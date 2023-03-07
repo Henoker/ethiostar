@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import {navVariants} from '../utils/motion';
+import Link from 'next/link';
 
 
 
@@ -12,7 +13,7 @@ const Navbar = () => (
   whileInView="show"
   className={`${styles.xPaddings} py-8 relative`}
   >
-    <div className='absolute w-[50%] inset-0 gradient-01'/>
+    {/* <div className='fixed top-0 left-0 w-full z-50'/>
 
     <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
       <img
@@ -30,6 +31,30 @@ const Navbar = () => (
       alt='menu'
       className='w-[24px] h-[24px] object-contain'
       />
+    </div> */}
+    <div>
+      <div>
+        {/* <Link href='/'>
+        <h1>Ethiostar</h1>
+        </Link> */}
+        
+      
+      <ul>
+      
+        <li>
+        <Link href="/about">About Us</Link>
+        </li>
+        <li>
+        <Link href="/services">Services</Link>
+        </li>
+        <li>
+        <Link href="/industries">industries</Link>
+        </li>
+        <li>
+        <Link href="/contact">Contact Us</Link>
+        </li>
+      </ul>
+      </div>
     </div>
   </motion.nav>
 );

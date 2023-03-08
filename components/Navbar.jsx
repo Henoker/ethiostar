@@ -1,62 +1,82 @@
-'use client';
+'use client'
 import { motion } from 'framer-motion';
 import styles from '../styles';
-import {navVariants} from '../utils/motion';
+import { navVariants } from '../utils/motion';
 import Link from 'next/link';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { useState } from 'react';
 
+const Navbar = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
+  const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
 
-const Navbar = () => (
-  <motion.nav
-  variants={navVariants}
-  initial="hidden"
-  whileInView="show"
-  className={`${styles.xPaddings} py-8 relative`}
-  >
-    {/* <div className='fixed top-0 left-0 w-full z-50'/>
+  return (
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      className={`${styles.xPaddings} py-8 relative`}
+    >
+      <div className="fixed top-0 left-0 w-full z-50">
+        <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8 bg-gray-900 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-2 px-4 rounded-l`}>
+          <Link href="/">
+            <h1>Ethiostar America</h1>
+          </Link>
 
-    <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
-      <img
-        src='/search.svg'
-        alt='search'
-        className='w-[24px] h-[24px] object-contain fill-inherit'
-      />
-      <img
-      src='/logo-horizontal-preta.png'
-      alt='logo'
-      className='w-[180px] h-[80px] object-contain'
-      />
-      <img 
-      src='/menu.svg'
-      alt='menu'
-      className='w-[24px] h-[24px] object-contain'
-      />
-    </div> */}
-    <div>
-      <div>
-        {/* <Link href='/'>
-        <h1>Ethiostar</h1>
-        </Link> */}
-        
-      
-      <ul>
-      
-        <li>
-        <Link href="/about">About Us</Link>
-        </li>
-        <li>
-        <Link href="/services">Services</Link>
-        </li>
-        <li>
-        <Link href="/industries">industries</Link>
-        </li>
-        <li>
-        <Link href="/contact">Contact Us</Link>
-        </li>
-      </ul>
+          <ul className="hidden sm:flex">
+            <li className="p-4 hover:text-gray-500">
+              <Link href="/home">Home</Link>
+            </li>
+            <li className="p-4 hover:text-gray-500">
+              <Link href="/about">About Us</Link>
+            </li>
+            <li className="p-4 hover:text-gray-500">
+              <Link href="/services">Services</Link>
+            </li>
+            <li className="p-4 hover:text-gray-500">
+              <Link href="/industries">Industries</Link>
+            </li>
+            <li className="p-4 hover:text-gray-500">
+              <Link href="/contact">Contact Us</Link>
+            </li>
+          </ul>
+
+          {/* Mobile section */}
+          <div className="block sm:hidden z-10">
+            {showMobileMenu ? (
+              <AiOutlineClose onClick={toggleMobileMenu} size={32} />
+            ) : (
+              <AiOutlineMenu onClick={toggleMobileMenu} size={32} />
+            )}
+          </div>
+        </div>
+
+        {/* Mobile menu */}
+        {showMobileMenu && (
+          <div className="sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-gray-900 bg-opacity-100">
+            <ul className="flex flex-col items-center text-white font-bold">
+              <li className="p-4 hover:text-gray-500">
+                <Link href="/">Home</Link>
+              </li>
+              <li className="p-4 hover:text-gray-500">
+                <Link href="/about">About Us</Link>
+              </li>
+              <li className="p-4 hover:text-gray-500">
+                <Link href="/services">Services</Link>
+              </li>
+              <li className="p-4 hover:text-gray-500">
+                <Link href="/industries">Industries</Link>
+              </li>
+              <li className="p-4 hover:text-gray-500">
+                <Link href="/contact">Contact Us</Link>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
-    </div>
-  </motion.nav>
-);
+    </motion.nav>
+  );
+};
 
 export default Navbar;

@@ -67,7 +67,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
+        {/* <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
           <button
             onClick={handlePrev}
             className="bg-gray-900 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-2 px-4 rounded-l"
@@ -80,7 +80,7 @@ const Hero = () => {
           >
             Next
           </button>
-        </div>
+        </div> */}
       </div>
   </section>
 

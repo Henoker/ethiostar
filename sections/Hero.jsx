@@ -4,15 +4,15 @@ import { useState, useEffect } from 'react';
 
 const images = [
   {
-    src: '/planet-07.png',
+    src: '/ethiostar1.jpg',
     alt: 'Image 1',
   },
   {
-    src: '/planet-08.png',
+    src: '/ethiostraname.jpg',
     alt: 'Image 2',
   },
   {
-    src: '/planet-09.png',
+    src: '/GoldenGate.jpg',
     alt: 'Image 3',
   },
 ];

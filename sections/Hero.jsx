@@ -4,16 +4,19 @@ import { useState, useEffect } from 'react';
 
 const images = [
   {
-    src: '/ethiostar1.jpg',
+    src: '/translation4.jpg',
     alt: 'Image 1',
+    text: 'Helping you to speak to the world. We deliver what you mean.',
   },
   {
-    src: '/ethiostraname.jpg',
+    src: '/translation3.jpg',
     alt: 'Image 2',
+    text: ' With our Language specialists, We serve your business.',
   },
   {
     src: '/GoldenGate.jpg',
     alt: 'Image 3',
+    text: 'Bridging success by providing best translation services.',
   },
 ];
 
@@ -34,6 +37,10 @@ const Hero = () => {
     }, 5000);
     return () => clearInterval(intervalId);
   }, [currentIndex]);
+
+  const currentImage = images[currentIndex];
+  const currentText = currentImage.text;
+
   return (
     <section>
      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
@@ -55,32 +62,16 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gray-900 opacity-75"></div>
 
         <div className="absolute inset-0 flex justify-center items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto pb-4 px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">Welcome to our website</span>
-                <span className="block text-indigo-600 xl:inline">
-                  Start exploring now!
-                </span>
+              <h1 className="font-extrabold text-6xl text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-purple-500 to-yellow-500">
+                <span className="block xl:inline">{currentText}</span> 
               </h1>
             </div>
           </div>
         </div>
 
-        {/* <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-          <button
-            onClick={handlePrev}
-            className="bg-gray-900 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-2 px-4 rounded-l"
-          >
-            Prev
-          </button>
-          <button
-            onClick={handleNext}
-            className="bg-gray-900 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-2 px-4 rounded-r"
-          >
-            Next
-          </button>
-        </div> */}
+      
       </div>
   </section>
 

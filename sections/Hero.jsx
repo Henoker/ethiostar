@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import { useState, useEffect } from 'react';
+import styles from '../styles';
 
 const images = [
   {
@@ -42,7 +43,7 @@ const Hero = () => {
   const currentText = currentImage.text;
 
   return (
-    <section>
+    <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <div className="absolute inset-0">
           {images.map((image, index) => (

@@ -8,9 +8,9 @@ const Page = () => (
     <div className="relative top-[480px]">
       <About />
       <div className="gradient-03 z-0 top-4" />
-      <Explore />
+      {/* <Explore /> */}
     </div>
-    <div className="relative top-64">
+    {/* <div className="relative top-64">
       <GetStarted />
       <div className="gradient-04 z-0" />
       <WhatsNew />
@@ -26,8 +26,8 @@ const Page = () => (
       <Feedback />
       </div>
     <div className='relative top-64'>
-    <Footer />
-    </div>
+    <Footer /> */}
+    {/* </div> */}
    
   </div>
 );

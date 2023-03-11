@@ -16,25 +16,24 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| About Metaversus" textStyles="text-center" />
+      <TypingText title="| Who We are" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-black"
+        className="mt-[8px] font-normal sm:text-[28px] text-[20px] text-center text-justify text-black"
       >
-        <span className="font-extrabold text-lime-700">Metaverse</span> is a new
-        thing in the future, where you can enjoy the virtual world by feeling
-        like it's really real, you can feel what you feel in this metaverse
-        world, because this is really the{' '}
-        <span className="font-extrabold text-lime-700">
-          madness of the metaverse
+        <span className="font-extrabold text-lime-500">Ethiostar </span> team inspired by a shared goal 
+        to achieve excellence; we are a group of translators and interpreters working together as partners. 
+        we&apos;ve been at the forefront of the translation sector, adopting inventive and forward-thinking 
+        technology to ensure our standards always remain high. We use the latest versions of quality assurance 
+        and project management tools, keeping our projects on {' '}
+        <span className="font-extrabold text-lime-500">
+        track and meeting customer expectations
         </span>{' '}
-        of today, using only{' '}
-        <span className="font-extrabold text-lime-700">VR</span> devices you can
-        easily explore the metaverse world you want, turn your dreams into
-        reality. Let's{' '}
-        <span className="font-extrabold text-lime-700">explore</span> the madness
-        of the metaverse by scrolling down
+        every time. we have integrated{' '}
+        <span className="font-extrabold text-lime-500">ISO 17100</span> into our operations so as to fulfill our
+        committement to providing the {' '}
+        <span className="font-extrabold text-lime-500">highest standard of translation and localization </span> to our clients.
       </motion.p>
 
       <motion.img

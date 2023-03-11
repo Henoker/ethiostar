@@ -16,17 +16,47 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} py-8 relative`}
+      className={`${styles.xPaddings} py-2 relative sticky top-0 bg-gray-900 bg-opacity-50 z-50`}
     >
-      <div className="fixed top-0 left-0 w-full z-50">
-        <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8 bg-gray-900 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-2 px-4 rounded-l`}>
-          <Link href="/">
-            <h1>Ethiostar America</h1>
-          </Link>
+      <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8 text-white font-bold py-2 px-4 rounded-l`}>
+        <Link href="/">
+          <h1>Ethiostar America</h1>
+        </Link>
 
-          <ul className="hidden sm:flex">
+        <ul className="hidden sm:flex">
+          <li className="p-4 hover:text-gray-500">
+            <Link href="/home">Home</Link>
+          </li>
+          <li className="p-4 hover:text-gray-500">
+            <Link href="/about">About Us</Link>
+          </li>
+          <li className="p-4 hover:text-gray-500">
+            <Link href="/services">Services</Link>
+          </li>
+          <li className="p-4 hover:text-gray-500">
+            <Link href="/industries">Industries</Link>
+          </li>
+          <li className="p-4 hover:text-gray-500">
+            <Link href="/contact">Contact Us</Link>
+          </li>
+        </ul>
+
+        {/* Mobile section */}
+        <div className="block sm:hidden z-10">
+          {showMobileMenu ? (
+            <AiOutlineClose onClick={toggleMobileMenu} size={32} />
+          ) : (
+            <AiOutlineMenu onClick={toggleMobileMenu} size={32} />
+          )}
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      {showMobileMenu && (
+        <div className="sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-gray-900 bg-opacity-100">
+          <ul className="flex flex-col items-center text-white font-bold">
             <li className="p-4 hover:text-gray-500">
-              <Link href="/home">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li className="p-4 hover:text-gray-500">
               <Link href="/about">About Us</Link>
@@ -41,40 +71,8 @@ const Navbar = () => {
               <Link href="/contact">Contact Us</Link>
             </li>
           </ul>
-
-          {/* Mobile section */}
-          <div className="block sm:hidden z-10">
-            {showMobileMenu ? (
-              <AiOutlineClose onClick={toggleMobileMenu} size={32} />
-            ) : (
-              <AiOutlineMenu onClick={toggleMobileMenu} size={32} />
-            )}
-          </div>
         </div>
-
-        {/* Mobile menu */}
-        {showMobileMenu && (
-          <div className="sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-gray-900 bg-opacity-100">
-            <ul className="flex flex-col items-center text-white font-bold">
-              <li className="p-4 hover:text-gray-500">
-                <Link href="/">Home</Link>
-              </li>
-              <li className="p-4 hover:text-gray-500">
-                <Link href="/about">About Us</Link>
-              </li>
-              <li className="p-4 hover:text-gray-500">
-                <Link href="/services">Services</Link>
-              </li>
-              <li className="p-4 hover:text-gray-500">
-                <Link href="/industries">Industries</Link>
-              </li>
-              <li className="p-4 hover:text-gray-500">
-                <Link href="/contact">Contact Us</Link>
-              </li>
-            </ul>
-          </div>
-        )}
-      </div>
+      )}
     </motion.nav>
   );
 };

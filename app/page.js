@@ -8,7 +8,7 @@ const Page = () => (
     <div className="relative top-[480px]">
       <About />
       <div className="gradient-03 z-0 top-4" />
-      {/* <Explore /> */}
+      <Explore />
     </div>
     {/* <div className="relative top-64">
       <GetStarted />

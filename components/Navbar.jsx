@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
 import Image from 'next/image';
-import logo from '../public/ethiostar.png';
+import logo from '../public/logoethioameric1.png';
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);

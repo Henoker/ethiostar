@@ -5,6 +5,8 @@ import { navVariants } from '../utils/motion';
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
+import Image from 'next/image';
+import logo from '../public/ethiostar.png';
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -20,7 +22,13 @@ const Navbar = () => {
     >
       <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8 text-white font-bold py-2 px-4 rounded-l`}>
         <Link href="/">
-          <h1>Ethiostar America</h1>
+          <Image
+          src={logo}
+          width={100}
+          height={100}
+          alt="logo"
+          priority
+          />
         </Link>
 
         <ul className="hidden sm:flex">

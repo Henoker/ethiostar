@@ -10,11 +10,12 @@ const Page = () => (
       <div className="gradient-03 z-0 top-4" />
       <Explore />
     </div>
-    {/* <div className="relative top-64">
+    <div className="relative pt-80">
       <GetStarted />
       <div className="gradient-04 z-0" />
-      <WhatsNew />
+      {/* <WhatsNew /> */}
     </div>
+     {/*
     <div className='relative top-64'>
     <World />
     </div>

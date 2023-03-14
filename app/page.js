@@ -13,7 +13,7 @@ const Page = () => (
     <div className="relative pt-80">
       <GetStarted />
       <div className="gradient-04 z-0" />
-      {/* <WhatsNew /> */}
+      <WhatsNew />
     </div>
      {/*
     <div className='relative top-64'>

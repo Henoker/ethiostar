@@ -71,7 +71,15 @@ const Hero = () => {
             </div>
           </div>
         </div>
-
+        <a href="#explore">
+          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] pt-[350px] relative z-10">
+            <img
+              src="/Certification.jpg"
+              alt="stamp"
+              className="sm:w-[455px] w-[100px] sm:h-[455px] h-[100px] object-contain"
+            />
+          </div>
+        </a>
       
       </div>
   </section>

@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import { useState, useEffect } from 'react';
+import CircularText from "../components/CircularText";
 import styles from '../styles';
 
 const images = [
@@ -67,16 +68,18 @@ const Hero = () => {
             <div className="text-center">
               <h1 className="font-extrabold text-6xl text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-purple-500 to-yellow-500">
                 <span className="block xl:inline">{currentText}</span> 
+                {/* <CircularText/> */}
               </h1>
+              <button className="btn text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-4 mr-2 mb-2">Learn More</button>
             </div>
           </div>
         </div>
         <a href="#explore">
-          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] pt-[350px] relative z-10">
+          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] sm:pt-[350px] pt-[400px] relative z-10">
             <img
               src="/Certification.jpg"
               alt="stamp"
-              className="sm:w-[455px] w-[100px] sm:h-[455px] h-[100px] object-contain"
+              className="sm:w-[455px] w-[300px] sm:h-[455px] h-[300px] object-contain"
             />
           </div>
         </a>

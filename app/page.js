@@ -15,11 +15,11 @@ const Page = () => (
       <div className="gradient-04 z-0" />
       <WhatsNew />
     </div>
-     {/*
-    <div className='relative top-64'>
+     
+    <div className='relative'>
     <World />
     </div>
-    
+    {/*
     <div className="relative top-64">
       <Insights />
     </div>

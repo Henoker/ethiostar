@@ -31,7 +31,7 @@ const GetStarted = () => (
       className="flex-[0.75] flex justify-center flex-col"
       >
         <TypingText title="| How Ethiostar works"/>
-        <TitleText title={<>Our translaton project ethos</>} />
+        <TitleText title={<>Cornerstones of our services</>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {startingFeatures.map((feature, index) => (
             <StartSteps

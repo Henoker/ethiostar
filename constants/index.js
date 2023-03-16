@@ -27,9 +27,9 @@ export const exploreWorlds = [
 ];
 
 export const startingFeatures = [
-  'Quality and cheap but not fast',
-  'Quality and fast but not cheap',
-  'Fast and cheap but not quality',
+  'Quality and lower priced but not expedited translation',
+  'Quality and expedited but not lower priced translation',
+  'Expedited and lower priced but not quality translation',
 ];
 
 export const newFeatures = [

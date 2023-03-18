@@ -19,10 +19,11 @@ const Page = () => (
     <div className='relative'>
     <World />
     </div>
-    {/*
+    
     <div className="relative top-64">
       <Insights />
     </div>
+    {/*
     <div className="gradient-04 relative z-0">
       <Feedback />
       </div>

@@ -70,11 +70,40 @@ const Hero = () => {
                 <span className="block xl:inline">{currentText}</span> 
                 {/* <CircularText/> */}
               </h1>
-              <button className="btn text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-4 mr-2 mb-2">Learn More</button>
+              {/* <button className="btn text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-4 mr-2 mb-2">Learn More</button> */}
+              <div class="space-y-8 sm:space-y-0 mt-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 relative z-15">
+              <a href="#explore">
+              <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] bg-[#25618B]:hover:bg-[#25608B] rounded-[32px] gap-[12px]">
+              <img
+              src="/headset.svg"
+              alt="headset"
+              className="w-[24px] h-[24px] object-contain"
+              />
+              <span className="font-normal text-[16px] text-white">
+                Learn More
+              </span>
+              </button>
+              </a>
+              <a href="#explore">
+              <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
+              <img
+              src="/headset.svg"
+              alt="headset"
+              className="w-[24px] h-[24px] object-contain"
+              />
+              <span className="font-normal text-[16px] text-white">
+                Contact Us
+              </span>
+              </button>
+
+              </a>
+              
+                
+              </div>
             </div>
           </div>
         </div>
-        <a href="#explore">
+        
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] sm:pt-[350px] pt-[400px] relative z-10">
             <img
               src="/Certification.jpg"
@@ -82,7 +111,7 @@ const Hero = () => {
               className="sm:w-[455px] w-[300px] sm:h-[455px] h-[300px] object-contain"
             />
           </div>
-        </a>
+       
       
       </div>
   </section>

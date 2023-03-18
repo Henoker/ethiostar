@@ -20,16 +20,17 @@ const Page = () => (
     <World />
     </div>
     
-    <div className="relative top-64">
+    <div className="relative">
       <Insights />
     </div>
-    {/*
-    <div className="gradient-04 relative z-0">
+   
+    <div className="relative">
       <Feedback />
       </div>
+    {/*  
     <div className='relative top-64'>
     <Footer /> */}
-    {/* </div> */}
+   
    
   </div>
 );

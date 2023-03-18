@@ -70,33 +70,29 @@ const Hero = () => {
                 <span className="block xl:inline">{currentText}</span> 
                 {/* <CircularText/> */}
               </h1>
-              {/* <button className="btn text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-4 mr-2 mb-2">Learn More</button> */}
-              <div class="space-y-8 sm:space-y-0 mt-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 relative z-15">
+              
+              <div class="space-y-8 sm:space-y-0 mt-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5  ">
+             
               <a href="#explore">
-              <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] bg-[#25618B]:hover:bg-[#25608B] rounded-[32px] gap-[12px]">
-              <img
-              src="/headset.svg"
-              alt="headset"
-              className="w-[24px] h-[24px] object-contain"
-              />
-              <span className="font-normal text-[16px] text-white">
-                Learn More
-              </span>
-              </button>
-              </a>
-              <a href="#explore">
-              <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
-              <img
-              src="/headset.svg"
-              alt="headset"
-              className="w-[24px] h-[24px] object-contain"
-              />
-              <span className="font-normal text-[16px] text-white">
-                Contact Us
-              </span>
-              </button>
-
-              </a>
+  <button type="button" className="btn flex items-center h-fit text-white bg-gradient-to-r from-purple-500 to-pink-500 focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-[32px] text-sm px-6 py-4 text-center gap-[12px] mr-2 mb-2 hover:from-pink-500 hover:to-purple-500 focus:from-pink-500 focus:to-purple-500">
+    <img
+      src="/headset.svg"
+      alt="headset"
+      className="w-[24px] h-[24px] object-contain"
+    />
+    <span className="font-normal text-[16px]">Learn More</span>
+  </button>
+</a>
+<a href="#contact">
+  <button type="button" className="flex items-center h-fit py-4 px-6 bg-gradient-to-r from-green-400 to-blue-600 focus:outline-none rounded-[32px] gap-[12px] hover:from-blue-600 hover:to-green-400 focus:from-blue-600 focus:to-green-400">
+    <img
+      src="/headset.svg"
+      alt="headset"
+      className="w-[24px] h-[24px] object-contain"
+    />
+    <span className="font-normal text-[16px] text-white">Contact Us</span>
+  </button>
+</a>
               
                 
               </div>
@@ -104,14 +100,14 @@ const Hero = () => {
           </div>
         </div>
         
-          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] sm:pt-[350px] pt-[400px] relative z-10">
+          {/* <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] sm:pt-[350px] pt-[400px] relative">
             <img
               src="/Certification.jpg"
               alt="stamp"
               className="sm:w-[455px] w-[300px] sm:h-[455px] h-[300px] object-contain"
             />
           </div>
-       
+        */}
       
       </div>
   </section>

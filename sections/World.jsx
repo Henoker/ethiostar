@@ -19,7 +19,7 @@ const World = () => (
       <TypingTextWhite title="| Speak global, translate local" textStyles="text-center" />
       <TitleTextWhite
         title={(
-          <>With Ethiostar, Global communications made simple.
+          <>Global communications made simple.
           </>
         )}
         textStyles="text-center"

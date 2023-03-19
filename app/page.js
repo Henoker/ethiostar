@@ -4,8 +4,10 @@ import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World }
 const Page = () => (
   <div className='bg-white'>
     <Navbar/>
+    
     <Hero />
-    <div className="relative top-[420px]">
+   
+    <div className="relative top-[420px] ">
       <About />
       <div className="gradient-03 z-0" />
       <Explore />

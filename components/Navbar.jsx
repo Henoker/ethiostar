@@ -18,7 +18,7 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} py-2 relative sticky top-0 bg-gray-900 bg-opacity-50 z-50`}
+      className={`${styles.xPaddings} py-2 sticky w-full top-0 bg-gray-900 bg-opacity-50 z-50`}
     >
       <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8 text-white font-bold py-2 px-4 rounded-l`}>
         <Link href="/">

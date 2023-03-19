@@ -27,9 +27,10 @@ const Page = () => (
     <div className="relative">
       <Feedback />
       </div>
-    {/*  
-    <div className='relative top-64'>
-    <Footer /> */}
+     
+    <div className='relative'>
+    <Footer />
+    </div>
    
    
   </div>

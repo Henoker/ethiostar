@@ -46,7 +46,7 @@ const Hero = () => {
   return (
     <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 h-screen">
           {images.map((image, index) => (
             <Image
               key={index}
@@ -71,7 +71,7 @@ const Hero = () => {
                 {/* <CircularText/> */}
               </h1>
               
-              <div class="space-y-8 sm:space-y-0 mt-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5  ">
+              <div class="flex space-x-4 justify-center mt-4">
              
               <a href="#explore">
   <button type="button" className="btn flex items-center h-fit text-white bg-gradient-to-r from-purple-500 to-pink-500 focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-[32px] text-sm px-6 py-4 text-center gap-[12px] mr-2 mb-2 hover:from-pink-500 hover:to-purple-500 focus:from-pink-500 focus:to-purple-500">

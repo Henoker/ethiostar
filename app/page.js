@@ -5,9 +5,9 @@ const Page = () => (
   <div className='bg-white'>
     <Navbar/>
     <Hero />
-    <div className="relative top-[480px]">
+    <div className="relative top-[420px]">
       <About />
-      <div className="gradient-03 z-0 top-4" />
+      <div className="gradient-03 z-0" />
       <Explore />
     </div>
     <div className="relative pt-80">

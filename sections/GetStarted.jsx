@@ -8,7 +8,7 @@ import { startingFeatures } from '../constants';
 
 
 const GetStarted = () => (
-  <section className={`${styles.paddings} relative z-10 mt-6`}>
+  <section className={`${styles.paddings} relative z-10`}>
     <motion.div
     variants={staggerContainer}
     initial="hidden"

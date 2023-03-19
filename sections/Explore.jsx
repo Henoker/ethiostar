@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { exploreWorlds } from '../constants';
 import { staggerContainer } from '../utils/motion';
-import { ExploreCard, TitleText, TypingText } from '../components';
+import { ExploreCard, TitleTextWhite, TypingTextWhite } from '../components';
 
 const Explore = () => {
   const [active, setActive] = useState('world-2');
 
   return (
-    <section className={`${styles.paddings} bg-gray-200`} id="explore" >
+    <section className={`${styles.paddings} theme-dark-blue bg-skin-fill`} id="explore" >
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -19,8 +19,8 @@ const Explore = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <TypingText title="| Our Solutions" textStyles="text-center" />
-        <TitleText
+        <TypingTextWhite title="| Our Solutions" textStyles="text-center" />
+        <TitleTextWhite
           title={<>Choose the solution you want <br className="md:block hidden" /> to explore</>}
           textStyles="text-center"
         />

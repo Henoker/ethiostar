@@ -16,7 +16,7 @@ const World = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
 
-      <TypingTextWhite title="| People on the World" textStyles="text-center" />
+      <TypingTextWhite title="| Speak global, translate local" textStyles="text-center" />
       <TitleTextWhite
         title={(
           <>With Ethiostar, Global communications made simple.

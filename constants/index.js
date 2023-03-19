@@ -50,21 +50,21 @@ export const newFeatures = [
 export const insights = [
   {
     imgUrl: '/people-01.png',
-    title: 'The launch of the Metaverse makes Elon musk ketar-ketir',
+    title: 'How a Bad Translation Started A War…',
     subtitle:
-        'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
+        'The Battle of Adwa was a major conflict in the late 19th century that pitted the Ethiopian Empire against the Kingdom of Italy.',
   },
   {
     imgUrl: '/people-02.png',
-    title: '7 tips to easily master the madness of the Metaverse',
+    title: 'Time to invest in translation so your business can grow in the digital world',
     subtitle:
-        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+        'With advent of cyber technology, no doubt you have noticed we are entering to multi-ethnic global lucrative market.',
   },
   {
     imgUrl: '/people-03.png',
-    title: 'With one platform you can explore the whole world virtually',
+    title: 'Things you should know about Medical Paper Translation',
     subtitle:
-        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+        'Medical translation is a translation service that helps people translate their medical documents into other languages. For example, Clinical trial results, pharmaceutical regulations, medical reports, and live interpretation.',
   },
 ];
 

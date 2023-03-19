@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-import { TypingText, TitleText } from './CustomTexts';
+import { TypingText, TitleText, TitleTextWhite, TypingTextWhite } from './CustomTexts';
 import ExploreCard from './ExploreCard';
 import StartSteps from './StartSteps';
 import NewFeatures from './NewFeatures';
@@ -10,9 +10,12 @@ export {
   Navbar,
   TitleText,
   TypingText,
+  TitleTextWhite,
+  TypingTextWhite,
   StartSteps,
   NewFeatures,
   ExploreCard,
   InsightCard,
   Footer,
+  
 };

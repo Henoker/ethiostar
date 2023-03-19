@@ -3,11 +3,11 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { TitleText, TypingText } from '../components';
+import { TitleTextWhite, TypingTextWhite } from '../components';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
 const World = () => (
-  <section className={`${styles.paddings} theme-neon bg-skin-fill relative z-10`}>
+  <section className={`${styles.paddings} theme-dark-blue bg-skin-fill relative z-10`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -16,10 +16,10 @@ const World = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
 
-      <TypingText title="| People on the World" textStyles="text-center" />
-      <TitleText
+      <TypingTextWhite title="| People on the World" textStyles="text-center" />
+      <TitleTextWhite
         title={(
-          <>From Africa to the United States. A translation company that you can trust
+          <>With Ethiosar Global communications made simple.
           </>
         )}
         textStyles="text-center"
@@ -35,11 +35,11 @@ const World = () => (
           <img src="people-01.png" alt="people" className="w-full h-full" />
         </div>
 
-        <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+        <div className="absolute top-[30%] left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
           <img src="/people-02.png" alt="people" className="w-full h-full" />
         </div>
 
-        <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+        <div className="absolute top-1/2 left-[48%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
           <img src="people-03.png" alt="people" className="w-full h-full" />
         </div>
       </motion.div>

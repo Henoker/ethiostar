@@ -7,11 +7,11 @@ const Page = () => (
     
     <Hero />
    
-    <div className="relative top-[420px] ">
-      <About />
-      <div className="gradient-03 z-0" />
+    {/* <div className="relative top-[134px] "> */}
+      {/* <About /> */}
+      {/* <div className="gradient-03 z-0" />
       <Explore />
-    </div>
+    </div> */}
     <div className="relative pt-80">
       <GetStarted />
       <div className="gradient-04 z-0" />

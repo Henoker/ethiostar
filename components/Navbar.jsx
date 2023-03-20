@@ -18,9 +18,10 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} py-2 sticky w-full top-0 bg-gray-900 bg-opacity-50 z-50`}
+      className={`${styles.xPaddings} py-4 px-4 sticky top-0 bg-gray-900 bg-opacity-50 md:pr-32 md:py-0 z-50`}
     >
-      <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8 text-white font-bold py-2 px-4 rounded-l`}>
+      {/* <div className={`${styles.innerWidth}  flex justify-between gap-8 text-white font-bold py-2 px-4 rounded-l`}> */}
+       <div className={`${styles.innerWidth}  flex items-center space-x-2 md:space-x-10 text-white`}>
         <Link href="/">
           <Image
           src={logo}
@@ -32,7 +33,7 @@ const Navbar = () => {
         </Link>
 
         <ul className="hidden sm:flex">
-          <li className="p-4 hover:text-gray-500">
+          <li className="p-4 hover:text-gray-500 md:text-[14px]">
             <Link href="/home">Home</Link>
           </li>
           <li className="p-4 hover:text-gray-500">

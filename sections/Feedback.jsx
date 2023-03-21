@@ -8,8 +8,8 @@ const Feedback = () => (
     <div className="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
     <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-extrabold text-skin-base sm:text-4xl">
-        <span className="block">Tell us what you think.</span>
-        {/* <span className="block">We handle the distribution.</span> */}
+        <span className="block">Get in Touch.</span>
+        <span className="block">Fill out the contact form.</span>
       </h2>
       <p className="mt-4 text-md leading-6 text-skin-muted"><span className='font-extrabold text-gray-300'>Note:</span> Sending us your contact details means we can respond to your enquiry. We will use your contact details only for the purpose for which you provided it. We promise not give your contact details to anyone else without your consent.</p>
       <form action="#" method="POST">
@@ -17,20 +17,20 @@ const Feedback = () => (
             <div class="bg-white px-4 py-5 sm:p-6">
               <div class="grid grid-cols-6 gap-6">
                 <div class="col-span-6 sm:col-span-3">
-                  <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
+                  <label for="first-name" class="block text-sm font-medium leading-6 text-left text-gray-900">Name</label>
                   <input type="text" name="first-name" id="first-name" autocomplete="given-name" className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
                 </div>
                 <div class="col-span-6 sm:col-span-3">
-                  <label for="phone-number" className="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
+                  <label for="phone-number" className="block text-sm font-medium leading-6 text-left text-gray-900">Phone Number</label>
                   <input type="text" name="phone-number" id="last-name" autocomplete="Phone" className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
                 </div>
 
                 <div class="col-span-6 sm:col-span-4">
-                  <label for="email-address" className="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                  <label for="email-address" className="block text-sm font-medium leading-6 text-left text-gray-900">Email address</label>
                   <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
                 </div>
                 <div class="col-span-6">
-                  <label for="text" class="block text-sm font-medium leading-6 text-gray-900">Message</label>
+                  <label for="text" class="block text-sm font-medium leading-6 text-left text-gray-900">Message</label>
                   <textarea id="message" name="message" rows="3" className="mt-1 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:py-1.5 sm:text-sm sm:leading-6" placeholder="message"></textarea>
                 </div>
 

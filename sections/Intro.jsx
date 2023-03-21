@@ -5,50 +5,44 @@ import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Intro = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
-    >
-      <div className="flex justify-center items-center flex-col relative z-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Metaverse
-        </motion.h1>
-        <motion.div
-          variants={textVariant(1.2)}
-          className="flex flex-row justify-center items-center"
-        >
-          <h1 className={styles.heroHeading}>Ma</h1>
-          <div className={styles.heroDText} />
-          <h1 className={styles.heroHeading}>Ness</h1>
-        </motion.div>
+  <div className="theme-black-pearl relative bg-skin-fill max-w-6xl overflow-hidden sm:rounded-2xl">
+        <img className="absolute inset-0 h-full w-full object-cover opacity-90" src="https://images.unsplash.com/photo-1573164574511-73c773193279?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="People working on laptops" />
+    <div className="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
+    <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+    <div class="flex items-center">
+        <div class="text-gray-100 text-1xl font-bold mr-4">Our Track Record</div>
+        <div class="border-l border-gray-400 h-8"></div>
       </div>
+    <div class="text-gray-100 text-3xl font-bold ml-0 mt-4 mb-6">Trusted by Many Organizations Throughout the World</div>
+    <div class="text-gray-100 text-lg mb-8 max-w-md text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod magna id turpis suscipit, eget rutrum augue consectetur. Ut tincidunt quam vel tempor consequat. Donec pulvinar vestibulum eros, quis consectetur felis ultrices vel.</div>
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
+        <div class="bg-[#94E958] rounded-lg p-6">
+        <div class="text-gray-900">More than</div>
+          <div class="text-4xl font-bold text-gray-900">80</div>
+          <div class="text-gray-900">Languages Served</div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
+        <div class="bg-[#F1A321] rounded-lg p-6">
+          <div class="text-gray-900">More than</div>
+          <div class="text-4xl font-bold text-gray-900">500</div>
+          <div class="text-gray-900">Projects Completed</div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
+        <div class="bg-[#D15D42] rounded-lg p-6">
+          <div class="text-gray-900">More than</div>
+          <div class="text-4xl font-bold text-gray-900">200</div>
+          <div class="text-gray-900">MM Words Translated </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
-      <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
-        className="relative w-full md:-mt-[20px] -mt-[12px]"
-      >
-        <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
-
-        <img
-          src="/cover.png"
-          alt="hero_cover"
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
-        />
-
-        <a href="#explore">
-          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
-            <img
-              src="/stamp.png"
-              alt="stamp"
-              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
-            />
-          </div>
-        </a>
-      </motion.div>
-    </motion.div>
+  </div> 
+      
+  
   </section>
 );
 

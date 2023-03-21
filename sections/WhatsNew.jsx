@@ -7,7 +7,7 @@ import {NewFeatures, TitleText, TypingText } from '../components';
 import { newFeatures } from '../constants';
 
 const WhatsNew = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} theme-neon bg-skin-fill relative z-10`}>
     <motion.div
     variants={staggerContainer}
     initial="hidden"

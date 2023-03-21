@@ -7,7 +7,7 @@ import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
 const About = () => (
-  <section className={`${styles.paddings} bg-white z-10`}>
+  <section className={`${styles.paddings} theme-neon bg-skin-fill z-10`}>
     <div className="gradient-02 z-0" />
     <motion.div
       variants={staggerContainer}
@@ -22,18 +22,18 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[28px] text-[20px] text-center text-justify text-black"
       >
-        <span className="font-extrabold text-lime-500">Ethiostar </span> team inspired by a shared goal 
+        <span className="font-extrabold text-gray-900">Ethiostar </span> team inspired by a shared goal 
         to achieve excellence; we are a group of translators and interpreters working together as partners. 
         we&apos;ve been at the forefront of the translation sector, adopting inventive and forward-thinking 
         technology to ensure our standards always remain high. We use the latest versions of quality assurance 
         and project management tools, keeping our projects on {' '}
-        <span className="font-extrabold text-lime-500">
+        <span className="font-extrabold text-gray-900">
         track and meeting customer expectations
         </span>{' '}
         every time. we have integrated{' '}
-        <span className="font-extrabold text-lime-500">ISO 17100</span> into our operations so as to fulfill our
+        <span className="font-extrabold text-gray-900">ISO 17100</span> into our operations so as to fulfill our
         committement to providing the {' '}
-        <span className="font-extrabold text-lime-500">highest standard of translation and localization </span> to our clients.
+        <span className="font-extrabold text-gray-900">highest standard of translation and localization </span> to our clients.
       </motion.p>
 
       <motion.img

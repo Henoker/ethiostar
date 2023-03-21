@@ -47,6 +47,17 @@
     --color-button-muted: 212, 255, 122;
 
   }
+
+  ..theme-black-pearl {
+    --color-text-base: 255, 255, 255;
+    --color-text-muted: 254, 202, 202;
+    --color-text-inverted: 79, 70, 229;
+    --color-fill: 9, 20, 60;
+    --color-button-accent: 36, 52, 3;
+    --color-button-accent-hover: 55, 79, 5;
+    --color-button-muted: 212, 255, 122;
+
+  }
 }
 .gradient-01 {
   background-image: linear-gradient(

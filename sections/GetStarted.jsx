@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-import { StartSteps, TitleText, TypingText } from '../components';
+import { StartSteps, TitleTextWhite, TypingTextWhite } from '../components';
 import { startingFeatures } from '../constants';
 
 
@@ -30,8 +30,8 @@ const GetStarted = () => (
       variants={fadeIn('left', 'tween', 0.2, 1)}
       className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="| Ethiostar's Ethos"/>
-        <TitleText title={<>Cornerstones of our services</>} />
+        <TypingTextWhite title="| Ethiostar's Ethos"/>
+        <TitleTextWhite title={<>Cornerstones of our services</>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {startingFeatures.map((feature, index) => (
             <StartSteps

@@ -38,8 +38,8 @@ const Hero = () => {
 
   return (
     // <section className={`${styles.yPaddings} sm:pl-0 pl-6`}>
-    <section className={`${styles.yPaddings} flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[65vh] lg:justify-end lg:pb-12`}>
-     <div className="absolute top-0 left-0 w-full h-full">
+    <section className={`${styles.yPaddings} flex flex-col w-full h-screen space-y-2 py-16 md:space-y-4 sm:h-[100vh] lg:h-[100vh] lg:justify-end lg:pb-12`}>
+     <div className="absolute top-0 left-0 w-full h-screen">
      {/* <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen"> */}
         <div className="absolute inset-0 h-screen">
           {images.map((image, index) => (

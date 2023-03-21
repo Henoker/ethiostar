@@ -1,9 +1,19 @@
+'use client';
+
 import { motion } from 'framer-motion';
+import CountUp from 'react-countup';
+import { useState } from 'react';
+import ScrollTrigger from 'react-scroll-trigger';
+
 
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
-const Intro = () => (
+
+
+const Intro = () => {
+  const [counterOn, setCounterOn] = useState(false);
+  return (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
   <div className="theme-black-pearl relative bg-skin-fill max-w-6xl overflow-hidden sm:rounded-2xl">
         <img className="absolute inset-0 h-full w-full object-cover opacity-90" src="https://images.unsplash.com/photo-1573164574511-73c773193279?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="People working on laptops" />
@@ -19,21 +29,29 @@ const Intro = () => (
       <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
         <div class="bg-[#94E958] rounded-lg p-6">
         <div class="text-gray-900">More than</div>
-          <div class="text-4xl font-bold text-gray-900">80</div>
+        <ScrollTrigger
+        onEnter={()=> setCounterOn(true)}
+        onExit={()=> setCounterOn(false)}
+        >
+        <div class="text-4xl font-bold text-gray-900">
+          {counterOn && <CountUp start={0} end={80} duration={2} delay={0}/> }
+        </div>
+        </ScrollTrigger>
+          
           <div class="text-gray-900">Languages Served</div>
         </div>
       </div>
       <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
         <div class="bg-[#F1A321] rounded-lg p-6">
           <div class="text-gray-900">More than</div>
-          <div class="text-4xl font-bold text-gray-900">500</div>
+          <div class="text-4xl font-bold text-gray-900"> {counterOn && <CountUp start={0} end={500} duration={2} delay={1}/> }</div>
           <div class="text-gray-900">Projects Completed</div>
         </div>
       </div>
       <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
         <div class="bg-[#D15D42] rounded-lg p-6">
           <div class="text-gray-900">More than</div>
-          <div class="text-4xl font-bold text-gray-900">200</div>
+          <div class="text-4xl font-bold text-gray-900"> {counterOn && <CountUp start={0} end={500} duration={2} delay={2}/> }</div>
           <div class="text-gray-900">MM Words Translated </div>
         </div>
       </div>
@@ -44,6 +62,6 @@ const Intro = () => (
       
   
   </section>
-);
+)};
 
 export default Intro;

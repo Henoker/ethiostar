@@ -13,23 +13,23 @@ const Feedback = () => (
       </h2>
       <p className="mt-4 text-md leading-6 text-skin-muted"><span className='font-extrabold text-gray-300'>Note:</span> Sending us your contact details means we can respond to your enquiry. We will use your contact details only for the purpose for which you provided it. We promise not give your contact details to anyone else without your consent.</p>
       <form action="#" method="POST">
-          <div class="overflow-hidden shadow sm:rounded-md mt-8">
-            <div class="bg-white px-4 py-5 sm:p-6">
-              <div class="grid grid-cols-6 gap-6">
-                <div class="col-span-6 sm:col-span-3">
-                  <label for="first-name" class="block text-sm font-medium leading-6 text-left text-gray-900">Name</label>
+          <div className="overflow-hidden shadow sm:rounded-md mt-8">
+            <div className="bg-white px-4 py-5 sm:p-6">
+              <div className="grid grid-cols-6 gap-6">
+                <div className="col-span-6 sm:col-span-3">
+                  <label for="first-name" className="block text-sm font-medium leading-6 text-left text-gray-900">Name</label>
                   <input type="text" name="first-name" id="first-name" autocomplete="given-name" className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
                 </div>
-                <div class="col-span-6 sm:col-span-3">
+                <div className="col-span-6 sm:col-span-3">
                   <label for="phone-number" className="block text-sm font-medium leading-6 text-left text-gray-900">Phone Number</label>
                   <input type="text" name="phone-number" id="last-name" autocomplete="Phone" className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
                 </div>
 
-                <div class="col-span-6 sm:col-span-4">
+                <div className="col-span-6 sm:col-span-4">
                   <label for="email-address" className="block text-sm font-medium leading-6 text-left text-gray-900">Email address</label>
                   <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
                 </div>
-                <div class="col-span-6">
+                <div className="col-span-6">
                   <label for="text" class="block text-sm font-medium leading-6 text-left text-gray-900">Message</label>
                   <textarea id="message" name="message" rows="3" className="mt-1 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:py-1.5 sm:text-sm sm:leading-6" placeholder="message"></textarea>
                 </div>
@@ -50,7 +50,7 @@ const Feedback = () => (
               </div> */}
               </div>
             </div>
-            <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
+            <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
             <button type="submit" className="inline-flex justify-center text-skin-base bg-skin-button-muted items-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-90 hover:bg-opacity-100 sm:px-8">Send Message</button>
             </div>
           </div>

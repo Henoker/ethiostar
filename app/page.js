@@ -16,9 +16,11 @@ const Page = () => (
     </div> 
     <div className="relative">
       <GetStarted />
+      <Cards/>
       <div className="gradient-04 z-0" />
       <WhatsNew />
     </div>
+    
     <Intro/>
     <World />
     <div className="relative">

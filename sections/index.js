@@ -7,6 +7,7 @@ import World from './World';
 import Insights from './Insights';
 import Feedback from './Feedback';
 import Intro from './Intro';
+import Cards from './Cards';
 
 
 export {
@@ -19,4 +20,5 @@ export {
   Insights,
   Feedback,
   Intro,
+  Cards,
 };

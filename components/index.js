@@ -6,6 +6,8 @@ import NewFeatures from './NewFeatures';
 import InsightCard from './InsightCard';
 import Footer from './Footer';
 import OurServices from './OurServices';
+import MarqueeSlider from './MarqueeSlider';
+
 
 export {
   Navbar,
@@ -19,6 +21,8 @@ export {
   InsightCard,
   Footer,
   OurServices,
+  MarqueeSlider,
+  
   
   
 };

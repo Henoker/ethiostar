@@ -6,6 +6,7 @@ import { socials } from '../constants';
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 
+
 const Footer = () => (
   <motion.footer
     variants={footerVariants}
@@ -29,6 +30,7 @@ const Footer = () => (
             Contact Ethiostar
           </span>
         </button>
+        
       </div>
 
       <div className="flex flex-col">

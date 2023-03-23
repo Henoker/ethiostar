@@ -8,6 +8,7 @@ import Insights from './Insights';
 import Feedback from './Feedback';
 import Intro from './Intro';
 import Cards from './Cards';
+import MarqueeSlider from './MarqueeSlider';
 
 
 export {
@@ -21,4 +22,6 @@ export {
   Feedback,
   Intro,
   Cards,
+  MarqueeSlider,
+ 
 };

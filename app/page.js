@@ -1,5 +1,5 @@
 import { Footer, Navbar} from '../components';
-import { About, Cards, Intro, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
+import { About, Cards, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
 
 const Page = () => (
 
@@ -9,10 +9,6 @@ const Page = () => (
     <Hero />
     <div className="relative">
       <About />
-      {/* <div className="gradient-03 z-0" />
-      {/* <Cards/> */}
-      {/* <Explore /> */}
-      {/* <Intro/> */}
     </div> 
     <div className="relative">
       <GetStarted />
@@ -23,11 +19,15 @@ const Page = () => (
     
     <Intro/>
     <World />
+    <MarqueeSlider/>
     <div className="relative">
+     
       <Insights />
       <div className="gradient-04 z-0" />
       <Feedback />
+      
     </div>
+    
     <Footer />
   </div>
 

@@ -6,6 +6,7 @@ import styles from '../styles';
 import { TitleTextWhite, TypingTextWhite } from '../components';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
+
 const World = () => (
   <section className={`${styles.paddings} theme-dark-blue bg-skin-fill relative z-10`}>
     <motion.div
@@ -44,6 +45,8 @@ const World = () => (
         </div>
       </motion.div>
     </motion.div>
+    
+
   </section>
 );
 

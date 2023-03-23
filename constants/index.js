@@ -89,15 +89,51 @@ export const socials = [
 
 export const ourServices = [
   {
-    imgUrl: '/vrpano.svg',
-    title: 'A new world',
+    imgUrl: '/language.svg',
+    title: 'Document Translation',
     subtitle:
-        'we have the latest update with new world for you to try never mind',
+        ' Through a rigorous recruitment process and ongoing training, our network of linguists, reviewers, and subject matter experts (SME) ensure that we have the capacity to handle any volume and speed. ',
   },
   {
-    imgUrl: '/headset.svg',
-    title: 'More realistic',
+    imgUrl: '/interpreter.svg',
+    title: 'Interpretation',
     subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
+        'We provide certified, professional interpreters with technical and subject matter expertise, allowing you to communicate effectively in more than 250 languages.',
   },
+  {
+    imgUrl: '/localization.svg',
+    title: 'Localization',
+    subtitle:
+        'Your localization business process is fully managed by our resources specialized in localization as well as other skills such as project management, project engineering and desktop publishing (DTP). ',
+  },
+  {
+    imgUrl: '/certificate.svg',
+    title: 'Localization',
+    subtitle:
+        'Your localization business process is fully managed by our resources specialized in localization as well as other skills such as project management, project engineering and desktop publishing (DTP). ',
+  },
+  {
+    imgUrl: '/desktop.svg',
+    title: 'Desktop Publishing',
+    subtitle:
+        'Enjoy Ethiostars cost-effective DTP services and start reaching your target audience in the Middle East and Africa in no time.  we may use Adobe InDesign, Adobe PageMaker and other tools.',
+  },
+  {
+    imgUrl: '/copywritting.svg',
+    title: 'Copy Writing',
+    subtitle:
+        'Copywriting is the act or the occupation of writing text for advertising or other forms of marketing. we will help you in your strive to increase brand awareness and global reach',
+  },
+  {
+    imgUrl: '/magnifying-glass.svg',
+    title: 'Proofreading',
+    subtitle:
+        'Our proofreaders help you to find out if anything goes wrong during typesetting by the printing press or your reviewer and you skipped during your review before sending the document for translation.  ',
+  },
+  {
+    imgUrl: '/medical.svg',
+    title: 'Medical Translation',
+    subtitle:
+        'we provide medical translation by specialist medical translators. We set high criteria, ensuring that our translators have expert skills in the subject, and provide a first-class translation of your material. '
+  }
 ];

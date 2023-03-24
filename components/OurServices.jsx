@@ -4,7 +4,7 @@ const OurServices = ({ imgUrl, title, subtitle}) => (
     
     <figure className="flex flex-col items-center justify-center p-8 text-center bg-gray-200 border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
         <figcaption className="flex items-center justify-center space-x-3">
-            <img className="rounded-full w-9 h-9" src={imgUrl}/>
+            <img className="rounded-full w-9 h-9 theme-neon bg-skin-fill" src={imgUrl}/>
             <div className="space-y-0.5 font-medium dark:text-white text-left">
                 <div>{title}</div>
                 {/* <div className="text-sm font-light text-gray-500 dark:text-gray-400">Developer at Open AI</div> */}

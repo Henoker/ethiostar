@@ -1,4 +1,3 @@
-import { Footer} from '../../../components';
 import { About, Cards, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World } from '../../../sections';
 
 const Page = () => (
@@ -28,7 +27,7 @@ const Page = () => (
       
     </div>
     
-    <Footer />
+   
   </div>
 
    

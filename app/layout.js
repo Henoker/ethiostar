@@ -1,4 +1,4 @@
-import { Navbar } from '../components';
+import { Navbar, Footer } from '../components';
 import '../styles/globals.css';
 
 const RootLayout = ({ children }) => (
@@ -12,6 +12,7 @@ const RootLayout = ({ children }) => (
       <Navbar/>
       
       {children}
+      <Footer/>
     </body>
   </html>
 );

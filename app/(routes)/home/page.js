@@ -1,11 +1,11 @@
-import { Footer, Navbar} from '../components';
-import { About, Cards, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
+import { Footer} from '../../../components';
+import { About, Cards, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World } from '../../../sections';
 
 const Page = () => (
 
  
   <div className="theme-dark-blue bg-skin-fill">
-    <Navbar />
+   
     <Hero />
     <div className="relative">
       <About />

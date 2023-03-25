@@ -20,7 +20,7 @@ const Navbar = () => {
       whileInView="show"
       className={`${styles.xPaddings} py-4 px-4 sticky top-0 bg- bg-opacity-50 md:pr-32 md:py-0 z-50`}
     >
-      {/* <div className={`${styles.innerWidth}  flex justify-between gap-8 text-white font-bold py-2 px-4 rounded-l`}> */}
+     
        <div className={`${styles.innerWidth}  flex items-center space-x-2 md:space-x-10 text-white`}>
         <Link href="/">
           <Image
@@ -46,7 +46,7 @@ const Navbar = () => {
             <Link href="/industries">Industries</Link>
           </li>
           <li className="p-4 hover:text-gray-500">
-            <Link href="/contact">Contact</Link>
+            <Link href="/quote">Instant Quote</Link>
           </li>
         </ul>
         
@@ -78,7 +78,7 @@ const Navbar = () => {
               <Link href="/industries">Industries</Link>
             </li>
             <li className="p-4 hover:text-gray-500">
-              <Link href="/contact">Contact</Link>
+              <Link href="/quote">Instant Quote</Link>
             </li>
           </ul>
         </div>

@@ -1,6 +1,9 @@
+import { HeroQuote, QuoteContainer } from "../../../sections";
+
 const Page = () => (
     <div className="theme-dark-blue bg-skin-fill">
-     <h1>Quote</h1>
+    <HeroQuote/>
+    <QuoteContainer/>
     </div>
   );
   

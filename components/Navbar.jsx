@@ -34,7 +34,7 @@ const Navbar = () => {
 
         <ul className="hidden sm:flex">
           <li className="p-4 hover:text-gray-500 md:text-[14px]">
-            <Link href="/home">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li className="p-4 hover:text-gray-500">
             <Link href="/about">About</Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
           <li className="p-4 hover:text-gray-500">
             <Link href="/industries">Industries</Link>
           </li>
-          <li className="p-4 hover:text-gray-500">
+          <li className="bg-[#fa2222] p-4 hover:text-gray-500">
             <Link href="/quote">Instant Quote</Link>
           </li>
         </ul>

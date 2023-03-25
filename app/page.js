@@ -1,4 +1,4 @@
-import { About, Cards, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World } from '../../../sections';
+import { About, Cards, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
 
 const Page = () => (
 

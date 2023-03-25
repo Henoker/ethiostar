@@ -9,7 +9,8 @@ import Feedback from './Feedback';
 import Intro from './Intro';
 import Cards from './Cards';
 import MarqueeSlider from './MarqueeSlider';
-
+import HeroQuote from './HeroQuote';
+import QuoteContainer from './QuoteConatiner';
 
 export {
   Hero,
@@ -23,5 +24,7 @@ export {
   Intro,
   Cards,
   MarqueeSlider,
+  HeroQuote,
+  QuoteContainer,
  
 };

@@ -1,7 +1,39 @@
 'use client';
 import styles from '../styles';
+import { useState } from 'react';
 
 const QuoteContainer = () => {
+  const products = [  { id: 1, name: "Product 1" },  { id: 2, name: "Product 2" },  { id: 3, name: "Product 3" },  { id: 4, name: "Product 4" },];
+
+  const languages = ["English", "Spanish", "French"];
+  
+  
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [wordCount, setWordCount] = useState("");
+  const [sourceLanguage, setSourceLanguage] = useState("");
+  const [targetLanguage, setTargetLanguage] = useState("");
+  const [totalPrice, setTotalPrice] = useState("");
+
+  const handleProductSelection = (productId) => {
+      setSelectedProduct(productId);
+    };
+  
+  const handleWordCountChange = (event) => {
+      setWordCount(event.target.value);
+    };
+  
+  const handleSourceLanguageChange = (event) => {
+      setSourceLanguage(event.target.value);
+    };
+  
+  const handleTargetLanguageChange = (event) => {
+      setTargetLanguage(event.target.value);
+    };
+  
+  const handleCalculatePrice = () => {
+      const price = Number(wordCount) * 0.05;
+      setTotalPrice(price.toFixed(2));
+    };
  
   return (
     <section className={`${styles.paddings}`} id="quote">
@@ -16,74 +48,22 @@ const QuoteContainer = () => {
        <span className='font-extrabold text-gray-300'></span> In a few clicks, input your order and receive your quote right away.</p>
      
      <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-     </div>
-    </div>
-  </div>
-  </section>
-
-)};
-
-
-    // const products = [  { id: 1, name: "Product 1" },  { id: 2, name: "Product 2" },  { id: 3, name: "Product 3" },  { id: 4, name: "Product 4" },];
-
-    // const languages = ["English", "Spanish", "French"];
-    
-    
-    //   const [selectedProduct, setSelectedProduct] = useState(null);
-    //   const [wordCount, setWordCount] = useState("");
-    //   const [sourceLanguage, setSourceLanguage] = useState("");
-    //   const [targetLanguage, setTargetLanguage] = useState("");
-    //   const [totalPrice, setTotalPrice] = useState("");
-    
-    //   const handleProductSelection = (productId) => {
-    //     setSelectedProduct(productId);
-    //   };
-    
-    //   const handleWordCountChange = (event) => {
-    //     setWordCount(event.target.value);
-    //   };
-    
-    //   const handleSourceLanguageChange = (event) => {
-    //     setSourceLanguage(event.target.value);
-    //   };
-    
-    //   const handleTargetLanguageChange = (event) => {
-    //     setTargetLanguage(event.target.value);
-    //   };
-    
-    //   const handleCalculatePrice = () => {
-    //     const price = Number(wordCount) * 0.05;
-    //     setTotalPrice(price.toFixed(2));
-    //   };
-  
-     
-        {/* <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-4 sm:gap-5">
-          
-          
-          <a href="#" className="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"> Get started </a>
-          <a href="#" className="text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Live demo </a>
-          <a href="#" className="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"> Get started </a>
-          <a href="#" className="text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Live demo </a>
-        </div> */}
-
-
-  {/* return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-4xl font-bold">
+     {/* <h1 className="text-4xl font-bold">
           Welcome to the Price Generator App
         </h1>
         <p className="mt-3 text-xl">
           Please select a product and enter the word count to get a price quote.
-        </p>
-        <div className="flex justify-center mt-6">
+        </p> */}
+        
+        {/* <div className="flex justify-center mt-6"> */}
+        <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-4 sm:gap-5">
           {products.map((product) => (
             <button
               key={product.id}
               className={`${
                 selectedProduct === product.id
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-200 text-gray-700"
+                  ? "text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"
+                  : "text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"
               } py-2 px-4 mr-4 rounded`}
               onClick={() => handleProductSelection(product.id)}
             >
@@ -152,6 +132,31 @@ const QuoteContainer = () => {
             )}
           </div>
         )}
+     </div>
+    </div>
+  </div>
+  </section>
+
+)};
+
+
+  
+  
+     
+        {/* <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-4 sm:gap-5">
+          
+          
+          <a href="#" className="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"> Get started </a>
+          <a href="#" className="text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Live demo </a>
+          <a href="#" className="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"> Get started </a>
+          <a href="#" className="text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Live demo </a>
+        </div> */}
+
+
+  {/* return (
+    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+        
       </main>
     </div> */}
     

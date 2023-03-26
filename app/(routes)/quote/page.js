@@ -2,7 +2,7 @@ import { HeroQuote, QuoteContainer } from "../../../sections";
 
 const Page = () => (
     <div className="theme-dark-blue bg-skin-fill">
-    <HeroQuote/>
+    {/* <HeroQuote/> */}
     <QuoteContainer/>
     </div>
   );

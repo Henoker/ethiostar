@@ -18,7 +18,7 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} py-4 px-4 sticky top-0 bg- bg-opacity-50 md:pr-32 md:py-0 z-50`}
+      className={`${styles.xPaddings} py-4 px-4 sticky top-0 bg-blue-900 bg-opacity-50 md:pr-32 md:py-0 z-50`}
     >
      
        <div className={`${styles.innerWidth}  flex items-center space-x-2 md:space-x-10 text-white`}>
@@ -59,7 +59,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <div className="mb-[50px] h-[2px] w-screen  bg-white opacity-50" />
+      {/* <div className="mb-[50px] h-[2px] w-screen  bg-white opacity-50" /> */}
 
       {/* Mobile menu */}
       {showMobileMenu && (

@@ -45,7 +45,7 @@ const Navbar = () => {
           <li className="p-4 hover:text-gray-500">
             <Link href="/industries">Industries</Link>
           </li>
-          <li className="bg-[#fa2222] p-4 hover:text-gray-500">
+          <li className="bg-skin-fill p-4 hover:text-gray-500">
             <Link href="/quote">Instant Quote</Link>
           </li>
         </ul>

@@ -2,6 +2,7 @@
 import styles from '../styles';
 import { useState } from 'react';
 
+
 const QuoteContainer = () => {
   // const products = [  { id: 1, name: "Product 1" },  { id: 2, name: "Product 2" },  { id: 3, name: "Product 3" },  { id: 4, name: "Product 4" },];
 
@@ -104,11 +105,44 @@ const QuoteContainer = () => {
                
 
           </div>
-          <div className="bg-skin-fill text-skin-base p-4 rounded-lg mt-4">
-                  <p className="font-bold text-lg">Total Price</p>
-                  <p className="text-2xl">${totalPrice}</p>
+          <div className="relative flex-[1] flex flex-col items-center  mt-6 pt-2 pb-6 px-4">
+          {totalPrice && (
+            <div className='mt-6 w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700'>
+              <h3 className='font-bold text-2xl flex flex-col items-center'> Quote Summary</h3>
+              <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
+               Connect with one of our available wallet providers or create a new one.
+              </p>
+              <div className='my-4 space-y-3'>
+                <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+                <img src='/certificate.svg' alt='next' className='h-6' />
+                  <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Job:<span className='inline-flex items-center justify-end px-2 py-0.5 ml-3 text-xl font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400'>Translation</span></p>
+                </div>
+                <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+                <img src='/source.svg' alt='next' className='h-6' />
+                <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Source Language:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-teal-400 rounded dark:bg-gray-700 dark:text-gray-400'>{sourceLanguage}</span></p>
+                </div>
+                <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+                <img src='/target.svg' alt='next' className='h-6' />
+                <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Target Language:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-teal-400 rounded dark:bg-gray-700 dark:text-gray-400'>{targetLanguage}</span></p>
+                </div>
+                <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+                <img src='/count.svg' alt='next' className='h-6' />
+                <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Word Count:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-rose-400 rounded dark:bg-gray-700 dark:text-gray-400'>{wordCount}</span></p>
+                </div>
+                <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+                <img src='/total.svg' alt='next' className='h-6' />
+                <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Total Price:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-rose-400 rounded dark:bg-gray-700 dark:text-gray-400'>${totalPrice}</span></p>
+                </div>
+              </div>
+            </div>
+          )}
+                  
           </div>
+          <div class="text-sm leading-[26px] mt-[30px]">
+		          <span class="text-lg leading-5 font-medium text-blue-700 align-middle m-0 px-3 py-1.5 rounded-2xl bg-skin-button-accent;">Pay after delivery</span> We trust you: feel free to pay within 5 days from delivery via bank transfer, credit card, or PayPal.  <a href="frequently-asked-questions#payments">Learn more</a>
+		      </div>
 
+          
         </div>
 
        </div>

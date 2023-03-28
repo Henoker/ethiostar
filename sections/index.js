@@ -14,6 +14,8 @@ import QuoteContainer from './QuoteConatiner';
 import SplitSection from './SplitSection';
 import ServicesSection from './ServicesSection';
 import SectionOverview from './SectionOverview';
+import AboutHero from './AboutHero';
+import IndustriesHero from './IndustriesHero';
 
 export {
   Hero,
@@ -32,5 +34,7 @@ export {
   SplitSection,
   ServicesSection,
   SectionOverview,
+  AboutHero,
+  IndustriesHero,
  
 };

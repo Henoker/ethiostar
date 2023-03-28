@@ -1,8 +1,9 @@
+import { AboutHero } from "../../../sections";
 
 
 const Page = () => (
   <div className="theme-dark-blue bg-skin-fill">
-   <h1>About</h1>
+   <AboutHero/>
   </div>
 );
 

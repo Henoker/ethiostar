@@ -20,39 +20,39 @@ const Intro = () => {
     <div className="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
     <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
     <div class="flex items-center">
-        <div class="text-gray-100 text-1xl font-bold mr-4">Our Track Record</div>
-        <div class="border-l border-gray-400 h-8"></div>
+        <div className="text-gray-100 text-1xl font-bold mr-4">Our Track Record</div>
+        <div className="border-l border-gray-400 h-8"></div>
       </div>
-    <div class="text-gray-100 text-3xl font-bold ml-0 mt-4 mb-6">Trusted by Many Organizations Throughout the World</div>
-    <div class="text-gray-100 text-lg mb-8 max-w-md text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod magna id turpis suscipit, eget rutrum augue consectetur. Ut tincidunt quam vel tempor consequat. Donec pulvinar vestibulum eros, quis consectetur felis ultrices vel.</div>
-    <div class="flex flex-wrap -mx-4">
-      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
-        <div class="bg-[#94E958] rounded-lg p-6">
-        <div class="text-gray-900">More than</div>
+    <div className="text-gray-100 text-3xl font-bold ml-0 mt-4 mb-6">Trusted by Many Organizations Throughout the World</div>
+    <div className="text-gray-100 text-lg mb-8 max-w-md text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod magna id turpis suscipit, eget rutrum augue consectetur. Ut tincidunt quam vel tempor consequat. Donec pulvinar vestibulum eros, quis consectetur felis ultrices vel.</div>
+    <div className="flex flex-wrap -mx-4">
+      <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
+        <div className="bg-[#94E958] rounded-lg p-6">
+        <div className="text-gray-900">More than</div>
         <ScrollTrigger
         onEnter={()=> setCounterOn(true)}
         onExit={()=> setCounterOn(false)}
         >
-        <div class="text-4xl font-bold text-gray-900">
+        <div className="text-4xl font-bold text-gray-900">
           {counterOn && <CountUp start={0} end={80} duration={2} delay={0}/> }
         </div>
         </ScrollTrigger>
           
-          <div class="text-gray-900">Languages Served</div>
+          <div className="text-gray-900">Languages Served</div>
         </div>
       </div>
-      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
-        <div class="bg-[#F1A321] rounded-lg p-6">
-          <div class="text-gray-900">More than</div>
-          <div class="text-4xl font-bold text-gray-900"> {counterOn && <CountUp start={0} end={500} duration={2} delay={1}/> }</div>
-          <div class="text-gray-900">Projects Completed</div>
+      <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
+        <div className="bg-[#F1A321] rounded-lg p-6">
+          <div className="text-gray-900">More than</div>
+          <div className="text-4xl font-bold text-gray-900"> {counterOn && <CountUp start={0} end={500} duration={2} delay={1}/> }</div>
+          <div className="text-gray-900">Projects Completed</div>
         </div>
       </div>
-      <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
-        <div class="bg-[#D15D42] rounded-lg p-6">
-          <div class="text-gray-900">More than</div>
-          <div class="text-4xl font-bold text-gray-900"> {counterOn && <CountUp start={0} end={500} duration={2} delay={2}/> }</div>
-          <div class="text-gray-900">MM Words Translated </div>
+      <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
+        <div className="bg-[#D15D42] rounded-lg p-6">
+          <div className="text-gray-900">More than</div>
+          <div className="text-4xl font-bold text-gray-900"> {counterOn && <CountUp start={0} end={500} duration={2} delay={2}/> }</div>
+          <div className="text-gray-900">MM Words Translated </div>
         </div>
       </div>
     </div>

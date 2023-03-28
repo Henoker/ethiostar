@@ -11,6 +11,9 @@ import Cards from './Cards';
 import MarqueeSlider from './MarqueeSlider';
 import HeroQuote from './HeroQuote';
 import QuoteContainer from './QuoteConatiner';
+import SplitSection from './SplitSection';
+import ServicesSection from './ServicesSection';
+import SectionOverview from './SectionOverview';
 
 export {
   Hero,
@@ -26,5 +29,8 @@ export {
   MarqueeSlider,
   HeroQuote,
   QuoteContainer,
+  SplitSection,
+  ServicesSection,
+  SectionOverview,
  
 };

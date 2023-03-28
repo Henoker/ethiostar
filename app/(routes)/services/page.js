@@ -1,9 +1,16 @@
+import { SectionOverview, ServicesSection, SplitSection } from "../../../sections";
+import { Article, TestimonialSolo } from "../../../components";
 
 
 const Page = () => (
   
   <div className="theme-dark-blue bg-skin-fill">
-   <h1>Services</h1>
+   <SplitSection/>
+   <Article/>
+   <TestimonialSolo/>
+   <ServicesSection/>
+   <SectionOverview/>
+   <TestimonialSolo/>
   </div>
   
 );

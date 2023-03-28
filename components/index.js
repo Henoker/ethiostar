@@ -7,6 +7,8 @@ import InsightCard from './InsightCard';
 import Footer from './Footer';
 import OurServices from './OurServices';
 import MarqueeSlider from './MarqueeSlider';
+import TestimonialSolo from './TestimonialSolo';
+import Article from './Article';
 
 
 export {
@@ -22,6 +24,8 @@ export {
   Footer,
   OurServices,
   MarqueeSlider,
+  TestimonialSolo,
+  Article,
   
   
   

@@ -1,6 +1,7 @@
 'use client';
 
 const ServicesSection = () => (
+  
     <section className= "text-white">
   <div className="max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
     <div className="max-w-xl">

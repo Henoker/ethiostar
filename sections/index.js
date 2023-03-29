@@ -16,6 +16,7 @@ import ServicesSection from './ServicesSection';
 import SectionOverview from './SectionOverview';
 import AboutHero from './AboutHero';
 import IndustriesHero from './IndustriesHero';
+import ServicesHero from './ServicesHero';
 
 export {
   Hero,
@@ -36,5 +37,6 @@ export {
   SectionOverview,
   AboutHero,
   IndustriesHero,
+  ServicesHero,
  
 };

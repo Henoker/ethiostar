@@ -5,7 +5,7 @@ import { Article, TestimonialSolo } from "../../../components";
 const Page = () => (
   
   <div className="theme-dark-blue bg-skin-fill">
-   <ServicesHero/>
+   <ServicesHero className="mt-6"/>
    <SplitSection/>
    <Article/>
    <TestimonialSolo/>

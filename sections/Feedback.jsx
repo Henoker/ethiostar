@@ -2,7 +2,7 @@
 import styles from '../styles';
 
 const Feedback = () => (
-  <section className={`${styles.paddings} theme-dark-blue relative bg-skin-fill`}>
+  <section className={`${styles.paddings} theme-dark-blue relative bg-skin-fill`} id="contact">
      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
       <h1 className='text-center justify-center text-3xl text-white mb-6'>Contact Us</h1>
       <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">

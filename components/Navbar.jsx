@@ -24,7 +24,7 @@ const Navbar = () => {
       whileInView="show"
       // className={`${styles.xPaddings} py-4 px-4 sticky top-0 bg-blue-900 bg-opacity-50 md:pr-32 md:py-0 z-50`}
       // className={`${styles.xPaddings} bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600`}
-      className={`${styles.xPaddings} bg-white bg-opacity-50 z-50 fixed w-full flex items-center justify-between flex-wrap p-6 top-0 left-0`}
+      className={`${styles.xPaddings} bg-white z-50 fixed w-full flex items-center justify-between flex-wrap p-4 top-0 left-0`}
     >
      
        {/* <div className={`${styles.innerWidth}  max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4`}>
@@ -264,28 +264,33 @@ const Navbar = () => {
      <div
        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
      >
-       <div className="text-sm lg:flex-grow">
-         <Link href="/" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+       <div className="flex flex-col p-4 md:p-0 mt-4 font-medium border  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+         <Link href="/" className="block py-2 pl-3 pr-4 text-blue-700  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
            Home
          </Link>
-         <Link href="/about" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+         <Link href="/about" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
            About
          </Link>
-         <Link href="/services" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+         <Link href="/services" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
            Services
          </Link>
-         <Link href="/industries" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+         <Link href="/industries" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
            Industries
          </Link>
-         <Link href="/quote" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+         {/* <Link href="/quote" className="block py-2 pl-3 pr-4 text-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+           Instant Quote
+         </Link> */}
+         <div>
+         <Link
+          href="/quote"
+          className="inline-flex items-center bg-amber-500 border-0 py-2 px-3 text-white"
+          >
            Instant Quote
          </Link>
        </div>
-       <div>
-         <button className="inline-flex items-center bg-blue-700 hover:bg-blue-800 border-0 py-2 px-4 text-white">
-           Contact us
-         </button>
        </div>
+   
+      
      </div>
     
     

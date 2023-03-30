@@ -1,9 +1,10 @@
-import { IndustriesHero } from "../../../sections";
+import { Headlines, IndustriesHero } from "../../../sections";
 
 
 const Page = () => (
     <div className="theme-dark-blue bg-skin-fill">
-   <IndustriesHero/>
+   <IndustriesHero />
+   <Headlines/>
    </div>
 );
 

@@ -27,9 +27,9 @@ export const exploreWorlds = [
 ];
 
 export const startingFeatures = [
-  'Quality and lower priced but not expedited translation',
-  'Quality and expedited but not lower priced translation',
-  'Expedited and lower priced but not quality translation',
+  'We examine the source files, and we share a precise delivery schedule.',
+  "As agreed, we work on the files, communicate our progress, and solicit client's opinions",
+  'Smooth Delivery after analyzing feedback and completing the QA.',
 ];
 
 export const newFeatures = [

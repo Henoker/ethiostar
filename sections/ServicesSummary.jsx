@@ -110,11 +110,11 @@ const ServicesSummary = () => (
 				<div className="flex flex-col items-center">
 					<h4 className="text-xl text-white font-semibold">Document Translations</h4>
 					<div className="flex mt-2 space-x-2">
-						<Link rel="noopener noreferrer" href="/#document-translation" title="Document Translation" className="dark:text-gray-400">
+						<a rel="noopener noreferrer" href="/services/translation" title="Document Translation" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-gray-100 text-gray-800">
                             Read More
                         </button>
-						</Link>
+						</a>
 					</div>
 				</div>
 			</div>

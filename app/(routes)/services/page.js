@@ -7,9 +7,6 @@ const Page = () => (
   <div className="theme-dark-blue bg-skin-fill">
    <ServicesHero className="mt-6"/>
    <ServicesSummary/>
-   <SplitSection/>
-   <ServicesFeature/>
-   <OurProcess/>
    <Article/>
    <TestimonialSolo/>
    <ServicesSection/>

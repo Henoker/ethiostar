@@ -8,11 +8,13 @@ const RootLayout = ({ children }) => (
       <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
     </head>
     <body>
-
-      <Navbar/>
-      
-      {children}
-      <Footer/>
+    <header>
+    <Navbar/>
+    </header>
+    <main>
+    {children}
+    <Footer/>
+    </main>
     </body>
   </html>
 );

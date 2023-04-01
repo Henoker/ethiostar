@@ -71,7 +71,7 @@ const ServicesFeature = () => (
 			<h3 className="my-3 text-3xl font-semibold text-white">Technical Translations</h3>
 			<div className="space-y-1 leading-tight text-white">
 				<p>Technical authoring services</p>
-				<p>that ensures healt, work and</p>
+				<p>that ensures health, work and</p>
 				<p>safety procedures are in place</p>
 			</div>
 		</div>

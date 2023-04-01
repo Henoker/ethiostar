@@ -19,6 +19,8 @@ import IndustriesHero from './IndustriesHero';
 import ServicesHero from './ServicesHero';
 import Headlines from './Headlines';
 import OurTeam from './OurTeam';
+import OurProcess from './OurProcess';
+import ServicesSummary from './ServicesSummary';
 
 export {
   Hero,
@@ -42,5 +44,6 @@ export {
   ServicesHero,
   Headlines,
   OurTeam,
- 
+  OurProcess,
+  ServicesSummary,
 };

@@ -1,4 +1,5 @@
 'use client';
+import Link from "next/link";
 
 const ServicesSummary = () => (
 //     <section className=" bg-white dark:bg-gray-200 dark:text-gray-100">
@@ -109,11 +110,11 @@ const ServicesSummary = () => (
 				<div className="flex flex-col items-center">
 					<h4 className="text-xl text-white font-semibold">Document Translations</h4>
 					<div className="flex mt-2 space-x-2">
-						<a rel="noopener noreferrer" href="#" title="Document Translation" className="dark:text-gray-400">
+						<Link rel="noopener noreferrer" href="/#document-translation" title="Document Translation" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-gray-100 text-gray-800">
                             Read More
                         </button>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

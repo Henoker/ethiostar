@@ -1,8 +1,11 @@
 'use client';
 
 const SplitSection = () => (
-    <section>
+    <section id="document-translation">
   <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+    <div className="container mx-auto p-4 my-6 space-y-2 text-center">
+		<h2 className="text-5xl text-white font-bold">Document Translation</h2>
+    </div>
     <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
       <div className="relative z-10 lg:py-16">
         <div className="relative h-64 sm:h-80 lg:h-full">
@@ -17,18 +20,23 @@ const SplitSection = () => (
         <span className="hidden lg:absolute lg:inset-y-0 lg:-left-16 lg:block lg:w-16 lg:bg-gray-100" />
         <div className="p-8 sm:p-16 lg:p-24">
           <h2 className="text-2xl font-bold sm:text-3xl">
-          Enabling customer experiences in every language
+          Different languages. One reliable solution.
           </h2>
           <p className="mt-4 text-gray-600">
-        Ethiostar America has extensive experience operating in all industries materials and 
-        if you want to specialized Middle Eastern and Africa languages translation and localization,
-        services, we offer reliable solutions for your organization.
+        Any expanding firm needs a translation service to help you communicate with your target 
+        market efficiently. Translate Plus is a translation company that can handle any kind of job,
+        whether you need a technical paper translated or a marketing campaign localized.
+
+        We work with various clients across a wide range of sectors to provide a professional
+        and dependable translation service. Using our vetted network of industry-specialized
+        linguists and best-in-class translation technology, we provide consistent and reliable
+        african languages translation and localization services.
           </p>
           <a
             href="#"
-            className="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+            className="mt-8 inline-block rounded border border-teal-100 bg-[#B3FF17] px-12 py-3 text-sm font-medium text-black hover:bg-[#bbff32] hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
           >
-            Get in Touch
+            Request a Quote
           </a>
         </div>
       </div>

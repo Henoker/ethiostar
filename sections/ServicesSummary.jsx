@@ -106,20 +106,20 @@ const ServicesSummary = () => (
 		</div>
 		<div className="grid w-full grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 w-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1619418602850-35ad20aa1700?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" />
+				<img alt="" className="object-cover h-56 w-56 hover:scale-125 ease-in duration-500 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1619418602850-35ad20aa1700?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" />
 				<div className="flex flex-col items-center">
 					<h4 className="text-xl text-white font-semibold">Document Translations</h4>
 					<div className="flex mt-2 space-x-2">
-						<a rel="noopener noreferrer" href="/services/translation" title="Document Translation" className="dark:text-gray-400">
+						<Link rel="noopener noreferrer" href="/services/translation" title="Document Translation" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-gray-100 text-gray-800">
                             Read More
                         </button>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 w-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1005&q=80" />
+				<img alt="" className="object-cover h-56 w-56 hover:scale-125 ease-in duration-500 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1005&q=80" />
 				<div className="flex flex-col items-center">
                 <h4 className="text-xl text-white font-semibold">Website Localization</h4>
 					<div className="flex mt-2 space-x-2">
@@ -132,7 +132,7 @@ const ServicesSummary = () => (
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 w-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1553775282-20af80779df7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
+				<img alt="" className="object-cover h-56 w-56 hover:scale-125 ease-in duration-500 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1553775282-20af80779df7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
 				<div className="flex flex-col items-center">
                 <h4 className="text-xl text-white font-semibold">Intrepretation</h4>
 					<div className="flex mt-2 space-x-2">
@@ -145,7 +145,7 @@ const ServicesSummary = () => (
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 w-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1565120130276-dfbd9a7a3ad7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
+				<img alt="" className="object-cover h-56 w-56 mx-auto hover:scale-125 ease-in duration-500 mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1565120130276-dfbd9a7a3ad7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
 				<div className="flex flex-col items-center">
                 <h4 className="text-xl text-white font-semibold">Software Localization</h4>
 					<div className="flex mt-2 space-x-2">
@@ -158,7 +158,7 @@ const ServicesSummary = () => (
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 w-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1572028412480-0a75271c6bb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" />
+				<img alt="" className="object-cover h-56 w-56 mx-auto mb-4 bg-center hover:scale-125 ease-in duration-500 rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1572028412480-0a75271c6bb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" />
 				<div className="flex flex-col items-center">
                 <h4 className="text-xl text-white font-semibold">Desktop Publishing</h4>
 					<div className="flex mt-2 space-x-2">
@@ -171,20 +171,20 @@ const ServicesSummary = () => (
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://plus.unsplash.com/premium_photo-1676637656210-390da73f4951?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
+				<img alt="" className="object-cover h-56 mx-auto mb-4 hover:scale-125 ease-in duration-500 bg-center rounded-sm dark:bg-gray-500" src="https://plus.unsplash.com/premium_photo-1676637656210-390da73f4951?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
 				<div className="flex flex-col items-center">
                 <h4 className="text-xl text-white font-semibold">AI and Machine Translation</h4>
 					<div className="flex mt-2 space-x-2">
-						<a rel="noopener noreferrer" href="#" title="Document Translation" className="dark:text-gray-400">
+						<Link rel="noopener noreferrer" href="/services/ai-and-machine-translation" title="Document Translation" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-gray-100 text-gray-800">
                             Read More
                         </button>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 w-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
+				<img alt="" className="object-cover h-56 w-56 mx-auto mb-4 hover:scale-125 ease-in duration-500 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
 				<div className="flex flex-col items-center">
                 <h4 className="text-xl text-white font-semibold">Voiceovers Services</h4>
 					<div className="flex mt-2 space-x-2">
@@ -197,9 +197,9 @@ const ServicesSummary = () => (
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 w-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1615458318132-1f151a3d18f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
+				<img alt="" className="object-cover h-56 w-56 mx-auto hover:scale-125 ease-in duration-500 mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1615458318132-1f151a3d18f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
 				<div className="flex flex-col items-center">
-                <h4 className="text-xl text-white font-semibold">TRANSCRIPTION SERVICES</h4>
+                <h4 className="text-xl text-white font-semibold">Transcription Services</h4>
 					<div className="flex mt-2 space-x-2">
 						<a rel="noopener noreferrer" href="#" title="Document Translation" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-gray-100 text-gray-800">

@@ -3,7 +3,7 @@ import { Feedback, OurProcess, ServicesFeature, SplitSection } from "../../../..
 
 const Page = () => (
     <div className="theme-dark-blue bg-skin-fill">
-         <SplitSection/>
+        <SplitSection/>
         <ServicesFeature/>
         <OurProcess/>
         <Feedback/>

@@ -24,7 +24,7 @@ const ServicesHero = () => (
   </div>
   <img
     alt="Student"
-    src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+    src="https://images.unsplash.com/photo-1630135485071-ecbd06865017?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80"
     className="h-56 w-full object-cover sm:h-full"
   />
 </section>

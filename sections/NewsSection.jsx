@@ -35,7 +35,7 @@ const NewsSection = () => (
 							</div>
 						</div>
 						<div className="ml-4">
-							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Proffesionalism</h4>
+							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Professionalism</h4>
 							<p className="mt-2 dark:text-gray-400">Professional linguists with subject matter expertise in various industries, including legal, medical, and technical fields.</p>
 						</div>
 					</div>

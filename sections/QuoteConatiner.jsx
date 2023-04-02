@@ -107,34 +107,93 @@ const QuoteContainer = () => {
           </div>
           <div className="relative flex-[1] flex flex-col items-center  mt-6 pt-2 pb-6 px-4">
           {totalPrice && (
-            <div className='mt-6 w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700'>
-              <h3 className='font-bold text-2xl flex flex-col items-center'> Quote Summary</h3>
-              <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
-               Connect with one of our available wallet providers or create a new one.
-              </p>
-              <div className='my-4 space-y-3'>
-                <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
-                <img src='/certificate.svg' alt='next' className='h-6' />
-                  <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Job:<span className='inline-flex items-center justify-end px-2 py-0.5 ml-3 text-xl font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400'>Translation</span></p>
+            // <div className='mt-6 w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700'>
+            //   <h3 className='font-bold text-2xl flex flex-col items-center'> Quote Summary</h3>
+            //   <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
+            //    Connect with one of our available wallet providers or create a new one.
+            //   </p>
+            //   <div className='my-4 space-y-3'>
+            //     <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+            //     <img src='/certificate.svg' alt='next' className='h-6' />
+            //       <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Job:<span className='inline-flex items-center justify-end px-2 py-0.5 ml-3 text-xl font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400'>Translation</span></p>
+            //     </div>
+            //     <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+            //     <img src='/source.svg' alt='next' className='h-6' />
+            //     <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Source Language:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-teal-400 rounded dark:bg-gray-700 dark:text-gray-400'>{sourceLanguage}</span></p>
+            //     </div>
+            //     <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+            //     <img src='/target.svg' alt='next' className='h-6' />
+            //     <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Target Language:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-teal-400 rounded dark:bg-gray-700 dark:text-gray-400'>{targetLanguage}</span></p>
+            //     </div>
+            //     <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+            //     <img src='/count.svg' alt='next' className='h-6' />
+            //     <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Word Count:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-rose-400 rounded dark:bg-gray-700 dark:text-gray-400'>{wordCount}</span></p>
+            //     </div>
+            //     <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+            //     <img src='/total.svg' alt='next' className='h-6' />
+            //     <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Total Price:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-rose-400 rounded dark:bg-gray-700 dark:text-gray-400'>${totalPrice}</span></p>
+            //     </div>
+            //   </div>
+            // </div>
+            <div className="flex flex-col max-w-md p-6 space-y-4 divide-y sm:w-96 sm:p-10 divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
+	            <h2 className="text-2xl font-semibold">Quote Summary</h2>
+              <ul className="flex flex-col pt-4 space-y-2">
+                <li className="flex items-start justify-between">
+                  <h3>Language:
+                    <span className="text-sm dark:text-violet-400">Source</span>
+			            </h3>
+                  <div className="text-right">
+                    <span className="block">{sourceLanguage}</span>
+                    
+			            </div>
+                </li>
+                <li className="flex items-start justify-between">
+                  <h3>Language:
+                    <span className="text-sm dark:text-violet-400">Target</span>
+			            </h3>
+                  <div className="text-right">
+                    <span className="block">{targetLanguage}</span>
+                    {/* <span className="text-sm dark:text-gray-400">à $2.75</span> */}
+			            </div>
+		            </li>
+                <li className="flex items-start justify-between">
+                  <h3>Word Count
+                    <span className="text-sm dark:text-violet-400">#</span>
+                  </h3>
+                  <div className="text-right">
+                    <span className="block">{wordCount}</span>
+                  
+                  </div>
+		            </li>
+              </ul>
+              <div className="pt-4 space-y-2">
+                <div className="flex justify-between">
+                  <span>Rate</span>
+                  <span>$0.50</span>
                 </div>
-                <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
-                <img src='/source.svg' alt='next' className='h-6' />
-                <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Source Language:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-teal-400 rounded dark:bg-gray-700 dark:text-gray-400'>{sourceLanguage}</span></p>
-                </div>
-                <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
-                <img src='/target.svg' alt='next' className='h-6' />
-                <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Target Language:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-teal-400 rounded dark:bg-gray-700 dark:text-gray-400'>{targetLanguage}</span></p>
-                </div>
-                <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
-                <img src='/count.svg' alt='next' className='h-6' />
-                <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Word Count:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-rose-400 rounded dark:bg-gray-700 dark:text-gray-400'>{wordCount}</span></p>
-                </div>
-                <div className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
-                <img src='/total.svg' alt='next' className='h-6' />
-                <p className="font-bold text-lg flex-1 ml-3 whitespace-nowrap">Total Price:<span className='inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xl font-medium text-gray-100 bg-rose-400 rounded dark:bg-gray-700 dark:text-gray-400'>${totalPrice}</span></p>
-                </div>
-              </div>
-            </div>
+                <div className="flex items-center space-x-2 text-xs">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-3 h-3 mt-1 fill-current dark:text-violet-400">
+					          <path d="M485.887,263.261,248,25.373A31.791,31.791,0,0,0,225.373,16H64A48.055,48.055,0,0,0,16,64V225.078A32.115,32.115,0,0,0,26.091,248.4L279.152,486.125a23.815,23.815,0,0,0,16.41,6.51q.447,0,.9-.017a23.828,23.828,0,0,0,16.79-7.734L486.581,296.479A23.941,23.941,0,0,0,485.887,263.261ZM295.171,457.269,48,225.078V64A16.019,16.019,0,0,1,64,48H225.373L457.834,280.462Z"></path>
+					          <path d="M148,96a52,52,0,1,0,52,52A52.059,52.059,0,0,0,148,96Zm0,72a20,20,0,1,1,20-20A20.023,20.023,0,0,1,148,168Z"></path>
+				          </svg>
+				          <span className="dark:text-gray-400">Order until August 31, 2023, get 20% off</span>
+			          </div>
+                {/* <div className="flex flex-col">
+                  <div className="flex justify-between">
+                    <span>Delivery fee</span>
+                    <span>$4.00</span>
+                  </div>
+                  <a rel="noopener noreferrer" href="#" className="text-xs hover:underline dark:text-violet-400">How do our fees work?</a>
+		            </div> */}
+              <div className="space-y-6">
+                <div className="flex justify-between">
+                  <span>Total</span>
+				        <span className="font-semibold">{totalPrice}</span>
+			        </div>
+              <button type="button" className="w-full py-2 font-semibold border rounded text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover">Order Now</button>
+		        </div>
+	      </div>
+      </div>
           )}
                   
           </div>

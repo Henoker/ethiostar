@@ -23,6 +23,8 @@ import OurProcess from './OurProcess';
 import ServicesSummary from './ServicesSummary';
 import ServicesFeature from './ServicesFeature';
 import NewsSection from './NewsSection';
+import IndustriesOverview from './IndustriesOverview';
+import IndustryStats from './IndustryStats';
 
 export {
   Hero,
@@ -50,5 +52,7 @@ export {
   ServicesSummary,
   ServicesFeature,
   NewsSection,
+  IndustriesOverview,
+  IndustryStats,
   
 };

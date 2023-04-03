@@ -8,10 +8,10 @@ const OurTeam = () => (
 		<h1 className="text-4xl font-bold text-gray-300 leading-none text-center sm:text-5xl">The talented people behind the scenes</h1>
 		<div className="flex flex-row flex-wrap-reverse justify-center mt-8">
 			<div className="flex flex-col justify-center bg-white w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-100 dark:text-gray-800">
-				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?0" />
+				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://www.ethiostarlocalization.com/wp-content/uploads/2022/12/Rediat-D.jpg" />
 				<div className="flex-1 my-4">
-					<p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-					<p>Visual Designer</p>
+					<p className="text-xl font-semibold leading-snug">Rediat Desalegn</p>
+					<p>HR Manager</p>
 				</div>
 				<div className="flex items-center justify-center p-3 space-x-3 border-t-2">
 					<a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-900 hover:dark:text-violet-400">
@@ -38,10 +38,10 @@ const OurTeam = () => (
 				</div>
 			</div>
 			<div className="flex flex-col justify-center bg-white w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-100 dark:text-gray-800">
-				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?1" />
+				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://www.ethiostarlocalization.com/wp-content/uploads/2022/12/Amanuel-Sisay.jpg" />
 				<div className="flex-1 my-4">
-					<p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-					<p>Visual Designer</p>
+					<p className="text-xl font-semibold leading-snug">Amanuel Sisay</p>
+					<p>Account Manager</p>
 				</div>
 				<div className="flex items-center justify-center p-3 space-x-3 border-t-2">
 					<a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-900 hover:dark:text-violet-400">
@@ -68,10 +68,10 @@ const OurTeam = () => (
 				</div>
 			</div>
 			<div className="flex flex-col justify-center bg-white w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-100 dark:text-gray-800">
-				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?2" />
+				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://ethiostarlocalization.com/wp-content/uploads/2022/12/1667649966301.jpeg" />
 				<div className="flex-1 my-4">
-					<p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-					<p>Visual Designer</p>
+					<p className="text-xl font-semibold leading-snug">Zainab Mohammed</p>
+					<p>Project Manager</p>
 				</div>
 				<div className="flex items-center justify-center p-3 space-x-3 border-t-2">
 					<a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-900 hover:dark:text-violet-400">
@@ -98,10 +98,10 @@ const OurTeam = () => (
 				</div>
 			</div>
 			<div className="flex flex-col justify-center bg-white w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-100 dark:text-gray-800">
-				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?3" />
+				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://ethiostarlocalization.com/wp-content/uploads/2022/12/bbt.jpg" />
 				<div className="flex-1 my-4">
-					<p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-					<p>Visual Designer</p>
+					<p className="text-xl font-semibold leading-snug">Brook Beyene</p>
+					<p>CEO</p>
 				</div>
 				<div className="flex items-center justify-center p-3 space-x-3 border-t-2">
 					<a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-900 hover:dark:text-violet-400">
@@ -128,10 +128,10 @@ const OurTeam = () => (
 				</div>
 			</div>
 			<div className="flex flex-col justify-center bg-white w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-100 dark:text-gray-800">
-				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?4" />
+				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://ethiostarlocalization.com/wp-content/uploads/2022/12/ME.jpg" />
 				<div className="flex-1 my-4">
-					<p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-					<p>Visual Designer</p>
+					<p className="text-xl font-semibold leading-snug">Alamin Abdu</p>
+					<p>IT Manager</p>
 				</div>
 				<div className="flex items-center justify-center p-3 space-x-3 border-t-2">
 					<a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-900 hover:dark:text-violet-400">
@@ -158,10 +158,10 @@ const OurTeam = () => (
 				</div>
 			</div>
 			<div className="flex flex-col justify-center bg-white w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-100 dark:text-gray-800">
-				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?5" />
+				<img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://www.ethiostarlocalization.com/wp-content/uploads/2022/12/Sara-Solomon.jpg" />
 				<div className="flex-1 my-4">
-					<p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-					<p>Visual Designer</p>
+					<p className="text-xl font-semibold leading-snug">Sara Solomon</p>
+					<p>Project Manager</p>
 				</div>
 				<div className="flex items-center justify-center p-3 space-x-3 border-t-2">
 					<a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-900 hover:dark:text-violet-400">

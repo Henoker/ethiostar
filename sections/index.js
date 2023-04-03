@@ -25,6 +25,9 @@ import ServicesFeature from './ServicesFeature';
 import NewsSection from './NewsSection';
 import IndustriesOverview from './IndustriesOverview';
 import IndustryStats from './IndustryStats';
+import AboutFeature from './AboutFeature';
+import AboutArticle from './AboutArticle';
+import AboutValues from './AboutValues';
 
 export {
   Hero,
@@ -54,5 +57,8 @@ export {
   NewsSection,
   IndustriesOverview,
   IndustryStats,
+  AboutFeature,
+  AboutArticle,
+  AboutValues,
   
 };

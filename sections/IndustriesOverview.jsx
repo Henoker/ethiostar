@@ -4,16 +4,15 @@
 const IndustriesOverview = () => (
     <section className= "text-gray-200 top-8">
 		<div className="container p-4 mt-12 mx-auto text-center">
-			<h2 className="text-4xl font-bold">Curated Language Solution for Every Industry</h2>
+			<h2 className="text-4xl font-bold">Language Solution for Every Industry</h2>
 	    </div>
 	<div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
 		<a rel="noopener noreferrer" href="#" className=" block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
-			<img src="https://source.unsplash.com/random/480x360" alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
+			<img src="https://images.unsplash.com/photo-1593812725955-6d89f01ded2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 			<div className="p-6 space-y-2 lg:col-span-5">
-				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Legal Translation</h3>
-				<span className="text-xs dark:text-gray-400">February 19, 2021</span>
-				<p>Our legal translation services include critical documents such as Court Orders, Contracts, Legal disclaimers,
-					Agreements, Affidavits, Registration documentation, Certifications, Arbitration, among others.
+				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Comprehensive Support for Global Industries and Sectors</h3>
+				<p>As expert communicators, we know that context is everything. That&apos;s why we have dedicated teams with deep experience in almost every industry sector. 
+				   This tailored expertise gives you peace of mind that your global content is both effective and compliant with specific formatting, terminology and regulatory requirements.
 				</p>
 			</div>
 		</a>

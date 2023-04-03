@@ -6,7 +6,7 @@ const IndustriesHero = () => (
 >
   <div class="p-8 md:p-12 lg:px-16 lg:py-24">
     <div class="mx-auto max-w-xl text-center sm:text-left">
-      <h2 class="text-2xl font-bold text-gray-100 md:text-3xl">
+      <h2 class="text-2xl mt-6 font-bold text-gray-100 md:text-3xl">
       Industry specific solutions for every sector
       </h2>
 

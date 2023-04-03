@@ -45,10 +45,7 @@ module.exports = {
         },
       },
     },
-    backgroundImage: {
-      'hero-pattern': "url('Ethiostaroffice.jpg')",
-      
-    },
+   
   },
   plugins: [],
 };

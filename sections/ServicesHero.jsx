@@ -4,7 +4,7 @@ const ServicesHero = () => (
     <section className="overflow-hidden mt-8 bg-dark-blue sm:grid sm:grid-cols-2">
   <div className="p-8 md:p-12 lg:px-16 lg:py-24">
     <div className="mx-auto max-w-xl text-center sm:text-left">
-      <h2 className="text-2xl font-bold text-white md:text-3xl">
+      <h2 className="text-2xl mt-5 font-bold text-white md:text-3xl">
         Enabling customer experiences in every language
       </h2>
       <p className="hidden text-gray-100 md:mt-4 md:block">

@@ -1,4 +1,4 @@
-import { AboutArticle, AboutFeature, AboutHero, AboutValues, OurTeam } from "../../../sections";
+import { AboutArticle, AboutFeature, AboutHero, AboutValues, Feedback, OurTeam } from "../../../sections";
 
 
 const Page = () => (
@@ -8,6 +8,7 @@ const Page = () => (
    <AboutValues/>
    <OurTeam/>
    <AboutFeature/>
+   <Feedback/>
   
   </div>
 );

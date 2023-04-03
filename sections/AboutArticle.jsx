@@ -15,7 +15,7 @@ const AboutArticle = () => (
 					<a rel="noopener noreferrer" href="#" className="text-xs hover:underline">Leroy Jenkins</a>
 				</p> */}
 			</div>
-			<div className=" text-gray-100">
+			<div className=" text-gray-100 text-justify justify-center">
 				<p>Our expert African language translators are dedicated to translating Africa for America, and America for Africa. With our sister comapany that resides in Addis Ababa, Ethiopia, we bridge cultures and unlock the potential of African languages for global success.
                   We understand that accurate translations are essential for effective communication, and we are committed to providing high-quality African language translations for a diverse and connected world.</p>
 			</div>

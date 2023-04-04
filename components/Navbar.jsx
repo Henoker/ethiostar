@@ -27,7 +27,7 @@ const Navbar = () => {
       whileInView="show"
       // className={`${styles.xPaddings} py-4 px-4 sticky top-0 bg-blue-900 bg-opacity-50 md:pr-32 md:py-0 z-50`}
       // className={`${styles.xPaddings} bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600`}
-      className={`${styles.xPaddings} bg-white z-50 fixed w-full flex items-center justify-between flex-wrap p-4 top-0 left-0`}
+      className={`${styles.xPaddings} bg-white z-50 fixed w-full flex items-center justify-between flex-wrap top-0 left-0`}
     >
      
        {/* <div className={`${styles.innerWidth}  max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4`}>
@@ -229,13 +229,15 @@ const Navbar = () => {
   <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
        <Link href="/" className="flex items-center">
       <img
-        src="/favicon.ico"
-        className="h-8 mr-3"
+        src="/2.svg"
+        className=" h-24 w-24 mr-3"
         alt="Ethiostar Logo"
+        
+
       />
-      <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
+      {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
         Ethiostar America
-      </span>
+      </span> */}
     </Link>
      </div>
      <div className="block lg:hidden">

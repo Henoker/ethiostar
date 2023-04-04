@@ -9,9 +9,9 @@ const Page = () => (
    <ServicesSummary/>
    <TestimonialSolo/>
    <NewsSection/>
-   <ServicesSection/>
-   <SectionOverview/>
-   <TestimonialSolo/>
+   {/* <ServicesSection/> */}
+   {/* <SectionOverview/>
+   <TestimonialSolo/> */}
   </div>
   
 );

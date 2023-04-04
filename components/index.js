@@ -9,6 +9,7 @@ import OurServices from './OurServices';
 import MarqueeSlider from './MarqueeSlider';
 import TestimonialSolo from './TestimonialSolo';
 import Article from './Article';
+import CommonHero from './CommonHero';
 
 
 export {
@@ -26,6 +27,7 @@ export {
   MarqueeSlider,
   TestimonialSolo,
   Article,
+  CommonHero,
   
   
   

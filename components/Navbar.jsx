@@ -21,13 +21,11 @@ const Navbar = () => {
   // const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
 
   return (
-    <motion.nav
-      variants={navVariants}
-      initial="hidden"
-      whileInView="show"
+    <nav
+      
       // className={`${styles.xPaddings} py-4 px-4 sticky top-0 bg-blue-900 bg-opacity-50 md:pr-32 md:py-0 z-50`}
       // className={`${styles.xPaddings} bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600`}
-      className={`${styles.xPaddings} bg-white z-50 fixed w-full flex items-center justify-between flex-wrap top-0 left-0`}
+      className={`${styles.xPaddings} bg-gray-900 bg-opacity-50 z-50 fixed w-full flex items-center justify-between flex-wrap top-0 left-0 md:py-0`}
     >
      
        {/* <div className={`${styles.innerWidth}  max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4`}>
@@ -226,10 +224,10 @@ const Navbar = () => {
     </div>
   </div> */}
   
-  <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
+  <div className="flex items-center top-0 flex-shrink-1 text-white mr-6 lg:mr-72">
        <Link href="/" className="flex items-center">
       <img
-        src="/2.svg"
+        src="/logo3.svg"
         className=" h-24 w-24 mr-3"
         alt="Ethiostar Logo"
         
@@ -264,7 +262,7 @@ const Navbar = () => {
      <div
        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
      >
-       <div className="flex flex-col p-4 md:p-0 mt-4 font-medium border  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+       <div className="flex flex-col p-2 md:p-0 mt-2 font-medium border  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
          <Link href="/" className="block py-2 pl-3 pr-4 text-blue-700  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
            Home
          </Link>
@@ -430,7 +428,7 @@ const Navbar = () => {
   </div> */}
 
 
-    </motion.nav>
+    </nav>
     
   );
 };

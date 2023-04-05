@@ -28,6 +28,7 @@ import IndustryStats from './IndustryStats';
 import AboutFeature from './AboutFeature';
 import AboutArticle from './AboutArticle';
 import AboutValues from './AboutValues';
+import LottieAnimation from './LottieAnimation';
 
 export {
   Hero,
@@ -60,5 +61,6 @@ export {
   AboutFeature,
   AboutArticle,
   AboutValues,
+  LottieAnimation,
   
 };

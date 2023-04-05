@@ -1,3 +1,4 @@
+import { LottieAnimation } from '../sections';
 import styles from '../styles';
 
 
@@ -17,7 +18,7 @@ const CommonHero = () => (
 			</div>
 		</div>
 		<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-			<img src="assets/svg/Business_SVG.svg" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+			<LottieAnimation/>
 		</div>
 	</div>
 </section>

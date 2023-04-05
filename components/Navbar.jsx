@@ -227,7 +227,7 @@ const Navbar = () => {
   <div className="flex items-center top-0 flex-shrink-1 text-white mr-6 lg:mr-72">
        <Link href="/" className="flex items-center">
       <img
-        src="/logo3.svg"
+        src="/logo5.svg"
         className=" h-24 w-24 mr-3"
         alt="Ethiostar Logo"
         
@@ -263,16 +263,16 @@ const Navbar = () => {
        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
      >
        <div className="flex flex-col p-2 md:p-0 mt-2 font-medium border  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-         <Link href="/" className="block py-2 pl-3 pr-4 text-blue-700  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+         <Link href="/" className="block py-2 pl-3 pr-4 text-blue-100  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
            Home
          </Link>
-         <Link href="/about" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+         <Link href="/about" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
            About
          </Link>
-         <Link href="/services" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+         <Link href="/services" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
            Services
          </Link>
-         <Link href="/industries" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+         <Link href="/industries" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
            Industries
          </Link>
          <div>

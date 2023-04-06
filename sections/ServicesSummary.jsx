@@ -136,10 +136,10 @@ const ServicesSummary = () => (
 			<div className="space-y-4 bg-[#B3FF17] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
 				<img alt="" className="object-cover h-56 w-56 hover:scale-125 ease-in duration-500 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1553775282-20af80779df7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
 				<div className="flex flex-col items-center">
-                <h4 className="text-xl text-black font-semibold">Intrepretation</h4>
+                <h4 className="text-xl text-black font-semibold">Interpretation</h4>
 				<p class="ml-4 mr-4 justify-center text-base leading-relaxed text-gray-900">We provide certified, professional interpreters with technical and subject matter expertise, allowing you to communicate effectively in more than 125 african and other languages.</p>
 					<div className="flex mt-2 space-x-2 pb-4" pb-4>
-						<a rel="noopener noreferrer" href="/services/intrepretation" title="Document Translation" className="dark:text-gray-400">
+						<a rel="noopener noreferrer" href="/services/interpretation" title="Document Translation" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-skin-button-accent hover:bg-skin-button-accent-hover text-gray-100">
                             Read More
                         </button>

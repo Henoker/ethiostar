@@ -29,6 +29,7 @@ import AboutFeature from './AboutFeature';
 import AboutArticle from './AboutArticle';
 import AboutValues from './AboutValues';
 import LottieAnimation from './LottieAnimation';
+import InterpretationOverview from './InterpretationOverview';
 
 export {
   Hero,
@@ -62,5 +63,6 @@ export {
   AboutArticle,
   AboutValues,
   LottieAnimation,
+  InterpretationOverview,
   
 };

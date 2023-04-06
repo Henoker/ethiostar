@@ -241,7 +241,7 @@ const Navbar = () => {
      <div className="block lg:hidden">
        <button
          onClick={() => setIsOpen(!isOpen)}
-         className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
+         className="flex items-center px-3 py-2 rounded text-white hover:text-gray-200"
        >
          <svg
            className={`fill-current h-6 w-6 ${isOpen ? "hidden" : "block"}`}
@@ -262,17 +262,17 @@ const Navbar = () => {
      <div
        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
      >
-       <div className="flex flex-col p-2 md:p-0 mt-2 font-medium border  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-         <Link href="/" className="block py-2 pl-3 pr-4 text-blue-100  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
+       <div className="flex flex-col p-2 md:p-0 mt-2 font-medium border  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-white md:bg-transparent border-gray-700">
+         <Link href="/" className="block py-2 pl-3 pr-4 text-blue-700  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
            Home
          </Link>
-         <Link href="/about" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
+         <Link href="/about" className="block py-2 pl-3 pr-4 text-blue-700  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
            About
          </Link>
-         <Link href="/services" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
+         <Link href="/services" className="block py-2 pl-3 pr-4 text-blue-700  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
            Services
          </Link>
-         <Link href="/industries" className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
+         <Link href="/industries" className="block py-2 pl-3 pr-4 text-blue-700  rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500">
            Industries
          </Link>
          <div>

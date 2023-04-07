@@ -125,7 +125,7 @@ const ServicesSummary = () => (
                 <h4 className="text-xl text-black font-semibold">Website Localization</h4>
 				<p class="ml-4 mr-4 justify-center text-base leading-relaxed text-gray-900">Our specialized website localization services combined with visual, cloud-based, and integrated localization tools enable us to be as agile as our clients in this fast faced digital world.</p>
 					<div className="flex mt-2 space-x-2 pb-4">
-						<a rel="noopener noreferrer" href="#" title="Document Translation" className="dark:text-gray-400">
+						<a rel="noopener noreferrer" href="/services/localization" title="Website Localization" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-skin-button-accent hover:bg-skin-button-accent-hover text-gray-100">
                             Read More
                         </button>
@@ -139,7 +139,7 @@ const ServicesSummary = () => (
                 <h4 className="text-xl text-black font-semibold">Interpretation</h4>
 				<p class="ml-4 mr-4 justify-center text-base leading-relaxed text-gray-900">We provide certified, professional interpreters with technical and subject matter expertise, allowing you to communicate effectively in more than 125 african and other languages.</p>
 					<div className="flex mt-2 space-x-2 pb-4" pb-4>
-						<a rel="noopener noreferrer" href="/services/interpretation" title="Document Translation" className="dark:text-gray-400">
+						<a rel="noopener noreferrer" href="/services/interpretation" title="Interpretation" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-skin-button-accent hover:bg-skin-button-accent-hover text-gray-100">
                             Read More
                         </button>
@@ -153,7 +153,7 @@ const ServicesSummary = () => (
                 <h4 className="text-xl text-black font-semibold">Software Localization</h4>
 				<p class="ml-4 mr-4 justify-center text-base leading-relaxed text-gray-900">Your localization business process is fully managed by our resources specialized in localization as well as other skills such as project management, project engineering and desktop publishing (DTP).</p>
 					<div className="flex mt-2 space-x-2 pb-4">
-						<a rel="noopener noreferrer" href="#" title="Document Translation" className="dark:text-gray-400">
+						<a rel="noopener noreferrer" href="/services/localization" title="Software Localization" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-skin-button-accent hover:bg-skin-button-accent-hover text-gray-100">
                             Read More
                         </button>
@@ -167,7 +167,7 @@ const ServicesSummary = () => (
                 <h4 className="text-xl text-black font-semibold">Desktop Publishing</h4>
 				<p class="ml-4 mr-4 justify-center text-base leading-relaxed text-gray-900">Our proofreaders help you to find out if anything goes wrong during typesetting by the printing press or your reviewer and you skipped during your review before sending the document for translation. </p>
 					<div className="flex mt-2 space-x-2 pb-4">
-						<a rel="noopener noreferrer" href="#" title="Document Translation" className="dark:text-gray-400">
+						<a rel="noopener noreferrer" href="#" title="Desktop Publishing" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-skin-button-accent hover:bg-skin-button-accent-hover text-gray-100">
                             Read More
                         </button>
@@ -181,7 +181,7 @@ const ServicesSummary = () => (
                 <h4 className="text-xl text-black font-semibold">AI and Machine Translation</h4>
 				<p class="ml-4 mr-4 justify-center text-base leading-relaxed text-gray-900">We employ artificial intelligence and machine learning capabilities to help our clients meet their growing content goals by combining neural machine translation (NMT) with best-practice approaches. </p>
 					<div className="flex mt-2 space-x-2 pb-4">
-						<Link rel="noopener noreferrer" href="/services/ai-and-machine-translation" title="Document Translation" className="dark:text-gray-400">
+						<Link rel="noopener noreferrer" href="/services/ai-and-machine-translation" title="AI and Machine Translation" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-skin-button-accent hover:bg-skin-button-accent-hover text-gray-100">
                             Read More
                         </button>
@@ -195,7 +195,7 @@ const ServicesSummary = () => (
                 <h4 className="text-xl text-black font-semibold">Voiceovers Services</h4>
 				<p class="ml-4 mr-4 justify-center text-base leading-relaxed text-gray-900">From television, film, audio-only, and online content to training and e-learning materials, our voiceover actors have the expertise and experience to convey your message to your audiences.</p>
 					<div className="flex mt-2 space-x-2 pb-4">
-						<a rel="noopener noreferrer" href="#" title="Document Translation" className="dark:text-gray-400">
+						<a rel="noopener noreferrer" href="#" title="Voiceovers Services" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-skin-button-accent hover:bg-skin-button-accent-hover text-gray-100">
                             Read More
                         </button>
@@ -209,7 +209,7 @@ const ServicesSummary = () => (
                 <h4 className="text-xl text-black font-semibold">Transcription Services</h4>
 				<p class="ml-4 mr-4 justify-center text-base leading-relaxed text-gray-900">Ethiostar America uses state of the art platform, AI-based workflow solutions, and a global transcription team to assist organizations with script prep, accessibility needs, legal requests, and other needs.</p>
 					<div className="flex mt-2 pb-4 space-x-2">
-						<a rel="noopener noreferrer" href="#" title="Document Translation" className="dark:text-gray-400">
+						<a rel="noopener noreferrer" href="#" title="Transcription Services" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-skin-button-accent hover:bg-skin-button-accent-hover text-gray-100">
                             Read More
                         </button>

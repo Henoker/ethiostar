@@ -30,6 +30,8 @@ import AboutArticle from './AboutArticle';
 import AboutValues from './AboutValues';
 import LottieAnimation from './LottieAnimation';
 import InterpretationOverview from './InterpretationOverview';
+import LocalizationHero from './LocalizationHero';
+import LocalizationFeature from './LocalizationFeature';
 
 export {
   Hero,
@@ -64,5 +66,8 @@ export {
   AboutValues,
   LottieAnimation,
   InterpretationOverview,
+  LocalizationHero,
+  LocalizationFeature,
+
   
 };

@@ -33,6 +33,7 @@ import InterpretationOverview from './InterpretationOverview';
 import LocalizationHero from './LocalizationHero';
 import LocalizationFeature from './LocalizationFeature';
 import AudioHero from './AudioHero';
+import AudioFeatures from './AudioFeatures';
 
 export {
   Hero,
@@ -70,6 +71,7 @@ export {
   LocalizationHero,
   LocalizationFeature,
   AudioHero,
+  AudioFeatures,
 
   
 };

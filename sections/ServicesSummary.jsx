@@ -209,7 +209,7 @@ const ServicesSummary = () => (
                 <h4 className="text-xl text-black font-semibold">Transcription Services</h4>
 				<p class="ml-4 mr-4 justify-center text-base leading-relaxed text-gray-900">Ethiostar America uses state of the art platform, AI-based workflow solutions, and a global transcription team to assist organizations with script prep, accessibility needs, legal requests, and other needs.</p>
 					<div className="flex mt-2 pb-4 space-x-2">
-						<a rel="noopener noreferrer" href="#" title="Transcription Services" className="dark:text-gray-400">
+						<a rel="noopener noreferrer" href="/services/audio-services" title="Transcription Services" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-skin-button-accent hover:bg-skin-button-accent-hover text-gray-100">
                             Read More
                         </button>

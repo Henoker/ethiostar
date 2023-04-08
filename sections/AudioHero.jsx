@@ -20,9 +20,12 @@ const AudioHero = () => (
          to transcribe a legal document or voiceover a commercial video, we have the skills
          and experience necessary to get the job done right.
         </p>
+        <a href="#contact">
         <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
           Contact us Now
         </button>
+        </a>
+        
       </div>
     </div>
     <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">

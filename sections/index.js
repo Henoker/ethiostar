@@ -32,6 +32,7 @@ import LottieAnimation from './LottieAnimation';
 import InterpretationOverview from './InterpretationOverview';
 import LocalizationHero from './LocalizationHero';
 import LocalizationFeature from './LocalizationFeature';
+import AudioHero from './AudioHero';
 
 export {
   Hero,
@@ -68,6 +69,7 @@ export {
   InterpretationOverview,
   LocalizationHero,
   LocalizationFeature,
+  AudioHero,
 
   
 };

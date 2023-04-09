@@ -1,7 +1,7 @@
 'use client';
 
 const DtpFeature = () => (
-    <section className="m-4 md:m-8  text-gray-100">
+    <section className="m-4 md:m-8  text-gray-100" id="learn">
 	<div className="container p-4 mx-auto my-6 space-y-1 text-center">
 		<span className="text-xs font-semibold tracking-wider uppercase text-violet-400">DTP Services</span>
 		<h2 className="pb-3 text-3xl font-bold md:text-4xl">Take your translated documents to the next level</h2>

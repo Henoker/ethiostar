@@ -167,7 +167,7 @@ const ServicesSummary = () => (
                 <h4 className="text-xl text-black font-semibold">Desktop Publishing</h4>
 				<p class="ml-4 mr-4 justify-center text-base leading-relaxed text-gray-900">Our proofreaders help you to find out if anything goes wrong during typesetting by the printing press or your reviewer and you skipped during your review before sending the document for translation. </p>
 					<div className="flex mt-2 space-x-2 pb-4">
-						<a rel="noopener noreferrer" href="#" title="Desktop Publishing" className="dark:text-gray-400">
+						<a rel="noopener noreferrer" href="services/dtp" title="Desktop Publishing" className="dark:text-gray-400">
                         <button type="button" className="px-8 py-3 font-semibold rounded bg-skin-button-accent hover:bg-skin-button-accent-hover text-gray-100">
                             Read More
                         </button>

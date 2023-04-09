@@ -34,6 +34,8 @@ import LocalizationHero from './LocalizationHero';
 import LocalizationFeature from './LocalizationFeature';
 import AudioHero from './AudioHero';
 import AudioFeatures from './AudioFeatures';
+import DtpHero from './DtpHero';
+import DtpFeature from './DtpFeature';
 
 export {
   Hero,
@@ -72,6 +74,8 @@ export {
   LocalizationFeature,
   AudioHero,
   AudioFeatures,
+  DtpHero,
+  DtpFeature,
 
   
 };

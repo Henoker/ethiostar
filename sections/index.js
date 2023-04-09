@@ -36,6 +36,8 @@ import AudioHero from './AudioHero';
 import AudioFeatures from './AudioFeatures';
 import DtpHero from './DtpHero';
 import DtpFeature from './DtpFeature';
+import AiLottie from './AiLottie';
+import AiHero from './AiHero';
 
 export {
   Hero,
@@ -76,6 +78,8 @@ export {
   AudioFeatures,
   DtpHero,
   DtpFeature,
+  AiLottie,
+  AiHero,
 
   
 };

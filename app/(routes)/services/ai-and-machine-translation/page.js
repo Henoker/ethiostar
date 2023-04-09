@@ -1,12 +1,12 @@
 import { CommonHero } from "../../../../components";
-import { Feedback, LottieAnimation, SplitSection } from "../../../../sections";
+import { AiHero, Feedback, LottieAnimation, SplitSection } from "../../../../sections";
 
 
 const Page = () => (
     <div className="theme-dark-blue bg-skin-fill">
         
-        <SplitSection/>
-        <Feedback/>
+       <AiHero/>
+       <Feedback/>
     </div>    
 
 );

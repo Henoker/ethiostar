@@ -24,7 +24,7 @@ const Intro = () => {
         <div className="border-l border-gray-400 h-8"></div>
       </div>
     <div className="text-gray-100 text-3xl font-bold ml-0 mt-4 mb-6">Trusted by Many Organizations Throughout the World</div>
-    <div className="text-gray-100 text-lg mb-8 max-w-md text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod magna id turpis suscipit, eget rutrum augue consectetur. Ut tincidunt quam vel tempor consequat. Donec pulvinar vestibulum eros, quis consectetur felis ultrices vel.</div>
+    <div className="text-gray-100 text-lg mb-8 max-w-md text-justify">We offer a comprehensive range of language services to meet your global communication needs. With a team of expert translators and state-of-the-art technology, we provide accurate and culturally sensitive translations for all types of content. From document translation to website localization, we are committed to helping you connect with the world.</div>
     <div className="flex flex-wrap -mx-4">
       <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
         <div className="bg-[#94E958] rounded-lg p-6">

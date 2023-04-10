@@ -8,79 +8,13 @@ import { footerVariants } from '../utils/motion';
 
 
 const Footer = () => (
-  // <motion.footer
-  //   variants={footerVariants}
-  //   initial="hidden"
-  //   whileInView="show"
-  //   className={`${styles.xPaddings} .theme-dark-blue bg-skin-fill py-8 relative`}
-  // >
-  //   <div className="footer-gradient" />
-  //   <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
-  //     <div className="flex items-center justify-between flex-wrap gap-5">
-  //       <h4 className="font-bold md:text-[64px] text-[44px] text-white">
-  //         Contact with us
-  //       </h4>
-  //       <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
-  //         <img
-  //           src="/headset.svg"
-  //           alt="headset"
-  //           className="w-[24px] h-[24px] object-contain"
-  //         />
-  //         <span className="font-normal text-[16px] text-white">
-  //           Contact Ethiostar
-  //         </span>
-  //       </button>
-        
-  //     </div>
-
-  //     <div className="flex flex-col">
-  //       <div className="mb-[50px] h-[2px] bg-white opacity-50" />
-
-  //       <div className="flex items-center justify-between flex-wrap gap-4">
-  //         <h4 className="font-extrabold text-[24px] text-white">
-  //           Ethiostar America
-  //         </h4>
-  //         <p className="font-normal text-[14px] text-white opacity-50">
-  //           Copyright © 2022 - 2023 Ethiostar. All rights reserved.
-  //         </p>
-
-  //         <div className="flex gap-4">
-  //           {socials.map((social) => (
-  //             <img
-  //               key={social.name}
-  //               src={social.url}
-  //               alt={social.name}
-  //               className="w-[24px] h-[24px] object-contain cursor-pointer"
-  //             />
-  //           ))}
-  //         </div>
-  //       </div>
-  //       <div className="flex items-center justify-between flex-wrap gap-4">
-  //         <p className="text-[20px] text-white flex-wrap">
-  //           Ethiostar America is an <br/> ISO 17100 Certified <br/> language service <br/> provider,based in <br/> Fremont, California, <br/>with a sister comapny <br/>in Ethiopia.
-  //         </p>
-  //         <p className="font-normal text-[14px] text-white opacity-50">
-  //           Copyright © 2022 - 2023 Ethiostar. All rights reserved.
-  //         </p>
-
-  //         <div className="flex gap-4">
-  //           {socials.map((social) => (
-  //             <img
-  //               key={social.name}
-  //               src={social.url}
-  //               alt={social.name}
-  //               className="w-[24px] h-[24px] object-contain cursor-pointer"
-  //             />
-  //           ))}
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </div>
-  // </motion.footer>
+ 
   <footer aria-label="Site Footer" className="theme-dark-blue bg-skin-fill lg:grid lg:grid-cols-5">
   <div className="relative block h-32 lg:col-span-2 lg:h-full">
     <img
       src="https://images.unsplash.com/photo-1601520525445-1039c1fa232b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+      
+     
       alt=""
       className="absolute inset-0 object-cover w-full h-full"
     />
@@ -104,7 +38,7 @@ const Footer = () => (
           <li>Weekend: 10am - 3pm</li>
         </ul>
         <ul className="flex gap-6 mt-8">
-          <li>
+          {/* <li>
             <a
               href="/"
               rel="noreferrer"
@@ -147,7 +81,7 @@ const Footer = () => (
                 />
               </svg>
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="/"
@@ -156,14 +90,19 @@ const Footer = () => (
               className="text-gray-100 transition hover:opacity-75"
             >
               <span className="sr-only">Twitter</span>
-              <svg
+              {/* <svg
                 className="w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
                 <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-              </svg>
+              </svg> */}
+              <img 
+              src='/logoetam.png'
+              alt='logo'
+              className='w-36 h-36'
+              />
             </a>
           </li>
           <li>
@@ -176,28 +115,7 @@ const Footer = () => (
               
             </a>
           </li>
-          {/* <li>
-            <a
-              href="/"
-              rel="noreferrer"
-              target="_blank"
-              className="text-gray-100 transition hover:opacity-75"
-            >
-              <span className="sr-only">Dribbble</span>
-              <svg
-                className="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </a>
-          </li> */}
+         
         </ul>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -207,42 +125,50 @@ const Footer = () => (
             <ul className="space-y-4 text-sm">
               <li>
                 <a
-                  href="#"
+                  href="/services/translation"
                   className="text-gray-100 transition hover:opacity-75"
                 >
-                  1on1 Coaching
+                  Translation
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/services/localization"
                   className="text-gray-100 transition hover:opacity-75"
                 >
-                  Company Review
+                  Localization
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/services/interpretation"
                   className="text-gray-100 transition hover:opacity-75"
                 >
-                  Accounts Review
+                  Interpretation
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/services/audio-services"
                   className="text-gray-100 transition hover:opacity-75"
                 >
-                  HR Consulting
+                  Audio Services
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/services/dtp"
                   className="text-gray-100 transition hover:opacity-75"
                 >
-                  SEO Optimisation
+                  DTP
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services/ai-and-machine-translation"
+                  className="text-gray-100 transition hover:opacity-75"
+                >
+                  Machine Traslation
                 </a>
               </li>
             </ul>
@@ -254,7 +180,7 @@ const Footer = () => (
             <ul className="space-y-4 text-sm">
               <li>
                 <a
-                  href="#"
+                  href="/about"
                   className="text-gray-100 transition hover:opacity-75"
                 >
                   About
@@ -262,18 +188,18 @@ const Footer = () => (
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/industries"
                   className="text-gray-100 transition hover:opacity-75"
                 >
-                  Meet the Team
+                  Industries
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/services"
                   className="text-gray-100 transition hover:opacity-75"
                 >
-                  Accounts Review
+                  Services
                 </a>
               </li>
             </ul>

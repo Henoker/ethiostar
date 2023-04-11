@@ -1,8 +1,20 @@
 'use client';
 import styles from '../styles';
+import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
+import sendEmail from "../utils/sendEmail";
 
-const Feedback = () => (
-  <div className="container px-6 py-12 mx-auto">
+const Feedback = () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const message = event.target.message.value;
+    await sendEmail(name, email, message);
+  };
+
+  return (
+    <div className="container px-6 py-12 mx-auto">
     <div className="lg:flex lg:items-center lg:-mx-6">
       <div className="lg:w-1/2 lg:mx-6">
         <h1 className="text-2xl font-semibold capitalize text-white lg:text-3xl">
@@ -152,14 +164,18 @@ const Feedback = () => (
           <h1 className="text-lg font-medium text-gray-900">
             Contact Form
           </h1>
-          <form className="mt-6">
+          <form 
+          onSubmit={handleSubmit}
+          className="mt-6">
             <div className="flex-1">
               <label className="block mb-2 text-sm  text-gray-900">
                 Full Name
               </label>
               <input
                 type="text"
+                name="name"
                 placeholder="John Doe"
+                required
                 className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
@@ -168,8 +184,11 @@ const Feedback = () => (
                 Email address
               </label>
               <input
-                type="email"
+               name="email"
+               type="email"
+               
                 placeholder="johndoe@example.com"
+                required
                 className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
@@ -180,6 +199,8 @@ const Feedback = () => (
               <textarea
                 className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 placeholder="Message"
+                name="message"
+                required
                 defaultValue={""}
               />
             </div>
@@ -191,6 +212,146 @@ const Feedback = () => (
       </div>
     </div>
   </div>
+
+  )
+
+}
+  // const {
+  //   register,
+  //   trigger,
+  //   reset,
+  //   formState: { errors },
+  // } = useForm();
+
+  // const onSubmit = async (e) => {
+  //   console.log("~ e", e);
+  //   const isValid = await trigger();
+  //   if (!isValid) {
+  //     e.preventDefault();
+  //   }
+   
+  // };
+
+  // return (
+  //   <section id="contact" className="contact  px-6 py-8">
+  //     {/* HEADINGS */}
+  //     <motion.div
+  //       initial="hidden"
+  //       whileInView="visible"
+  //       viewport={{ once: true, amount: 0.5 }}
+  //       transition={{ duration: 0.5 }}
+  //       variants={{
+  //         hidden: { opacity: 0, x: 50 },
+  //         visible: { opacity: 1, x: 0 },
+  //       }}
+  //       className="flex justify-end w-full"
+  //     >
+  //       <div>
+  //         <p className="font-playfair text-white text-center font-semibold text-4xl">
+  //           <span className="text-white">CONTACT US</span> 
+  //         </p>
+  //       </div>
+  //     </motion.div>
+
+  //     {/* FORM & IMAGE */}
+  //     <div className="md:flex md:justify-between gap-16 mt-5">
+  //       <motion.div
+  //         initial="hidden"
+  //         whileInView="visible"
+  //         viewport={{ once: true, amount: 0.5 }}
+  //         transition={{ duration: 0.5 }}
+  //         variants={{
+  //           hidden: { opacity: 0, y: 50 },
+  //           visible: { opacity: 1, y: 0 },
+  //         }}
+  //         className="basis-1/2 flex justify-center"
+  //       >
+  //         <img src="/logoetam.png" alt="contact" />
+  //       </motion.div>
+
+  //       <motion.div
+  //         initial="hidden"
+  //         whileInView="visible"
+  //         viewport={{ once: true, amount: 0.5 }}
+  //         transition={{ delay: 0.2, duration: 0.5 }}
+  //         variants={{
+  //           hidden: { opacity: 0, y: 50 },
+  //           visible: { opacity: 1, y: 0 },
+  //         }}
+  //         className="basis-1/2 mt-10 md:mt-0"
+  //       >
+  //         <form
+  //           target="_blank"
+  //           onSubmit={onSubmit}
+  //           action="https://formsubmit.co/399a726a7e6acda18e72f4d78428c092"
+  //           method="POST"
+  //         >
+  //           <input
+  //             className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+  //             type="text"
+  //             placeholder="NAME"
+  //             {...register("name", {
+  //               required: true,
+  //               maxLength: 100,
+  //             })}
+  //           />
+  //           {errors.name && (
+  //             <p className="text-red mt-1">
+  //               {errors.name.type === "required" && "This field is required."}
+  //               {errors.name.type === "maxLength" && "Max length is 100 char."}
+  //             </p>
+  //           )}
+
+  //           <input
+  //             className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+  //             type="text"
+  //             placeholder="EMAIL"
+  //             {...register("email", {
+  //               required: true,
+  //               pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+  //             })}
+  //           />
+  //           {errors.email && (
+  //             <p className="text-red mt-1">
+  //               {errors.email.type === "required" && "This field is required."}
+  //               {errors.email.type === "pattern" && "Invalid email address."}
+  //             </p>
+  //           )}
+
+  //           <textarea
+  //             className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+  //             name="message"
+  //             placeholder="MESSAGE"
+  //             rows="4"
+  //             cols="50"
+  //             {...register("message", {
+  //               required: true,
+  //               maxLength: 2000,
+  //             })}
+  //           />
+  //           {errors.message && (
+  //             <p className="text-red mt-1">
+  //               {errors.message.type === "required" &&
+  //                 "This field is required."}
+  //               {errors.message.type === "maxLength" &&
+  //                 "Max length is 2000 char."}
+  //             </p>
+  //           )}
+
+  //           <button
+  //             className="p-5 bg-teal-200 font-semibold text-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+  //             type="submit"
+  //           >
+  //             SEND ME A MESSAGE
+  //           </button>
+  //         </form>
+  //       </motion.div>
+  //     </div>
+  //   </section>
+  // );
+
+
+ 
   // <section className={`${styles.paddings} theme-dark-blue relative bg-skin-fill`} id="contact">
   //    <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
   //     <h1 className='text-center justify-center text-3xl text-white mb-6'>Contact Us</h1>
@@ -277,6 +438,7 @@ const Feedback = () => (
      
 
   // </section>
+
 /* <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 text-gray-100">
 	<div className="flex flex-col justify-between">
 		<div className="space-y-2">
@@ -305,6 +467,6 @@ const Feedback = () => (
   
 </section> */
 
-);
+// );
 
 export default Feedback;

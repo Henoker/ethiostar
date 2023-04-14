@@ -10,8 +10,6 @@ import MarqueeSlider from './MarqueeSlider';
 import TestimonialSolo from './TestimonialSolo';
 import CommonHero from './CommonHero';
 
-
-
 export {
   Navbar,
   TitleText,
@@ -27,8 +25,4 @@ export {
   MarqueeSlider,
   TestimonialSolo,
   CommonHero,
- 
-  
-  
-  
 };

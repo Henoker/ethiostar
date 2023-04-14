@@ -1,7 +1,5 @@
 'use client';
-import styles from '../styles';
-import { motion } from "framer-motion";
-import { useForm } from "react-hook-form";
+
 import { useState } from "react";
 
 
@@ -9,8 +7,8 @@ import { useState } from "react";
 const Feedback = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  // const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [alertMessage, setAlertMessage] = useState("");
 
 
   const handleSubmit = async (e) => {
@@ -32,16 +30,14 @@ const Feedback = () => {
     });
     const content = await rawResponse.json();
 
-    // print to screen
-    // alert(content.data.tableRange);
-    alert("Your message sent successfully")
+    
+    setAlertMessage("Your message sent successfully");
  
    
 
 
     // Reset the form fields
     setMessage("");
-    // setPhone("");
     setName("");
     setEmail("");
   };
@@ -51,8 +47,11 @@ const Feedback = () => {
 
 
     <div className="container px-6 py-12 mx-auto">
+    
        <div className="lg:flex lg:items-center lg:-mx-6">
+       
        <div className="lg:w-1/2 lg:mx-6">
+     
          <h1 className="text-2xl font-semibold capitalize text-white lg:text-3xl">
             Contact us for <br /> more info
           </h1>
@@ -196,7 +195,13 @@ const Feedback = () => {
           </div>
         </div>
         <div className="mt-8 lg:w-1/2 lg:mx-6">
+       
           <div className="w-full px-8 py-10 mx-auto overflow-hidden rounded-lg shadow-2xl bg-[#B3FF17] lg:max-w-xl shadow-black/50">
+          {alertMessage && (
+          <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+          <strong className="font-bold">{alertMessage}</strong>
+           </div>
+           )}
             <h1 className="text-lg font-medium text-gray-900">
               Contact Form
             </h1>
@@ -256,328 +261,9 @@ const Feedback = () => {
         </div>
       </div>
     </div>
-    // <main className="bg-gray-100 min-h-screen">
-    //   <div className="max-w-5xl mx-auto py-16">
-    //     <form className="py-4 space-y-4" onSubmit={handleSubmit}>
-    //       <div className="flex items-center justify-center">
-    //         <label htmlFor="name" className="sr-only">
-    //           Name
-    //         </label>
-    //         <input
-    //           value={name}
-    //           onChange={(e) => setName(e.target.value)}
-    //           type="text"
-    //           name="name"
-    //           id="name"
-    //           className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md"
-    //           placeholder="Your Name"
-    //         />
-    //       </div>
-    //       <div className="flex items-center justify-center">
-    //         <label htmlFor="email" className="sr-only">
-    //           Email
-    //         </label>
-    //         <input
-    //           value={email}
-    //           onChange={(e) => setEmail(e.target.value)}
-    //           type="email"
-    //           name="email"
-    //           id="email"
-    //           className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md"
-    //           placeholder="Your Email"
-    //         />
-    //       </div>
-    
-    //       <div className="flex items-center justify-center">
-    //         <label htmlFor="message" className="sr-only">
-    //           Message
-    //         </label>
-    //         <textarea
-    //           value={message}
-    //           onChange={(e) => setMessage(e.target.value)}
-    //           id="message"
-    //           className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md"
-    //           placeholder="Your Message"
-    //         />
-    //       </div>
-    //       <div className="flex items-center justify-center">
-    //         <button
-    //           type="submit"
-    //           className="flex items-center justify-center text-sm w-64 rounded-md shadow py-3 px-2 text-white bg-indigo-600"
-    //         >
-    //           Save
-    //         </button>
-    //       </div>
-    //     </form>
-    //   </div>
-    // </main>
+   
   );
 };
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
-  //   const name = event.target.name.value;
-  //   const email = event.target.email.value;
-  //   const message = event.target.message.value;
-  //   await sendEmail(name, email, message);
-  // };
-
-  // return (
-  // 
-
-  // )
-
-
-  // const {
-  //   register,
-  //   trigger,
-  //   reset,
-  //   formState: { errors },
-  // } = useForm();
-
-  // const onSubmit = async (e) => {
-  //   console.log("~ e", e);
-  //   const isValid = await trigger();
-  //   if (!isValid) {
-  //     e.preventDefault();
-  //   }
-   
-  // };
-
-  // return (
-  //   <section id="contact" className="contact  px-6 py-8">
-  //     {/* HEADINGS */}
-  //     <motion.div
-  //       initial="hidden"
-  //       whileInView="visible"
-  //       viewport={{ once: true, amount: 0.5 }}
-  //       transition={{ duration: 0.5 }}
-  //       variants={{
-  //         hidden: { opacity: 0, x: 50 },
-  //         visible: { opacity: 1, x: 0 },
-  //       }}
-  //       className="flex justify-end w-full"
-  //     >
-  //       <div>
-  //         <p className="font-playfair text-white text-center font-semibold text-4xl">
-  //           <span className="text-white">CONTACT US</span> 
-  //         </p>
-  //       </div>
-  //     </motion.div>
-
-  //     {/* FORM & IMAGE */}
-  //     <div className="md:flex md:justify-between gap-16 mt-5">
-  //       <motion.div
-  //         initial="hidden"
-  //         whileInView="visible"
-  //         viewport={{ once: true, amount: 0.5 }}
-  //         transition={{ duration: 0.5 }}
-  //         variants={{
-  //           hidden: { opacity: 0, y: 50 },
-  //           visible: { opacity: 1, y: 0 },
-  //         }}
-  //         className="basis-1/2 flex justify-center"
-  //       >
-  //         <img src="/logoetam.png" alt="contact" />
-  //       </motion.div>
-
-  //       <motion.div
-  //         initial="hidden"
-  //         whileInView="visible"
-  //         viewport={{ once: true, amount: 0.5 }}
-  //         transition={{ delay: 0.2, duration: 0.5 }}
-  //         variants={{
-  //           hidden: { opacity: 0, y: 50 },
-  //           visible: { opacity: 1, y: 0 },
-  //         }}
-  //         className="basis-1/2 mt-10 md:mt-0"
-  //       >
-  //         <form
-  //           target="_blank"
-  //           onSubmit={onSubmit}
-  //           action="https://formsubmit.co/399a726a7e6acda18e72f4d78428c092"
-  //           method="POST"
-  //         >
-  //           <input
-  //             className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
-  //             type="text"
-  //             placeholder="NAME"
-  //             {...register("name", {
-  //               required: true,
-  //               maxLength: 100,
-  //             })}
-  //           />
-  //           {errors.name && (
-  //             <p className="text-red mt-1">
-  //               {errors.name.type === "required" && "This field is required."}
-  //               {errors.name.type === "maxLength" && "Max length is 100 char."}
-  //             </p>
-  //           )}
-
-  //           <input
-  //             className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-  //             type="text"
-  //             placeholder="EMAIL"
-  //             {...register("email", {
-  //               required: true,
-  //               pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-  //             })}
-  //           />
-  //           {errors.email && (
-  //             <p className="text-red mt-1">
-  //               {errors.email.type === "required" && "This field is required."}
-  //               {errors.email.type === "pattern" && "Invalid email address."}
-  //             </p>
-  //           )}
-
-  //           <textarea
-  //             className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-  //             name="message"
-  //             placeholder="MESSAGE"
-  //             rows="4"
-  //             cols="50"
-  //             {...register("message", {
-  //               required: true,
-  //               maxLength: 2000,
-  //             })}
-  //           />
-  //           {errors.message && (
-  //             <p className="text-red mt-1">
-  //               {errors.message.type === "required" &&
-  //                 "This field is required."}
-  //               {errors.message.type === "maxLength" &&
-  //                 "Max length is 2000 char."}
-  //             </p>
-  //           )}
-
-  //           <button
-  //             className="p-5 bg-teal-200 font-semibold text-blue mt-5 hover:bg-red hover:text-white transition duration-500"
-  //             type="submit"
-  //           >
-  //             SEND ME A MESSAGE
-  //           </button>
-  //         </form>
-  //       </motion.div>
-  //     </div>
-  //   </section>
-  // );
-
-
- 
-  // <section className={`${styles.paddings} theme-dark-blue relative bg-skin-fill`} id="contact">
-  //    <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-  //     <h1 className='text-center justify-center text-3xl text-white mb-6'>Contact Us</h1>
-  //     <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-  //       <div className="lg:col-span-2 lg:py-12">
-          
-  //         <p className="max-w-xl text-lg text-white">
-  //           At the same time, the fact that we are wholly owned and totally
-  //           independent from manufacturer and other group control gives you
-  //           confidence that we will only recommend what is right for you.
-  //         </p>
-  //         <div className="mt-8">
-  //           <a href="" className="text-2xl font-bold text-pink-600">
-  //             0151 475 4450
-  //           </a>
-  //           <address className="mt-2 not-italic text-white">
-  //             282 Kevin Brook, Imogeneborough, CA 58517
-  //           </address>
-  //         </div>
-  //       </div>
-  //       <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-  //         <form action="" className="space-y-4">
-  //           <div>
-  //             <label className="sr-only" htmlFor="name">
-  //               Name
-  //             </label>
-  //             <input
-  //               className="w-full rounded-lg border-gray-200 bg-slate-100 p-3 text-sm"
-  //               placeholder="Name"
-  //               type="text"
-  //               id="name"
-  //             />
-  //           </div>
-  //           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-  //             <div>
-  //               <label className="sr-only" htmlFor="email">
-  //                 Email
-  //               </label>
-  //               <input
-  //                 className="w-full rounded-lg border-gray-200  bg-slate-100 p-3 text-sm"
-  //                 placeholder="Email address"
-  //                 type="email"
-  //                 id="email"
-  //               />
-  //             </div>
-  //             <div>
-  //               <label className="sr-only" htmlFor="phone">
-  //                 Phone
-  //               </label>
-  //               <input
-  //                 className="w-full rounded-lg border-gray-200  bg-slate-100 p-3 text-sm"
-  //                 placeholder="Phone Number"
-  //                 type="tel"
-  //                 id="phone"
-  //               />
-  //             </div>
-  //           </div>
-            
-             
-  //           <div>
-  //             <label className="sr-only" htmlFor="message">
-  //               Message
-  //             </label>
-  //             <textarea
-  //               className="w-full rounded-lg border-gray-200  bg-slate-100 p-3 text-sm"
-  //               placeholder="Message"
-  //               rows={8}
-  //               id="message"
-  //               defaultValue={""}
-  //             />
-  //           </div>
-  //           <div className="mt-4">
-  //             <button
-  //               type="submit"
-  //               className="inline-block w-full rounded-lg bg-blue-700 px-5 py-3 font-medium text-white sm:w-auto"
-  //             >
-  //               Send Enquiry
-  //             </button>
-  //           </div>
-  //         </form>
-  //       </div>
-  //     </div>
-  //   </div>
-     
-
-  // </section>
-
-/* <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 text-gray-100">
-	<div className="flex flex-col justify-between">
-		<div className="space-y-2">
-			<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's talk!</h2>
-			<div className="text-gray-200">Vivamus in nisl metus? Phasellus.</div>
-		</div>
-		<img src="assets/svg/doodle.svg" alt="" className="p-6 h-52 md:h-64" />
-	</div>
-	<form novalidate="" className="space-y-6 ng-untouched ng-pristine ng-valid">
-		<div>
-			<label for="name" className="text-sm">Full name</label>
-			<input id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800" />
-		</div>
-		<div>
-			<label for="email" className="text-sm">Email</label>
-			<input id="email" type="email" className="w-full p-3 rounded dark:bg-gray-800" />
-		</div>
-		<div>
-			<label for="message" className="text-sm">Message</label>
-			<textarea id="message" rows="3" className="w-full p-3 rounded dark:bg-gray-800"></textarea>
-		</div>
-		<button type="submit" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-violet-400 text-gray-900">Send Message</button>
-	</form>
-</div> */
-/* <section className={`${styles.paddings} theme-dark-blue relative bg-skin-fill`} id="contact">
   
-</section> */
-
-// );
 
 export default Feedback;

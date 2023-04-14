@@ -1,4 +1,4 @@
-import styles from "../styles";
+
 
 const TestimonialSolo = () => (
     <div className="mx-auto max-w-5xl px-4 py-8">

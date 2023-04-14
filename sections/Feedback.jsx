@@ -4,11 +4,14 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
+
+
 const Feedback = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   // const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +33,11 @@ const Feedback = () => {
     const content = await rawResponse.json();
 
     // print to screen
-    alert(content.data.tableRange);
+    // alert(content.data.tableRange);
+    alert("Your message sent successfully")
+ 
+   
+
 
     // Reset the form fields
     setMessage("");

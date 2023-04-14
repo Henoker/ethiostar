@@ -10,6 +10,7 @@ import MarqueeSlider from './MarqueeSlider';
 import TestimonialSolo from './TestimonialSolo';
 import Article from './Article';
 import CommonHero from './CommonHero';
+import Alert from './Alert';
 
 
 export {
@@ -28,6 +29,7 @@ export {
   TestimonialSolo,
   Article,
   CommonHero,
+  Alert,
   
   
   

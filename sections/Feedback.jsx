@@ -198,11 +198,7 @@ const Feedback = () => {
        
           <div className="w-full px-8 py-10 mx-auto overflow-hidden rounded-lg shadow-2xl bg-[#B3FF17] lg:max-w-xl shadow-black/50">
           {alertMessage && (
-<<<<<<< HEAD
-          <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
-          <strong className="font-bold">{alertMessage}</strong>
-           </div>
-=======
+
             <div class="flex bg-green-lighter max-w-sm mb-4">
             <div class="w-16 bg-green">
                 <div class="p-4">
@@ -218,7 +214,7 @@ const Feedback = () => {
                 </p>
             </div>
         </div>
->>>>>>> f13c115 (feat: message alert div added)
+
            )}
             <h1 className="text-lg font-medium text-gray-900">
               Contact Form

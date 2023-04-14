@@ -1,5 +1,4 @@
 
-
 const CommonHero = () => (
     <section className="dark:bg-gray-800 text-gray-100">
 		<div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">

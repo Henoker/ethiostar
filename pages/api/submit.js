@@ -2,7 +2,7 @@ import { google } from "googleapis"
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
-    return res.status(405).send({ message: "Only POST requests allowed" })
+    return res.status(405).send({ message: 'Only POST requests allowed' })
   }
 
   const body = req.body
@@ -18,26 +18,26 @@ export default async function handler(req, res) {
         "https://www.googleapis.com/auth/drive.file",
         "https://www.googleapis.com/auth/spreadsheets"
       ]
-    })
+    });
 
     const sheets = google.sheets({
       auth,
-      version: "v4"
-    })
+      version: 'v4'
+    });
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: "A1:C1",
-      valueInputOption: "USER_ENTERED",
+      range: 'A1:C1',
+      valueInputOption: 'USER_ENTERED',
       requestBody: {
         // values: [[body.name, body.email, body.phone, body.message]]
         values: [[body.name, body.email, body.message]]
       }
-    })
+    });
 
     return res.status(201).json({
       data: response.data
-    })
+    });
   } catch (e) {
     return res.status(e.code).send({ message: e.message })
   }

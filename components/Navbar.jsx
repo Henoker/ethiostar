@@ -1,18 +1,14 @@
-'use client'
-import { motion } from 'framer-motion';
-import styles from '../styles';
-import { navVariants } from '../utils/motion';
+'use client';
 import Link from 'next/link';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
-import Image from 'next/image';
-import logo from '../public/logoethioameric1.png';
+import styles from '../styles';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleDropdown = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
 
  

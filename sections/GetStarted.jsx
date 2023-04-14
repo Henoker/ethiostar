@@ -20,9 +20,10 @@ const GetStarted = () => (
       variants={planetVariants('left')}
       className={`flex-1 ${styles.flexCenter}`}
       >
-        <img 
-        src='/get-started.png'
-        alt='get-started'
+      
+         <img 
+        src='/logoetam.png'
+        alt='whats-new'
         className='w-[90%] h-[90%] object-contain'
         />
       </motion.div>

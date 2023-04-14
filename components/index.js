@@ -8,9 +8,8 @@ import Footer from './Footer';
 import OurServices from './OurServices';
 import MarqueeSlider from './MarqueeSlider';
 import TestimonialSolo from './TestimonialSolo';
-import Article from './Article';
 import CommonHero from './CommonHero';
-import Alert from './Alert';
+
 
 
 export {
@@ -27,9 +26,8 @@ export {
   OurServices,
   MarqueeSlider,
   TestimonialSolo,
-  Article,
   CommonHero,
-  Alert,
+ 
   
   
   

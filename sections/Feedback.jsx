@@ -30,12 +30,8 @@ const Feedback = () => {
     });
     const content = await rawResponse.json();
 
-    
     setAlertMessage("Your message sent successfully");
  
-   
-
-
     // Reset the form fields
     setMessage("");
     setName("");
@@ -43,9 +39,6 @@ const Feedback = () => {
   };
 
   return (
-
-
-
     <div className="container px-6 py-12 mx-auto">
     
        <div className="lg:flex lg:items-center lg:-mx-6">
@@ -207,7 +200,7 @@ const Feedback = () => {
             </div>
             <div class="w-auto text-grey-darker items-center p-4">
                 <span class="text-lg font-bold pb-4">
-                   Thansk you!
+                   Thank you!
                 </span>
                 <p class="leading-tight">
                     {alertMessage}

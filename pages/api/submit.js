@@ -1,28 +1,28 @@
 import { google } from 'googleapis';
 
 export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).send({ message: 'Only POST requests allowed' })
+  if (req.method !== 'POST') {
+    return res.status(405).send({ message: 'Only POST requests allowed' });
   }
 
-  const body = req.body
+  const { body } = req;
 
   try {
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
-        private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n")
+        private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
       },
       scopes: [
-        "https://www.googleapis.com/auth/drive",
-        "https://www.googleapis.com/auth/drive.file",
-        "https://www.googleapis.com/auth/spreadsheets"
-      ]
+        'https://www.googleapis.com/auth/drive',
+        'https://www.googleapis.com/auth/drive.file',
+        'https://www.googleapis.com/auth/spreadsheets',
+      ],
     });
 
     const sheets = google.sheets({
       auth,
-      version: 'v4'
+      version: 'v4',
     });
 
     const response = await sheets.spreadsheets.values.append({
@@ -31,14 +31,15 @@ export default async function handler(req, res) {
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         // values: [[body.name, body.email, body.phone, body.message]]
-        values: [[body.name, body.email, body.message]]
-      }
+        values: [[body.name, body.email, body.message]],
+      },
     });
 
     return res.status(201).json({
-      data: response.data
+      data: response.data,
     });
   } catch (e) {
-    return res.status(e.code).send({ message: e.message })
+    return res.status(e.code).send({ message: e.message });
   }
 }
+

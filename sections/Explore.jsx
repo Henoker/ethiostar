@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -11,7 +12,7 @@ const Explore = () => {
   const [active, setActive] = useState('world-2');
 
   return (
-    <section className={`${styles.paddings} theme-dark-blue bg-skin-fill`} id="explore" >
+    <section className={`${styles.paddings} theme-dark-blue bg-skin-fill`} id="explore">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

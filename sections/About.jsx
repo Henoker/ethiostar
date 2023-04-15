@@ -22,13 +22,13 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[28px] text-[20px] text-center text-black"
       >
-        <span className="font-extrabold text-gray-900">Ethiostar </span> team inspired by a shared goal 
-        to achieve excellence; we are a group of translators and interpreters working together as partners. 
-        we&apos;ve been at the forefront of the translation sector, adopting inventive and forward-thinking 
-        technology to ensure our standards always remain high. We use the latest versions of quality assurance 
+        <span className="font-extrabold text-gray-900">Ethiostar </span> team inspired by a shared goal
+        to achieve excellence; we are a group of translators and interpreters working together as partners.
+        we&apos;ve been at the forefront of the translation sector, adopting inventive and forward-thinking
+        technology to ensure our standards always remain high. We use the latest versions of quality assurance
         and project management tools, keeping our projects on {' '}
         <span className="font-extrabold text-gray-900">
-        track and meeting customer expectations
+          track and meeting customer expectations
         </span>{' '}
         every time. we have integrated{' '}
         <span className="font-extrabold text-gray-900">ISO 17100</span> into our operations so as to fulfill our

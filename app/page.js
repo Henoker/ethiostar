@@ -1,37 +1,32 @@
-import { About, Cards, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
+import { About, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
 
 const Page = () => (
 
- 
   <div className="theme-dark-blue bg-skin-fill">
-   
+
     <Hero />
-    <div className="relative">
+    <div>
       <About />
-    </div> 
+    </div>
     <div className="relative">
       <GetStarted />
-      {/* <Cards/> */}
-      <div className="gradient-04 z-0" />
+      <div />
       <WhatsNew />
     </div>
-    
-    <Intro/>
+
+    <Intro />
     <World />
-    <MarqueeSlider/>
+    <MarqueeSlider />
     <div className="relative">
-     
+
       <Insights />
-      <div className="gradient-04 z-0" />
+      <div />
       <Feedback />
-      
+
     </div>
-    
-   
+
   </div>
 
-   
- 
 );
 
 export default Page;

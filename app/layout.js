@@ -1,9 +1,6 @@
 import { Navbar, Footer } from '../components';
 import '../styles/globals.css';
 
-
-
-
 const RootLayout = ({ children }) => (
   <html lang="en">
     <head>
@@ -11,14 +8,13 @@ const RootLayout = ({ children }) => (
       <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
     </head>
     <body>
-    <header>
-    <Navbar/>
-    </header>
-    
-    <main>
-    {children}
-    <Footer/>
-    </main>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        {children}
+        <Footer />
+      </main>
     </body>
   </html>
 );

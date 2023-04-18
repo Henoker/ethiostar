@@ -5,11 +5,11 @@ const AiHero = () => (
     <div className="items-center lg:flex">
       <div className="w-full lg:w-1/2">
         <div className="lg:max-w-lg">
-          <h1 className="text-3xl font-semibold text-white lg:text-4xl">
+          <h1 className="mt-12 text-3xl font-semibold text-white lg:text-4xl">
             Overcome the language barrier with  <span className="text-blue-500">Machine Translation</span>
           </h1>
           <p className="mt-3 text-gray-100">
-            Ethistar America provides machine translation service that delivers, {' '}
+            Ethiostar America provides machine translation service that delivers, {' '}
             <span className="font-medium text-blue-500">fast, high-quality, affordable, and customizable</span> language translation service.
           </p>
 

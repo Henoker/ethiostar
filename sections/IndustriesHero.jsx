@@ -7,8 +7,8 @@ const IndustriesHero = () => (
     className=" mt-0 sm:grid sm:grid-cols-2 sm:items-center"
   >
     <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-      <div className="mx-auto max-w-xl text-center sm:text-left">
-        <h2 className="text-2xl mt-6 font-bold text-gray-100 md:text-3xl">
+      <div className="mx-auto mt-16 max-w-xl text-center sm:text-left">
+        <h2 className="text-2xl font-bold text-gray-100 md:text-3xl">
           Industry specific solutions for every sector
         </h2>
 

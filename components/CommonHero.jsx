@@ -3,7 +3,7 @@ const CommonHero = () => (
   <section className="dark:bg-gray-800 text-gray-100">
     <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
       <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-        <h1 className="text-5xl font-bold leading-none sm:text-6xl">
+        <h1 className="text-4xl mt-12 font-bold leading-none sm:text-5xl">
           Ethiostar<span className="text-violet-400"> Interpreting</span> Services
         </h1>
         <p className="mt-6 mb-8 text-lg sm:mb-12">Contact us today to learn more about how we can

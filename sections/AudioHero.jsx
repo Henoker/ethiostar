@@ -6,7 +6,7 @@ const AudioHero = () => (
       <div className="items-center lg:flex">
         <div className="w-full lg:w-1/2">
           <div className="lg:max-w-lg">
-            <h1 className="text-3xl font-semibold text-white lg:text-4xl">
+            <h1 className="mt-12 text-3xl font-semibold text-white lg:text-4xl">
               we offer the <br /> best{' '}
               <span className="text-blue-500 ">voiceover</span> and <br /> {' '}
               <span className="text-blue-500 ">transcription</span> services

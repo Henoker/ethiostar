@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -6,51 +7,41 @@
 'use client';
 
 import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 
-const Feedback = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+export default function Feedback() {
+  const { register, handleSubmit, reset } = useForm();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const form = {
-      name,
-      email,
-      message,
-    };
-
-    const rawResponse = await fetch('/api/submit', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(form),
-    });
-
+  async function submitHandler(data) {
+    setLoading(true);
+    setError('');
     try {
-      const content = await rawResponse.json();
-      setAlertMessage('Your message sent successfully');
-    // eslint-disable-next-line no-shadow
+      const res = await fetch('/api/submit', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      if (res.ok) {
+        setAlertMessage('message sent successfully');
+        reset();
+      } else {
+        setError('Failed to submit form.');
+      }
     } catch (e) {
       console.error(e);
-      setAlertMessage('There was an error submitting your message.');
+      setError('Failed to submit form.');
+    } finally {
+      setLoading(false);
     }
-
-    // Reset the form fields
-    setMessage('');
-    setName('');
-    setEmail('');
-  };
-
+  }
   return (
     <div className="container px-6 py-12 mx-auto">
-
       <div className="lg:flex lg:items-center lg:-mx-6">
-
         <div className="lg:w-1/2 lg:mx-6">
 
           <h1 className="text-2xl font-semibold capitalize text-white lg:text-3xl">
@@ -221,38 +212,38 @@ const Feedback = () => {
               Contact Form
             </h1>
             <form
-              onSubmit={handleSubmit}
+              onSubmit={handleSubmit(submitHandler)}
               className="mt-6"
+              action="/api/submit"
+              method="POST"
             >
               <div className="flex-1">
                 <label className="block mb-2 text-sm  text-gray-900">
                   Full Name
                 </label>
                 <input
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
                   type="text"
                   name="name"
-                  id="name"
-                  required
+                  placeholder="Your Name"
+                  autoComplete="off"
+                  {...register('Name', { required: 'Please Enter Name' })}
                   className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
+                {error && <p className="text-red">{error}</p>}
               </div>
               <div className="flex-1 mt-6">
                 <label className="block mb-2 text-sm text-gray-900">
                   Email address
                 </label>
                 <input
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                   type="email"
                   name="email"
-                  id="email"
-
-                  placeholder="johndoe@example.com"
-                  required
+                  placeholder="Email"
+                  autoComplete="off"
+                  {...register('Email', { required: 'Please enter valid email' })}
                   className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
+                {error && <p className="text-red">{error}</p>}
               </div>
               <div className="w-full mt-6">
                 <label className="block mb-2 text-sm text-gray-900">
@@ -260,15 +251,14 @@ const Feedback = () => {
                 </label>
                 <textarea
                   className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                  name="message"
                   placeholder="Message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  id="message"
-                  required
-                  defaultValue=""
+                  autoComplete="off"
+                  {...register('Message', { required: 'Please enter message details' })}
                 />
+                {error && <p className="text-red">{error}</p>}
               </div>
-              <button type="button" className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-skin-button-accent hover:bg-skin-button-accent-hover rounded-md focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+              <button type="submit" disabled={loading} className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-skin-button-accent hover:bg-skin-button-accent-hover rounded-md focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                 Send Message
               </button>
             </form>
@@ -276,8 +266,5 @@ const Feedback = () => {
         </div>
       </div>
     </div>
-
   );
-};
-
-export default Feedback;
+}

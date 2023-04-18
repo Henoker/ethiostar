@@ -1,13 +1,12 @@
+/* eslint-disable no-unused-vars */
+
 import { google } from 'googleapis';
 
 export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).send({ message: 'Only POST requests allowed' });
-  }
+  if (req.method === 'POST') {
+    const { Name, Email, Message } = req.body;
+    console.log(Name, Email, Message);
 
-  const { body } = req;
-
-  try {
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
@@ -17,6 +16,7 @@ export default async function handler(req, res) {
         'https://www.googleapis.com/auth/drive',
         'https://www.googleapis.com/auth/drive.file',
         'https://www.googleapis.com/auth/spreadsheets',
+
       ],
     });
 
@@ -30,16 +30,12 @@ export default async function handler(req, res) {
       range: 'A1:C1',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
-        // values: [[body.name, body.email, body.phone, body.message]]
-        values: [[body.name, body.email, body.message]],
+        values: [[Name, Email, Message]],
       },
     });
 
-    return res.status(201).json({
-      data: response.data,
-    });
-  } catch (e) {
-    return res.status(e.code).send({ message: e.message });
+    res.status(201).json({ message: 'Date entered successfully' });
   }
-}
 
+  res.status(200).json({ message: 'Done!' });
+}

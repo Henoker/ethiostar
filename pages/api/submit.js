@@ -21,21 +21,21 @@ export default async function handler(req, res) {
     });
 
     const sheets = google.sheets({
-      auth,
       version: 'v4',
+      auth,
     });
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
       range: 'A1:C1',
       valueInputOption: 'USER_ENTERED',
-      requestBody: {
+      resource: {
         values: [[Name, Email, Message]],
       },
     });
 
-    res.status(201).json({ message: 'Date entered successfully' });
+    res.status(201).json({ message: 'Data entered successfully' });
+  } else {
+    res.status(200).json({ message: 'Done!' });
   }
-
-  res.status(200).json({ message: 'Done!' });
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/function-component-definition */
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
@@ -39,6 +40,12 @@ export default function Feedback() {
       setLoading(false);
     }
   }
+
+  // function handleResponse(response) {
+  //   if (!response.headersSent) {
+  //     response.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate');
+  //   }
+  // }
   return (
     <div className="container px-6 py-12 mx-auto">
       <div className="lg:flex lg:items-center lg:-mx-6">
@@ -216,6 +223,7 @@ export default function Feedback() {
               className="mt-6"
               action="/api/submit"
               method="POST"
+              // onSubmitCapture={handleResponse}
             >
               <div className="flex-1">
                 <label className="block mb-2 text-sm  text-gray-900">

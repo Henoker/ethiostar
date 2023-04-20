@@ -138,7 +138,7 @@ const LocalizationHero = () => (
       Brand new
     </p> */}
         <h2 className="mt-12 mb-5 font-sans text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl sm:leading-none">
-          Be understood
+          Be understood{' '}
           <br className="hidden md:block" />
           in a better{' '}
           <span className="inline-block text-deep-purple-accent-400">

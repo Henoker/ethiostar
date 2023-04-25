@@ -134,8 +134,8 @@ export const ourServices = [
     imgUrl: '/medical.svg',
     title: 'Medical Translation',
     subtitle:
-        'we provide medical translation by specialist medical translators. We set high criteria, ensuring that our translators have expert skills in the subject, and provide a first-class translation of your material. '
-  }
+        'we provide medical translation by specialist medical translators. We set high criteria, ensuring that our translators have expert skills in the subject, and provide a first-class translation of your material. ',
+  },
 ];
 
 export const allLanguages = [

@@ -25,41 +25,9 @@ const Footer = () => (
               href="#"
               className="block text-2xl font-medium text-gray-200 hover:opacity-75 sm:text-3xl"
             >
-              0123456789
+              (669) 842-1147
             </a>
           </p>
-          <ul className="mt-8 space-y-1 text-sm text-gray-100">
-            <li>Monday to Friday: 10am - 5pm</li>
-            <li>Weekend: 10am - 3pm</li>
-          </ul>
-          <ul className="flex gap-6 mt-8">
-
-            <li>
-              <a
-                href="/"
-                rel="noreferrer"
-                target="_blank"
-                className="text-gray-100 transition hover:opacity-75"
-              >
-                <span className="sr-only">Twitter</span>
-
-                <img
-                  src="/logoetam.png"
-                  alt="logo"
-                  className="w-36 h-36"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                rel="noreferrer"
-                target="_blank"
-                className="text-gray-100 transition hover:opacity-75"
-              />
-            </li>
-
-          </ul>
         </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
@@ -121,6 +89,14 @@ const Footer = () => (
             <p className="font-medium text-gray-200">Company</p>
             <nav aria-label="Footer Navigation - Company" className="mt-6">
               <ul className="space-y-4 text-sm">
+                <li>
+                  <a
+                    href="/"
+                    className="text-gray-100 transition hover:opacity-75"
+                  >
+                    Home
+                  </a>
+                </li>
                 <li>
                   <a
                     href="/about"

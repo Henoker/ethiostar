@@ -1,3 +1,6 @@
+/* eslint-disable import/named */
+/* eslint-disable no-unused-vars */
+/* eslint-disable radix */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable max-len */
 
@@ -5,30 +8,53 @@
 
 import { useState } from 'react';
 import styles from '../styles';
-import { allLanguages } from '../constants';
+import { LANGUAGE_PRICES, LANGUAGES } from '../constants';
 
 const QuoteContainer = () => {
+  // const [wordCount, setWordCount] = useState('');
+  // const [sourceLanguage, setSourceLanguage] = useState('');
+  // const [targetLanguage, setTargetLanguage] = useState('');
+  // const [totalPrice, setTotalPrice] = useState('');
+  // const handleWordCountChange = (event) => {
+  //   setWordCount(event.target.value);
+  // };
+
+  // const handleSourceLanguageChange = (event) => {
+  //   setSourceLanguage(event.target.value);
+  // };
+
+  // const handleTargetLanguageChange = (event) => {
+  //   setTargetLanguage(event.target.value);
+  // };
+
+  // const handleCalculatePrice = () => {
+  //   const price = Number(wordCount) * 0.08;
+  //   setTotalPrice(price.toFixed(2));
+  // };
+  const [sourceLang, setSourceLang] = useState('');
+  const [targetLang, setTargetLang] = useState('');
   const [wordCount, setWordCount] = useState('');
-  const [sourceLanguage, setSourceLanguage] = useState('');
-  const [targetLanguage, setTargetLanguage] = useState('');
   const [totalPrice, setTotalPrice] = useState('');
-  const handleWordCountChange = (event) => {
-    setWordCount(event.target.value);
+  const [pricePerWord, setPricePerWord] = useState('');
+
+  const handleSourceLangChange = (e) => {
+    setSourceLang(e.target.value);
   };
 
-  const handleSourceLanguageChange = (event) => {
-    setSourceLanguage(event.target.value);
+  const handleTargetLangChange = (e) => {
+    setTargetLang(e.target.value);
+    setPricePerWord(LANGUAGE_PRICES[e.target.value]);
   };
 
-  const handleTargetLanguageChange = (event) => {
-    setTargetLanguage(event.target.value);
+  const handleWordCountChange = (e) => {
+    setWordCount(e.target.value);
   };
 
-  const handleCalculatePrice = () => {
-    const price = Number(wordCount) * 0.05;
-    setTotalPrice(price.toFixed(2));
+  const handleShowPriceClick = () => {
+    const priceRate = LANGUAGE_PRICES[targetLang];
+    const total = priceRate * wordCount;
+    setTotalPrice(total.toFixed(2));
   };
-
   return (
     <section className={`${styles.paddings} mt-0`} id="quote">
       <div className="theme-neon relative bg-skin-fill max-w-6xl mt-12 mx-auto overflow-hidden sm:rounded-2xl">
@@ -47,48 +73,40 @@ const QuoteContainer = () => {
                 <div className="mt-12 flex flex-col w-full">
                   <div className="flex flex-row">
                     <div className="w-full mr-4 ml-0">
-                      <label htmlFor="InstantQuoteSourceLanguages" className="block mb-2 text-base font-medium text-gray-900 dark:text-white">Source Language</label>
+                      <label htmlFor="source-lang" className="block mb-2 text-base font-medium text-gray-900 dark:text-white">Source Language</label>
                       <div className="flex relative z-[1]">
 
                         <select
-                          required id="InstantQuoteSourceLanguages"
+                          required
                           className="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                          value={sourceLanguage}
-                          onChange={handleSourceLanguageChange}
+                          id="source-lang" value={sourceLang} onChange={handleSourceLangChange}
                         >
-                          <option value="" disabled>From</option>
-                          {allLanguages
-                          && allLanguages.map((language) => (
-                            <option
-                              key={`${language.name}-matrix`}
-                              value={[language.group.toString(), language.name]}
-                            >
-                              {language.name}
-                            </option>
+                          <option value="">Select a language</option>
+                          {LANGUAGES.map((language) => (
+                            <option key={language} value={language}>{language}</option>
                           ))}
+
                         </select>
                       </div>
                     </div>
                     <div className="w-full mr-4 ml-0 ">
-                      <label htmlFor="InstantQuoteTargetLanguages" className="block mb-2 text-base font-medium text-gray-900 dark:text-white">Target Language</label>
+                      <label htmlFor="target-lang" className="block mb-2 text-base font-medium text-gray-900 dark:text-white">Target Language</label>
                       <div className="flex relative z-[1]">
                         <select
-                          required id="InstantQuoteTargetLanguages"
+                          required
                           className="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                          value={targetLanguage}
-                          onChange={handleTargetLanguageChange}
+                          id="target-lang" value={targetLang} onChange={handleTargetLangChange}
                         >
                           <option value="" disabled>To</option>
-                          {allLanguages
-                          && allLanguages.map((language) => (
-                            <option
-                              key={language.name}
-                              value={[language.group.toString(), language.name]}
-                            >
-                              {language.name}
-                            </option>
+                          {LANGUAGES.map((language) => (
+                            <option key={language} value={language}>{language}</option>
                           ))}
                         </select>
+                        {pricePerWord && (
+                        <div>
+                          {/* Price per word: ${pricePerWord} */}
+                        </div>
+                        )}
                       </div>
                     </div>
 
@@ -110,7 +128,7 @@ const QuoteContainer = () => {
                       type="submit"
                       className="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 mt-4 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"
                       value="Show prices"
-                      onClick={handleCalculatePrice}
+                      onClick={handleShowPriceClick}
                     />
                   </div>
                 </div>
@@ -127,7 +145,7 @@ const QuoteContainer = () => {
                         <span className="text-sm dark:text-violet-400">Source</span>
                       </h3>
                       <div className="text-right">
-                        <span className="block">{sourceLanguage}</span>
+                        <span className="block">{sourceLang}</span>
 
                       </div>
                     </li>
@@ -136,7 +154,7 @@ const QuoteContainer = () => {
                         <span className="text-sm dark:text-violet-400">Target</span>
                       </h3>
                       <div className="text-right">
-                        <span className="block">{targetLanguage}</span>
+                        <span className="block">{targetLang}</span>
                       </div>
                     </li>
                     <li className="flex items-start justify-between">
@@ -152,7 +170,7 @@ const QuoteContainer = () => {
                   <div className="pt-4 space-y-2">
                     <div className="flex justify-between">
                       <span>Rate</span>
-                      <span>$0.50</span>
+                      <span>${pricePerWord}</span>
                     </div>
                     <div className="flex items-center space-x-2 text-xs">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-3 h-3 mt-1 fill-current dark:text-violet-400">
@@ -271,130 +289,6 @@ const QuoteContainer = () => {
           </a>
         </div>
       </div>
-      {/* <div className='w-full max-w-6xl mx-auto overflow-hidden sm:rounded-2xl'>
-    <div className="bg-white py-24 sm:py-32 mt-4">
-    <div className="mx-auto max-w-7xl px-6 lg:px-8">
-      <div className="mx-auto max-w-2xl lg:text-center">
-        <h2 className="text-base font-semibold leading-7 text-indigo-600">
-          Deploy faster
-        </h2>
-        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Everything you need to deploy your app
-        </p>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-          Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-          In mi viverra elit nunc.
-        </p>
-      </div>
-      <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-        <dl className="grid max-w-xl grid-cols-1 gap-y-10 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-          <div className="relative pl-16">
-            <dt className="text-base font-semibold leading-7 text-gray-900">
-              <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <svg
-                  className="h-6 w-6 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z"
-                  />
-                </svg>
-              </div>
-              Push to deploy
-            </dt>
-            <dd className="mt-2 text-base leading-7 text-gray-600">
-              Morbi viverra dui mi arcu sed. Tellus semper adipiscing
-              suspendisse semper morbi. Odio urna massa nunc massa.
-            </dd>
-          </div>
-          <div className="relative pl-16">
-            <dt className="text-base font-semibold leading-7 text-gray-900">
-              <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <svg
-                  className="h-6 w-6 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-                  />
-                </svg>
-              </div>
-              SSL certificates
-            </dt>
-            <dd className="mt-2 text-base leading-7 text-gray-600">
-              Sit quis amet rutrum tellus ullamcorper ultricies libero dolor
-              eget. Sem sodales gravida quam turpis enim lacus amet.
-            </dd>
-          </div>
-          <div className="relative pl-16">
-            <dt className="text-base font-semibold leading-7 text-gray-900">
-              <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <svg
-                  className="h-6 w-6 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
-                  />
-                </svg>
-              </div>
-              Simple queues
-            </dt>
-            <dd className="mt-2 text-base leading-7 text-gray-600">
-              Quisque est vel vulputate cursus. Risus proin diam nunc commodo.
-              Lobortis auctor congue commodo diam neque.
-            </dd>
-          </div>
-          <div className="relative pl-16">
-            <dt className="text-base font-semibold leading-7 text-gray-900">
-              <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <svg
-                  className="h-6 w-6 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33"
-                  />
-                </svg>
-              </div>
-              Advanced security
-            </dt>
-            <dd className="mt-2 text-base leading-7 text-gray-600">
-              Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis
-              aliquet hac quis. Id hac maecenas ac donec pharetra eget.
-            </dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-  </div>
-
-  </div> */}
     </section>
 
   );

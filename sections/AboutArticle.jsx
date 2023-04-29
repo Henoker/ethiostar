@@ -6,7 +6,7 @@ const AboutArticle = () => (
   <div className="p-5 mx-auto mt-6 sm:p-10 md:p-1 text-gray-100">
     <div className="container flex flex-col flex-wrap content-center justify-center p-4 py-20 mx-auto md:p-10">
       <h1 className="text-5xl antialiased font-semibold leading-none text-center dark:text-gray-100">Who We Are</h1>
-      <p className="pt-2 pb-8 text-xl antialiased text-center dark:text-gray-100">Find about our core values ad ethos</p>
+      <p className="pt-2 pb-8 text-xl antialiased text-center dark:text-gray-100">Find about our core values and ethos</p>
     </div>
     <div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
       <img src="https://images.unsplash.com/photo-1501466044931-62695aada8e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80" alt="" className="w-full h-60 sm:h-96 bg-gray-500" />

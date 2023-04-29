@@ -17,7 +17,7 @@ const IndustriesOverview = () => (
           </p>
         </div>
       </a>
-      <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid justify-center grid-cols-1 gap-x-6 gap-y-12 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <a rel="noopener noreferrer" href="#" className=" bg-[#B3FF17] max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
           <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
           <div className="p-6 space-y-2 text-black">
@@ -43,7 +43,7 @@ const IndustriesOverview = () => (
             <p>We offer medical translation on medical reports, research papers, patents, medical product documentation, publicity, marketing material, case reports, clinical trials, medical Studies, contracts, training materials, scientific articles.</p>
           </div>
         </a>
-        <a rel="noopener noreferrer" href="#" className=" bg-[#B3FF17] max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block">
+        <a rel="noopener noreferrer" href="#" className=" bg-[#B3FF17] max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
           <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" />
           <div className="p-6 space-y-2  text-black">
             <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">IT & Software</h3>
@@ -52,14 +52,14 @@ const IndustriesOverview = () => (
             </p>
           </div>
         </a>
-        <a rel="noopener noreferrer" href="#" className=" bg-[#B3FF17] max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block">
+        <a rel="noopener noreferrer" href="#" className=" bg-[#B3FF17] max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
           <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" />
           <div className="p-6 space-y-2 text-black">
             <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Education</h3>
             <p> We provide language translation and localization services for online learning, eLearning and mobile learning, content and courseware for global enterprises and government agencies, as well as educational institutions.</p>
           </div>
         </a>
-        <a rel="noopener noreferrer" href="#" className=" bg-[#B3FF17] max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block">
+        <a rel="noopener noreferrer" href="#" className=" bg-[#B3FF17] max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
           <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://images.unsplash.com/photo-1455165814004-1126a7199f9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
           <div className="p-6 space-y-2 text-black">
             <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Other Sectors</h3>

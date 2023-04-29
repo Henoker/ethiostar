@@ -36,7 +36,7 @@ const AboutFeature = () => (
       </div>
       <div className="lg:w-1/2 xl:w-3/5">
         <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
-          <img src="https://lh3.googleusercontent.com/p/AF1QipPeMITNvmIep0Sda0-iVxs0a5YV96c3J9O1ry3I=w600-h0" alt="" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
+          <img src="/certification.jpg" alt="" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
         </div>
       </div>
     </div>

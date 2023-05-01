@@ -28,7 +28,7 @@ const Intro = () => {
                   onExit={() => setCounterOn(false)}
                 >
                   <div className="text-4xl font-bold text-gray-900">
-                    {counterOn && <CountUp start={0} end={80} duration={2} delay={0} /> }
+                    {counterOn && <CountUp start={0} end={200} duration={2} delay={0} /> }
                   </div>
                 </ScrollTrigger>
 

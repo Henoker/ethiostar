@@ -8,7 +8,6 @@ import Footer from './Footer';
 import OurServices from './OurServices';
 import MarqueeSlider from './MarqueeSlider';
 import TestimonialSolo from './TestimonialSolo';
-import CommonHero from './CommonHero';
 
 export {
   Navbar,
@@ -24,5 +23,4 @@ export {
   OurServices,
   MarqueeSlider,
   TestimonialSolo,
-  CommonHero,
 };

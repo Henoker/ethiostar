@@ -39,6 +39,7 @@ import DtpFeature from './DtpFeature';
 import AiLottie from './AiLottie';
 import AiHero from './AiHero';
 import AiFeature from './AiFeature';
+import InterpretationHero from './InterpretationHero';
 
 export {
   Hero,
@@ -82,4 +83,5 @@ export {
   AiLottie,
   AiHero,
   AiFeature,
+  InterpretationHero,
 };

@@ -97,7 +97,7 @@ const QuoteContainer = () => {
                           className="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           id="target-lang" value={targetLang} onChange={handleTargetLangChange}
                         >
-                          <option value="" disabled>To</option>
+                          <option value="" disabled>Select a language</option>
                           {LANGUAGES.map((language) => (
                             <option key={language} value={language}>{language}</option>
                           ))}
@@ -282,7 +282,7 @@ const QuoteContainer = () => {
         </div>
         <div className="mt-12 text-center">
           <a
-            href="#"
+            href="#contact"
             className="inline-block rounded bg-[#B3FF17] px-12 py-3 text-sm font-medium text-black transition hover:bg-teal-100 focus:outline-none focus:ring focus:ring-yellow-400"
           >
             Order Today

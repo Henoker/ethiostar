@@ -98,7 +98,7 @@ const ServicesSummary = () => (
         <div className="space-y-4  bg-[#B3FF17] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
           <img alt="" className="object-cover h-56 w-56 mx-auto mb-4 hover:scale-125 ease-in duration-500 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
           <div className="flex flex-col items-center">
-            <h4 className="text-xl text-black font-semibold">Voiceovers Services</h4>
+            <h4 className="text-xl text-black font-semibold">Voiceover Services</h4>
             <p className="ml-4 mr-4 justify-center text-base leading-relaxed text-gray-900">From television, film, audio-only, and online content to training and e-learning materials, our voiceover actors have the expertise and experience to convey your message to your audiences.</p>
             <div className="flex mt-2 space-x-2 pb-4">
               <a rel="noopener noreferrer" href="/services/audio-services" title="Voiceovers Services" className="dark:text-gray-400">

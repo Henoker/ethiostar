@@ -25,7 +25,7 @@ const SplitSection = () => (
               Different languages. One reliable solution.
             </h2>
             <p className="mt-4 text-gray-800">
-              Any expanding firm needs a translation service to help you communicate with your target
+              By using our document translation services you can be able to communicate with your target
               market efficiently. Ethiostar America is a translation company that can handle any kind of job,
               whether you need a technical paper translated or a marketing campaign localized.
 
@@ -35,7 +35,7 @@ const SplitSection = () => (
               african languages translation and localization services.
             </p>
             <a
-              href="#"
+              href="/quote"
               className="mt-8 inline-block rounded border border-teal-100text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover px-12 py-3 text-sm font-medium text-white hover:text-gray-300 focus:outline-none focus:ring active:text-indigo-500"
             >
               Request a Quote

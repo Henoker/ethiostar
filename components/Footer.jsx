@@ -121,6 +121,14 @@ const Footer = () => (
                     Services
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="/quote"
+                    className="text-gray-100 transition hover:opacity-75"
+                  >
+                    Get Instant Quote
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>

@@ -1,15 +1,13 @@
-import { CommonHero } from "../../../../components";
-import { Feedback, InterpretationOverview, LottieAnimation, SplitSection } from "../../../../sections";
-
+import { Feedback, InterpretationHero, InterpretationOverview, LottieAnimation } from '../../../../sections';
 
 const Page = () => (
-    <div className="theme-dark-blue bg-skin-fill">
-        <CommonHero/>
-        <InterpretationOverview/>
-        <LottieAnimation/>
-        <Feedback/>
-    </div>    
+  <div className="theme-dark-blue bg-skin-fill">
+    <InterpretationHero />
+    <InterpretationOverview />
+    <LottieAnimation />
+    <Feedback />
+  </div>
 
 );
 
-export default Page
+export default Page;

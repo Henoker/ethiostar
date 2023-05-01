@@ -22,7 +22,7 @@ const GetStarted = () => (
       >
 
         <img
-          src="/logoetam.png"
+          src="/logoam.png"
           alt="whats-new"
           className="w-[90%] h-[90%] object-contain"
         />

@@ -14,7 +14,7 @@ const InterpretationOverview = () => (
           </svg>
           <div className="ml-3">
             <dt className="text-lg font-medium">On-site interpretation</dt>
-            <dd className="mt-2 dark:text-gray-400">ur experienced interpreters will accompany you to your event or meeting and provide accurate interpretation in real-time. We offer on-site interpretation for a wide range of events, including conferences, seminars, and business meetings.</dd>
+            <dd className="mt-2 dark:text-gray-400">Our experienced interpreters will accompany you to your event or meeting and provide accurate interpretation in real-time. We offer on-site interpretation for a wide range of events, including conferences, seminars, and business meetings.</dd>
           </div>
         </div>
         <div className="flex">

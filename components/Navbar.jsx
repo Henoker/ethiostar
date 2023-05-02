@@ -43,24 +43,24 @@ const Navbar = () => {
       <div
         className={`w-full text-amber-400 opacity-90 mx-4 block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}
       >
-        <div className="text-sm lg:flex-grow bg-white md:bg-transparent">
+        <div className="text-sm lg:flex-grow bg-gray-900 divide-gray-600 md:bg-transparent">
           <Link
             href="/"
-            className="block mt-4 lg:inline-block lg:mt-0 text-blue-700 md:text-blue-200 hover:text-blue-500 hover:underline mx-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 md:text-blue-200 hover:text-blue-500 hover:underline mx-4"
             onClick={() => setIsOpen(!isOpen)}
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="block mt-4 lg:inline-block lg:mt-0 text-blue-700 md:text-blue-200 hover:text-blue-500 hover:underline  mx-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 md:text-blue-200 hover:text-blue-500 hover:underline  mx-4"
             onClick={() => setIsOpen(!isOpen)}
           >
             About
           </Link>
           <Link
             href="/services"
-            className="block mt-4 lg:inline-block lg:mt-0 text-blue-700 md:text-blue-200 hover:text-blue-500 hover:underline ml-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 md:text-blue-200 hover:text-blue-500 hover:underline ml-4"
             onClick={() => setIsOpen(!isOpen)}
           >
             Services
@@ -87,11 +87,11 @@ const Navbar = () => {
             {/* Dropdown menu */}
             {showSubMenu && (
               <div
-                className="absolute left-0 z-20 w-48 py-2 ml-0 mt-2 origin-top-right bg-white rounded-md shadow-xl dark:bg-gray-800"
+                className="absolute left-0 z-20 w-48 py-2 ml-0 mt-2 origin-top-right rounded-md shadow-xl bg-gray-800"
               >
                 <Link
                   href="/services/translation"
-                  className="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
                   onClick={() => setShowSubMenu(!showSubMenu)}
                 >
                   {' '}
@@ -99,7 +99,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href="/services/localization"
-                  className="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
                   onClick={() => setShowSubMenu(!showSubMenu)}
                 >
                   {' '}
@@ -107,15 +107,15 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href="/services/interpretation"
-                  className="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
                   onClick={() => setShowSubMenu(!showSubMenu)}
                 >
                   {' '}
                   Interpretation{' '}
                 </Link>
                 <Link
-                  href="/services/audio-services"
-                  className="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                  href="/services/audioservices"
+                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
                   onClick={() => setShowSubMenu(!showSubMenu)}
                 >
                   {' '}
@@ -123,15 +123,15 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href="/services/dtp"
-                  className="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
                   onClick={() => setShowSubMenu(!showSubMenu)}
                 >
                   {' '}
                   DTP{' '}
                 </Link>
                 <Link
-                  href="/services/ai-and-machine-translation"
-                  className="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                  href="/services/machine"
+                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
                   onClick={() => setShowSubMenu(!showSubMenu)}
                 >
                   {' '}
@@ -142,14 +142,14 @@ const Navbar = () => {
           </div>
           <Link
             href="/industries"
-            className="block mt-4 lg:inline-block lg:mt-0 text-blue-700 md:text-blue-200 hover:text-blue-500 hover:underline  mx-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 md:text-blue-200 hover:text-blue-500 hover:underline  mx-4"
             onClick={() => setIsOpen(!isOpen)}
           >
             Industries
           </Link>
           <Link
             href="/quote"
-            className="block bg-amber-500 border-0 py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-blue-700 md:text-gray-200 hover:text-blue-500 hover:underline  mx-4"
+            className="block bg-amber-500 border-0 py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-gray-700 md:text-gray-700 hover:text-blue-500 hover:underline mx-4"
             onClick={() => setIsOpen(!isOpen)}
           >
             Instant Quote

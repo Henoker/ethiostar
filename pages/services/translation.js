@@ -1,6 +1,6 @@
-import { Feedback, OurProcess, ServicesFeature, SplitSection } from '../../../../sections';
+import { Feedback, OurProcess, ServicesFeature, SplitSection } from '../../sections';
 
-const Page = () => (
+const Translation = () => (
   <div className="theme-dark-blue bg-skin-fill">
     <SplitSection />
     <ServicesFeature />
@@ -10,4 +10,4 @@ const Page = () => (
 
 );
 
-export default Page;
+export default Translation;

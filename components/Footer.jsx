@@ -60,7 +60,7 @@ const Footer = () => (
                 </li>
                 <li>
                   <a
-                    href="/services/audio-services"
+                    href="/services/audioservices"
                     className="text-gray-100 transition hover:opacity-75"
                   >
                     Audio Services
@@ -76,7 +76,7 @@ const Footer = () => (
                 </li>
                 <li>
                   <a
-                    href="/services/ai-and-machine-translation"
+                    href="/services/machine"
                     className="text-gray-100 transition hover:opacity-75"
                   >
                     Machine Traslation

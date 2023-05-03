@@ -1,4 +1,4 @@
-import Head from 'next/head';
+// import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import { About, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
 
@@ -6,7 +6,7 @@ const Page = () => {
   const keywords = ['Ethiostar America', 'african languages', 'translation', 'localization', 'document translation', 'proofreading', 'mobile localization', 'website localization', 'software localization', 'interpretation', 'voiceover', 'desktop publishing', 'Fremont, California'];
   return (
     <div className="theme-dark-blue bg-skin-fill">
-      <Head>
+      {/* <Head>
         <title>Ethiostar America LLC</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Ethiostar America is a Fremont, California-based translation and localization LLC company. We provide document translation, proofreading, mobile localization, website localization and software localization, interpretation, voiceover, desktop publishing, and more." />
@@ -24,7 +24,7 @@ const Page = () => {
         <meta name="twitter:image" content="/ethiostar-america-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> */}
       <NextSeo
         title="Ethiostar America Translation and Localization LLC"
         description="Ethiostar America is a Fremont, California-based translation and localization LLC company. We provide document translation, proofreading, mobile localization, website localization and software localization, interpretation, voiceover, desktop publishing, and more."

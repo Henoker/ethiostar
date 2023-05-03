@@ -43,7 +43,7 @@ const Navbar = () => {
       <div
         className={`w-full text-amber-400 opacity-90 mx-4 block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}
       >
-        <div className="text-sm lg:flex-grow bg-gray-900 divide-gray-600 md:bg-transparent">
+        <div className="text-sm lg:flex-grow border border-gray-100 bg-gray-900 divide-gray-600 p-4 md:p-0 mt-4  md:bg-transparent border-transparent">
           <Link
             href="/"
             className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 md:text-blue-200 hover:text-blue-500 hover:underline mx-4"

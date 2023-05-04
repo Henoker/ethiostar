@@ -1,5 +1,9 @@
+# *
 User-agent: *
-allow: /
+Allow: /
 
+# Host
+Host: https://www.ethiostaramerica.com/
 
-sitemap: https://ethiostaramerica.com/api/my-sitemap
+# Sitemaps
+Sitemap: https://www.ethiostaramerica.com/sitemap.xml

@@ -1,0 +1,5 @@
+User-agent: *
+allow: /
+
+
+sitemap: https://ethiostaramerica.com/api/my-sitemap

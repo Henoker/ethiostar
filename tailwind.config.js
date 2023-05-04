@@ -2,10 +2,10 @@
 function withOpacity(variableName) {
   return ({ opacityValue }) => {
     if (opacityValue !== undefined) {
-      return `rgba(var(${variableName}), ${opacityValue})`
+      return `rgba(var(${variableName}), ${opacityValue})`;
     }
-    return `rgb(var(${variableName}))`
-  }
+    return `rgb(var(${variableName}))`;
+  };
 }
 module.exports = {
   content: [
@@ -45,9 +45,10 @@ module.exports = {
         },
       },
     },
-   
+
   },
   plugins: [
-    require('@tailwindcss/forms')
+    // eslint-disable-next-line global-require
+    require('@tailwindcss/forms'),
   ],
 };

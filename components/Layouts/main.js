@@ -5,7 +5,9 @@ import Footer from '../Footer';
 const Main = ({ children }) => (
   <>
     <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      {/* <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Ethiostar America is a Fremont, California-based translation and localization LLC company. We provide document translation, proofreading, mobile localization, website localization and software localization, interpretation, voiceover, desktop publishing, and more." />
       <meta name="author" content="Ethiostar America" />
       <meta name="author" content="Ethiostar America" />
@@ -20,7 +22,7 @@ const Main = ({ children }) => (
       <meta name="og:title" content="Ethiostar America - Translation and Localization LLC" />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="https://www.ethiostaramerica.com/card.png" />
-      <title>Ethiosta America - Homepage</title>
+      <title>Ethiosta America - Homepage</title> */}
     </Head>
     <Navbar />
 

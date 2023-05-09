@@ -8,6 +8,7 @@ import Footer from './Footer';
 import OurServices from './OurServices';
 import MarqueeSlider from './MarqueeSlider';
 import TestimonialSolo from './TestimonialSolo';
+import SEOHead from './SEOHead';
 
 export {
   Navbar,
@@ -23,4 +24,5 @@ export {
   OurServices,
   MarqueeSlider,
   TestimonialSolo,
+  SEOHead,
 };

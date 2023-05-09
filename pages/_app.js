@@ -1,6 +1,6 @@
 // import { App, Container } from 'next/app';
 import '../styles/globals.css';
-import { DefaultSeo } from 'next-seo';
+// import { DefaultSeo } from 'next-seo';
 import { Raleway } from '@next/font/google';
 import Layout from '../components/Layouts/main';
 
@@ -55,7 +55,7 @@ const raleway = Raleway({
 // }
 const MyApp = ({ Component, pageProps }) => (
   <Layout className={`${raleway.variable} font-sans`}>
-    <DefaultSeo
+    {/* <DefaultSeo
       title="Ethiostar America Translation and Localization LLC"
       description="Ethiostar America is a Fremont, California-based translation and localization LLC company. We provide document translation, proofreading, mobile localization, website localization and software localization, interpretation, voiceover, desktop publishing, and more"
       openGraph={{
@@ -69,7 +69,7 @@ const MyApp = ({ Component, pageProps }) => (
         site: '@EthiostarB',
         cardType: 'summary_large_image',
       }}
-    />
+    /> */}
     <Component {...pageProps} />
   </Layout>
 );

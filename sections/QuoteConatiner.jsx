@@ -217,7 +217,7 @@ const QuoteContainer = () => {
             href="/services/digital-campaigns"
           >
             <svg
-              className="h-10 w-10 text-[#B3FF17]"
+              className="h-10 w-10 text-[#9fe218]"
               fill="none"
               stroke="currentColor"
               strokeWidth="1.5"
@@ -238,7 +238,7 @@ const QuoteContainer = () => {
             href="/services/digital-campaigns"
           >
             <svg
-              className="h-10 w-10 text-[#B3FF17]"
+              className="h-10 w-10 text-[#9fe218]"
               fill="none"
               stroke="currentColor"
               strokeWidth="1.5"
@@ -260,7 +260,7 @@ const QuoteContainer = () => {
             href="/services/digital-campaigns"
           >
             <svg
-              className="h-10 w-10 text-[#B3FF17]"
+              className="h-10 w-10 text-[#9fe218]"
               fill="none"
               stroke="currentColor"
               strokeWidth="1.5"
@@ -283,7 +283,7 @@ const QuoteContainer = () => {
         <div className="mt-12 text-center">
           <a
             href="#contact"
-            className="inline-block rounded bg-[#B3FF17] px-12 py-3 text-sm font-medium text-black transition hover:bg-teal-100 focus:outline-none focus:ring focus:ring-yellow-400"
+            className="inline-block rounded bg-[#9fe218] px-12 py-3 text-sm font-medium text-black transition hover:bg-teal-100 focus:outline-none focus:ring focus:ring-yellow-400"
           >
             Order Today
           </a>

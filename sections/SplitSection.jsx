@@ -18,8 +18,8 @@ const SplitSection = () => (
             />
           </div>
         </div>
-        <div className="relative flex items-center bg-[#B3FF17]">
-          <span className="hidden lg:absolute lg:inset-y-0 lg:-left-16 lg:block lg:w-16 lg:bg-[#B3FF17]" />
+        <div className="relative flex items-center bg-[#9fe218]">
+          <span className="hidden lg:absolute lg:inset-y-0 lg:-left-16 lg:block lg:w-16 lg:bg-[#9fe218]" />
           <div className="p-8 sm:p-16 lg:p-24">
             <h2 className="text-2xl font-bold sm:text-3xl">
               Different languages. One reliable solution.

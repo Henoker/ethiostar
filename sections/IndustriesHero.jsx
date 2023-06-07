@@ -23,7 +23,7 @@ const IndustriesHero = () => (
         <div className="mt-4 md:mt-8">
           <a
             href="#"
-            className="inline-block rounded bg-[#B3FF17] px-12 py-3 text-sm font-medium text-black transition hover:bg-[#B3FF61] focus:outline-none focus:ring focus:ring-yellow-400"
+            className="inline-block rounded bg-[#9fe218] px-12 py-3 text-sm font-medium text-black transition hover:bg-[#B3FF61] focus:outline-none focus:ring focus:ring-yellow-400"
           >
             Get Started Today
           </a>

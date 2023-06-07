@@ -11,7 +11,7 @@ const ServicesSummary = () => (
         <p className="max-w-2xl text-white">Ethiostar America offers high-quality language services using our cutting-edge technology solutions to improve efficiency and reduce costs.!</p>
       </div>
       <div className="grid w-full grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-        <div className="space-y-4  bg-[#B3FF17] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
+        <div className="space-y-4  bg-[#9fe218] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
           <img alt="" className="object-cover h-56 w-56 hover:scale-125 ease-in duration-500 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1619418602850-35ad20aa1700?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" />
           <div className="flex flex-col items-center">
             <h4 className="text-xl text-black font-semibold">Document Translations</h4>
@@ -25,7 +25,7 @@ const ServicesSummary = () => (
             </div>
           </div>
         </div>
-        <div className="space-y-4  bg-[#B3FF17] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
+        <div className="space-y-4  bg-[#9fe218] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
           <img alt="" className="object-cover h-56 w-56 hover:scale-125 ease-in duration-500 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1005&q=80" />
           <div className="flex flex-col items-center">
             <h4 className="text-xl text-black font-semibold">Website Localization</h4>
@@ -39,7 +39,7 @@ const ServicesSummary = () => (
             </div>
           </div>
         </div>
-        <div className="space-y-4 bg-[#B3FF17] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
+        <div className="space-y-4 bg-[#9fe218] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
           <img alt="" className="object-cover h-56 w-56 hover:scale-125 ease-in duration-500 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1553775282-20af80779df7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
           <div className="flex flex-col items-center">
             <h4 className="text-xl text-black font-semibold">Interpretation</h4>
@@ -53,7 +53,7 @@ const ServicesSummary = () => (
             </div>
           </div>
         </div>
-        <div className="space-y-4  bg-[#B3FF17] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
+        <div className="space-y-4  bg-[#9fe218] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
           <img alt="" className="object-cover h-56 w-56 mx-auto hover:scale-125 ease-in duration-500 mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1565120130276-dfbd9a7a3ad7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
           <div className="flex flex-col items-center">
             <h4 className="text-xl text-black font-semibold">Software Localization</h4>
@@ -67,7 +67,7 @@ const ServicesSummary = () => (
             </div>
           </div>
         </div>
-        <div className="space-y-4  bg-[#B3FF17] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
+        <div className="space-y-4  bg-[#9fe218] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
           <img alt="" className="object-cover h-56 w-56 mx-auto mb-4 bg-center hover:scale-125 ease-in duration-500 rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1572028412480-0a75271c6bb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" />
           <div className="flex flex-col items-center">
             <h4 className="text-xl text-black font-semibold">Desktop Publishing</h4>
@@ -81,7 +81,7 @@ const ServicesSummary = () => (
             </div>
           </div>
         </div>
-        <div className="space-y-4  bg-[#B3FF17] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
+        <div className="space-y-4  bg-[#9fe218] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
           <img alt="" className="object-cover h-56 mx-auto mb-4 hover:scale-125 ease-in duration-500 bg-center rounded-sm dark:bg-gray-500" src="https://plus.unsplash.com/premium_photo-1676637656210-390da73f4951?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
           <div className="flex flex-col items-center">
             <h4 className="text-xl text-black font-semibold">AI and Machine Translation</h4>
@@ -95,7 +95,7 @@ const ServicesSummary = () => (
             </div>
           </div>
         </div>
-        <div className="space-y-4  bg-[#B3FF17] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
+        <div className="space-y-4  bg-[#9fe218] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
           <img alt="" className="object-cover h-56 w-56 mx-auto mb-4 hover:scale-125 ease-in duration-500 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
           <div className="flex flex-col items-center">
             <h4 className="text-xl text-black font-semibold">Voiceover Services</h4>
@@ -109,7 +109,7 @@ const ServicesSummary = () => (
             </div>
           </div>
         </div>
-        <div className="space-y-4 bg-[#B3FF17] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
+        <div className="space-y-4 bg-[#9fe218] pt-4 overflow-hidden rounded-lg border border-gray-100 shadow-sm">
           <img alt="" className="object-cover h-56 w-56 mx-auto hover:scale-125 ease-in duration-500 mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://images.unsplash.com/photo-1615458318132-1f151a3d18f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
           <div className="flex flex-col items-center">
             <h4 className="text-xl text-black font-semibold">Transcription Services</h4>

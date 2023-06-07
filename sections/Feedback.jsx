@@ -121,7 +121,7 @@ export default function Feedback() {
         </div>
         <div className="mt-8 lg:w-1/2 lg:mx-6">
 
-          <div className="w-full px-8 py-10 mx-auto overflow-hidden rounded-lg shadow-2xl bg-[#B3FF17] lg:max-w-xl shadow-black/50">
+          <div className="w-full px-8 py-10 mx-auto overflow-hidden rounded-lg shadow-2xl bg-[#9fe218] lg:max-w-xl shadow-black/50">
             {alertMessage && (
 
             <div className="flex bg-green-lighter max-w-sm mb-4">

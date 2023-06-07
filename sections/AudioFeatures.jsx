@@ -5,7 +5,7 @@ const AudioFeatures = () => (
     <div className="container mx-auto space-y-12">
       <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
         <img src="https://images.unsplash.com/photo-1611532736579-6b16e2b50449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHN0dWRpbyUyMGhlYWRwaG9uZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" className="h-80 bg-gray-500 aspect-video" />
-        <div className="flex flex-col justify-center flex-1 p-6 bg-[#B3FF17] ">
+        <div className="flex flex-col justify-center flex-1 p-6 bg-[#9fe218] ">
           <span className="text-xs uppercase text-gray-900">Conatct us Now</span>
           <h3 className="text-3xl font-bold text-black">Transcription Services</h3>
           <p className="my-6 text-gray-900">Our transcription services are designed to help you accurately and efficiently transcribe audio and video content in any language. With our cutting-edge technology and experienced transcriptionists, we can deliver high-quality transcriptions that are accurate, clear, and easy to read. We specialize in a variety of transcription services, including legal, medical, academic, and more.</p>
@@ -13,7 +13,7 @@ const AudioFeatures = () => (
       </div>
       <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
         <img src="https://images.unsplash.com/photo-1633933304466-2ef96bef43b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="" className="h-80 dark:bg-gray-500 aspect-video" />
-        <div className="flex flex-col justify-center flex-1 p-6 bg-[#B3FF17] ">
+        <div className="flex flex-col justify-center flex-1 p-6 bg-[#9fe218] ">
           <span className="text-xs uppercase text-gray-900">Contact us Now</span>
           <h3 className="text-3xl font-bold text-black">Voiceover services </h3>
           <p className="my-6 text-gray-900">Our voiceover services are perfect for businesses and individuals looking to take their message to a global audience. With our professional voiceover artists, we can provide voiceovers in any language, from English to Mandarin to Arabic. We work closely with you to understand your goals and deliver a voiceover that perfectly captures your message and brand.</p>

@@ -300,7 +300,7 @@ const LocalizationFeature = () => (
         Discover our <br /> <span className="text-blue-500">Mobile</span> and <span className="text-blue-500">app localization</span> services
       </h1>
       <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
-        <div className="flex flex-col items-center p-6 space-y-3 text-center rounded-xl  bg-[#B3FF17]">
+        <div className="flex flex-col items-center p-6 space-y-3 text-center rounded-xl  bg-[#9fe218]">
           <span className="inline-block p-3 rounded-full text-black bg-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -326,7 +326,7 @@ const LocalizationFeature = () => (
           </p>
 
         </div>
-        <div className="flex flex-col items-center p-6 space-y-3 text-center rounded-xl  bg-[#B3FF17]">
+        <div className="flex flex-col items-center p-6 space-y-3 text-center rounded-xl  bg-[#9fe218]">
           <span className="inline-block p-3 rounded-full text-black bg-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -352,7 +352,7 @@ const LocalizationFeature = () => (
           </p>
 
         </div>
-        <div className="flex flex-col items-center p-6 space-y-3 text-center rounded-xl bg-[#B3FF17]">
+        <div className="flex flex-col items-center p-6 space-y-3 text-center rounded-xl bg-[#9fe218]">
           <span className="inline-block p-3rounded-full text-black bg-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"

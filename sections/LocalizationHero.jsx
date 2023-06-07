@@ -154,7 +154,7 @@ const LocalizationHero = () => (
         <div className="flex items-center">
           <a
             href="#localization"
-            className="px-8 py-3 m-2 text-lg font-semibold rounded bg-[#B3FF17] text-gray-900"
+            className="px-8 py-3 m-2 text-lg font-semibold rounded bg-[#9fe218] text-gray-900"
           >
             Get started
           </a>

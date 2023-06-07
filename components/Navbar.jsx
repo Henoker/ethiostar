@@ -21,7 +21,7 @@ const Navbar = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           // className="flex items-center px-3 py-2 rounded text-white hover:text-gray-300"
-          className="inline-flex items-center p-2 ml-12 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="inline-flex items-center p-2 ml-12 text-sm text-white rounded-lg md:hidden"
           type="button"
         >
           <svg

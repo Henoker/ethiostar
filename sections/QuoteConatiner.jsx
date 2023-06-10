@@ -140,7 +140,8 @@ const QuoteContainer = () => {
                 <div className="flex flex-col max-w-md p-6 space-y-4 divide-y sm:w-96 sm:p-10 divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
                   <h2 className="text-2xl font-semibold">Quote Summary</h2>
                   <ul className="flex flex-col pt-4 space-y-2">
-                    <li className="flex items-start justify-between">
+                    {/* <li className="flex items-start justify-between"> */}
+                    <li className="space-y-2 col-span-full lg:col-span-1">
                       <h3>Language:
                         <span className="text-sm dark:text-violet-400">Source</span>
                       </h3>
@@ -149,7 +150,8 @@ const QuoteContainer = () => {
 
                       </div>
                     </li>
-                    <li className="flex items-start justify-between">
+                    {/* <li className="flex items-start justify-between"> */}
+                    <li className="space-y-2 col-span-full lg:col-span-1">
                       <h3>Language:
                         <span className="text-sm dark:text-violet-400">Target</span>
                       </h3>

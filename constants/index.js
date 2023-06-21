@@ -27,9 +27,10 @@ export const exploreWorlds = [
 ];
 
 export const startingFeatures = [
-  'We examine the source files, and we share a precise delivery schedule.',
-  "As agreed, we work on the files, communicate our progress, and solicit client's opinions",
-  'Smooth Delivery after analyzing feedback and completing the QA.',
+  'We prioritize the best interests of our clients, valuing their time and money',
+  'Our commitment to superior quality sets us apart as a leading translation service',
+  'We uphold uncompromising honesty, integrity, and honor our commitments',
+  'We strive to contribute to a better world by providing free or affordable services, inspiring the youth, and enabling effective communication',
 ];
 
 export const newFeatures = [
@@ -37,13 +38,13 @@ export const newFeatures = [
     imgUrl: '/vrpano.svg',
     title: 'A new world',
     subtitle:
-        'we have the latest update with new world for you to try never mind',
+        'Ethiostar Translation Company: Pioneering the Path to a New World of Global Communication.',
   },
   {
     imgUrl: '/headset.svg',
     title: 'More realistic',
     subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
+        'Making the World More Realistic through Accurate and Contextually Appropriate Translations.',
   },
 ];
 

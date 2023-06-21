@@ -7,16 +7,12 @@ const InterpretationHero = () => (
         <h1 className="text-4xl mt-12 font-bold leading-none sm:text-5xl">
           Ethiostar<span className="text-violet-400"> Interpreting</span> Services
         </h1>
-        <p className="mt-6 mb-8 text-lg sm:mb-12">You might require interpreting services for a
-          <br className="hidden md:inline lg:hidden" /> variety of settings, such as sizable conferences,
-          <br className="hidden md:inline lg:hidden" /> unofficial gatherings, court cases, medical
-          <br className="hidden md:inline lg:hidden" /> appointments, in-person conversations, and phone
-          <br className="hidden md:inline lg:hidden" /> . Participants who don't speak or understand
-          <br className="hidden md:inline lg:hidden" /> the primary language can benefit greatly from
-          <br className="hidden md:inline lg:hidden" /> interpreters. To guarantee a great experience for
-          <br className="hidden md:inline lg:hidden" /> your participants and a fruitful relationship for
-          <br className="hidden md:inline lg:hidden" /> everyone, Ethiostar America can provide in-person,
-          video, or phone-based interpreters for your engagements.
+        <p className="mt-6 mb-8 text-lg sm:mb-12">At Ethiostar, our professional interpretation services
+          <br className="hidden md:inline lg:hidden" /> cater to diverse client needs. Our skilled interpreters
+          <br className="hidden md:inline lg:hidden" /> excel in various languages, ensuring precise communication.
+          <br className="hidden md:inline lg:hidden" /> Whether for conferences, interviews, presentations,
+          <br className="hidden md:inline lg:hidden" />  or one-on-one interactions, we provide accurate,
+          <br className="hidden md:inline lg:hidden" /> simultaneous, consecutive, or whispered interpretation.
         </p>
         <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
           <a rel="noopener noreferrer" href="#contact" className="px-8 py-3 text-lg font-semibold rounded bg-violet-400 text-gray-900">Contact Us</a>

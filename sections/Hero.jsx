@@ -18,7 +18,7 @@ const images = [
   {
     src: '/GoldenGate.jpg',
     alt: 'Image 3',
-    text: 'Bridging success by providing best translation services.',
+    text: 'Connecting success through exceptional translation services',
   },
 ];
 

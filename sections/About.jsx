@@ -22,18 +22,14 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[28px] text-[20px] text-center text-black"
       >
-        <span className="font-extrabold text-gray-900">Ethiostar </span> team inspired by a shared goal
-        to achieve excellence; we are a group of translators and interpreters working together as partners.
-        we&apos;ve been at the forefront of the translation sector, adopting inventive and forward-thinking
-        technology to ensure our standards always remain high. We use the latest versions of quality assurance
-        and project management tools, keeping our projects on {' '}
+        <span className="font-extrabold text-gray-900">Ethiostar </span> is powered by a team of passionate translators driven by a common pursuit of excellence. As a collective of dedicated professionals, we have established ourselves as leaders in the translation industry across sub-Saharan Africa.{' '}
         <span className="font-extrabold text-gray-900">
-          track and meeting customer expectations
+          Embracing innovative and progressive technologies,
         </span>{' '}
-        every time. we have integrated{' '}
-        <span className="font-extrabold text-gray-900">ISO 17100</span> into our operations so as to fulfill our
-        committement to providing the {' '}
-        <span className="font-extrabold text-gray-900">highest standard of translation and localization </span> to our clients.
+        we maintain the highest standards in our work. Utilizing cutting-edge quality assurance and project management tools, we ensure that our projects stay on schedule and consistently meet our clients' expectations. With ISO 9001 and ISO 17100 certifications, we are fully committed to delivering the utmost quality in translation and localization services to our valued clients.{' '}
+        With <span className="font-extrabold text-gray-900">9001 and ISO 17100</span> certifications,
+        we are fully committed to delivering {' '}
+        <span className="font-extrabold text-gray-900">the utmost quality in translation and localization services </span> to our valued clients.
       </motion.p>
 
       <motion.img

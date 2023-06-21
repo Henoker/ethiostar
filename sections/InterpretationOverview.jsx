@@ -5,7 +5,7 @@ const InterpretationOverview = () => (
     <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-extrabold sm:text-4xl">All the Services you want</h2>
-        <p className="mt-4 text-lg dark:text-gray-400">No matter what type of interpretation services you need, our team of experienced interpreters is here to help. Contact us today to learn more about how we can assist you with your interpretation needs.</p>
+        <p className="mt-4 text-lg dark:text-gray-400">No matter what type of interpretation services you need, our team of experienced interpreters is here to help. We understand the importance of cultural sensitivity and confidentiality, and our interpreters are trained to maintain professionalism and discretion at all times. With Ethiostar, you can trust us to bridge the language gap and facilitate seamless communication for your global interactions. Contact us today to learn more about how we can assist you with your interpretation needs.</p>
       </div>
       <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
         <div className="flex">

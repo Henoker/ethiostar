@@ -139,7 +139,7 @@ const Footer = () => (
           <nav aria-label="Footer Navigation - Support">
             <ul className="flex flex-wrap gap-4 text-xs">
               <li>
-                <a href="#" className="text-gray-300 transition hover:opacity-75">
+                <a href="/termsandconditions" className="text-gray-300 transition hover:opacity-75">
                   Terms &amp; Conditions
                 </a>
               </li>

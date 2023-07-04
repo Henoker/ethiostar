@@ -12,15 +12,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-2 bg-gray-900 bg-opacity-50 fixed z-50 w-full">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="flex items-center justify-between flex-wrap p-1 bg-gray-900 bg-opacity-50 fixed z-50 w-full">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <div className="flex items-center">
           <img src="/logo5.svg" className="w-100 h-10 mr-12" alt="Logo" />
         </div>
-        {/* <div className="flex w-full lg:hidden "> */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          // className="flex items-center px-3 py-2 rounded text-white hover:text-gray-300"
           className="inline-flex items-center p-2 ml-12 text-sm text-white rounded-lg md:hidden"
           type="button"
         >

@@ -4,6 +4,8 @@
 
 'use client';
 
+import CookiesPolicy from './CookiesPolicy';
+
 const Footer = () => (
 
   <footer aria-label="Site Footer" className="theme-dark-blue bg-skin-fill lg:grid lg:grid-cols-5">
@@ -139,18 +141,13 @@ const Footer = () => (
           <nav aria-label="Footer Navigation - Support">
             <ul className="flex flex-wrap gap-4 text-xs">
               <li>
-                <a href="/termsandconditions" className="text-gray-300 transition hover:opacity-75">
+                <a href="Terms&conditions.pdf" download className="text-gray-300 transition hover:opacity-75">
                   Terms &amp; Conditions
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 transition hover:opacity-75">
+                <a href="ethiostarPolicy.pdf" download className="text-gray-300 transition hover:opacity-75">
                   Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 transition hover:opacity-75">
-                  Cookies
                 </a>
               </li>
             </ul>
@@ -158,11 +155,14 @@ const Footer = () => (
           <p className="mt-8 text-xs text-gray-300 sm:mt-0">
             © 2022. Ethiostar LLC. All rights reserved.
           </p>
+          <CookiesPolicy />
         </div>
       </div>
     </div>
   </footer>
 
 );
+
+Footer.getInitialProps = async ({ req }) => ({ req });
 
 export default Footer;

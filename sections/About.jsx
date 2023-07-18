@@ -26,8 +26,8 @@ const About = () => (
         <span className="font-extrabold text-gray-900">
           Embracing innovative and progressive technologies,
         </span>{' '}
-        we maintain the highest standards in our work. Utilizing cutting-edge quality assurance and project management tools, we ensure that our projects stay on schedule and consistently meet our clients' expectations. With ISO 9001 and ISO 17100 certifications, we are fully committed to delivering the utmost quality in translation and localization services to our valued clients.{' '}
-        With <span className="font-extrabold text-gray-900">9001 and ISO 17100</span> certifications,
+        we maintain the highest standards in our work. Utilizing cutting-edge quality assurance and project management tools, we ensure that our projects stay on schedule and consistently meet our clients' expectations.{' '}
+        With <span className="font-extrabold text-gray-900">ISO 9001 and ISO 17100</span> certifications,
         we are fully committed to delivering {' '}
         <span className="font-extrabold text-gray-900">the utmost quality in translation and localization services </span> to our valued clients.
       </motion.p>

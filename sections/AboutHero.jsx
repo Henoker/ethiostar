@@ -11,7 +11,9 @@ const AboutHero = () => (
           Ethiostar America
         </h2>
         <p className="hidden max-w-lg text-white mt-4 md:mt-6 md:block md:text-lg md:leading-relaxed">
-          Our people are our greatest asset, and we are not merely a translation company.
+          Our people are our greatest asset, and we are not merely a translation company. We are a group of
+          passionate individuals mostly from East African countries, specializing in Amharic, Afar, Oromo,
+          Somali and Tigrinya Languages.
           We are a group of passionate individuals who consider ourselves a family and strive to become
           the foremost facilitator of global communication.
         </p>

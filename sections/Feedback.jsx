@@ -114,7 +114,7 @@ export default function Feedback() {
                 />
               </svg>
               <span className="mx-2 truncate w-72 text-gray-400">
-                info@ethiostarlocalization.com
+                info@ethiostaramerica.com
               </span>
             </p>
             <p className="flex items-start mx-2">

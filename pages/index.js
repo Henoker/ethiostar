@@ -1,6 +1,6 @@
 // import Head from 'next/head';
 import SEOHead from '../components/SEOHead';
-import { About, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
+import { About, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World, IndustryStats } from '../sections';
 import globalMeta from '../constants/globalmeta';
 
 const Page = () => {
@@ -28,6 +28,7 @@ const Page = () => {
       </div>
 
       <Intro />
+      <IndustryStats />
       <World />
       <MarqueeSlider />
       <div className="relative">

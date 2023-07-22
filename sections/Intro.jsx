@@ -28,7 +28,7 @@ const Intro = () => {
                   onExit={() => setCounterOn(false)}
                 >
                   <div className="text-4xl font-bold text-gray-900">
-                    {counterOn && <CountUp start={0} end={200} duration={2} delay={0} /> }
+                    {counterOn && <CountUp start={0} end={30} duration={2} delay={0} /> }
                   </div>
                 </ScrollTrigger>
 
@@ -38,14 +38,14 @@ const Intro = () => {
             <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
               <div className="bg-[#F1A321] rounded-lg p-6">
                 <div className="text-gray-900">More than</div>
-                <div className="text-4xl font-bold text-gray-900"> {counterOn && <CountUp start={0} end={500} duration={2} delay={1} /> }</div>
+                <div className="text-4xl font-bold text-gray-900"> {counterOn && <CountUp start={0} end={150} duration={2} delay={1} /> }</div>
                 <div className="text-gray-900">Projects Completed</div>
               </div>
             </div>
             <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-4">
               <div className="bg-[#D15D42] rounded-lg p-6">
                 <div className="text-gray-900">More than</div>
-                <div className="text-4xl font-bold text-gray-900"> {counterOn && <CountUp start={0} end={500} duration={2} delay={2} /> }</div>
+                <div className="text-4xl font-bold text-gray-900"> {counterOn && <CountUp start={0} end={6} duration={2} delay={2} /> }</div>
                 <div className="text-gray-900">MM Words Translated </div>
               </div>
             </div>

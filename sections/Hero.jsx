@@ -57,8 +57,9 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gray-900 opacity-75" />
 
         <div className="absolute inset-0 flex text-center">
-          <div className="container mx-auto flex flex-col items-center px-2 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl">
-            <div className="text-center justify-center mt-16 max-w-lg">
+          {/* <div className="container mx-auto flex flex-col items-center px-2 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl"> */}
+          <div className="flex items-center justify-center w-full h-full text-clip px-2">
+            <div className="text-center justify-center mt-16">
               <h1 className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-purple-500 to-yellow-500 ">
                 <span className="text-4xl justify-center mt-8 xs:text-5xl md:text-6xl">{currentText}</span>
 

@@ -139,7 +139,7 @@ export default function Feedback() {
               </a>
             </p>
           </div>
-          <h1 className="mt-6 text-gray-400">Proud member of</h1>
+          <h1 className="mt-8 text-gray-400">Proud member of</h1>
           <img src="/ata.png" alt="" className="p-6 h-52 md:h-64" />
           <img src="/iso_logo.png" alt="" className="p-6 h-52 md:h-64" />
         </div>

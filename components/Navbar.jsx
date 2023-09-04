@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-1 bg-gray-900 bg-opacity-50 fixed z-50 w-full">
+    <nav className="flex items-center justify-between flex-wrap bg-transparent backdrop-blur-lg fixed z-50 w-full">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <div className="flex items-center">
           <img src="/logo5.svg" className="w-100 h-10 mr-12" alt="Logo" />
@@ -44,21 +44,21 @@ const Navbar = () => {
           <div className="text-sm lg:flex-grow border border-gray-100 bg-gray-900 divide-gray-600 p-4 md:p-0 mt-4  md:bg-transparent border-transparent">
             <Link
               href="/"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 md:text-blue-200 hover:text-blue-500 hover:underline mx-4"
+              className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 md:text-gray-100 hover:text-gray-300 hover:underline mx-4"
               onClick={() => setIsOpen(!isOpen)}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 md:text-blue-200 hover:text-blue-500 hover:underline  mx-4"
+              className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 md:text-gray-100 hover:text-gray-300 hover:underline  mx-4"
               onClick={() => setIsOpen(!isOpen)}
             >
               About
             </Link>
             <Link
               href="/services"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 md:text-blue-200 hover:text-blue-500 hover:underline ml-4"
+              className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 md:text-gray-100 hover:text-gray-300 hover:underline ml-4"
               onClick={() => setIsOpen(!isOpen)}
             >
               Services
@@ -140,14 +140,14 @@ const Navbar = () => {
             </div>
             <Link
               href="/industries"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 md:text-blue-200 hover:text-blue-500 hover:underline  mx-4"
+              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 md:text-gray-100 hover:text-gray-300 hover:underline  mx-4"
               onClick={() => setIsOpen(!isOpen)}
             >
               Industries
             </Link>
             <Link
               href="/quote"
-              className="block bg-amber-500 border-0 py-2 px-4 mt-4 lg:inline-block lg:mt-0 text-gray-700 md:text-gray-700 hover:text-blue-500 hover:underline mx-4"
+              className="block bg-amber-500 border-0 py-1 px-4 mt-4 lg:inline-block lg:mt-0 text-gray-700 md:text-gray-700 hover:text-blue-500 hover:underline mx-4"
               onClick={() => setIsOpen(!isOpen)}
             >
               Instant Quote

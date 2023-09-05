@@ -4,7 +4,7 @@
 
 'use client';
 
-import CookiesPolicy from './CookiesPolicy';
+// import CookiesPolicy from './CookiesPolicy';
 
 const Footer = () => (
 
@@ -182,7 +182,7 @@ const Footer = () => (
           <p className="mt-8 text-xs text-gray-300 sm:mt-0">
             © 2022. Ethiostar LLC. All rights reserved.
           </p>
-          <CookiesPolicy />
+          {/* <CookiesPolicy /> */}
         </div>
       </div>
     </div>

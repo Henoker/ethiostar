@@ -45,33 +45,38 @@ const Navbar = () => {
             </button>
             {showSubMenu && (
               <div className="ml-4">
+                <Link href="/services">
+                  <div className="py-2 text-gray-200 hover:text-gray-300 hover:underline" onClick={closeMenu}>
+                    ALL Services
+                  </div>
+                </Link>
                 <Link href="/services/translation">
-                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                  <div className="py-2 text-gray-200 hover:text-gray-300 hover:underline" onClick={closeMenu}>
                     Translation
                   </div>
                 </Link>
                 <Link href="/services/localization">
-                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                  <div className="py-2 text-gray-200 hover:text-gray-300 hover:underline" onClick={closeMenu}>
                     Localization
                   </div>
                 </Link>
                 <Link href="/services/interpretation">
-                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                  <div className="py-2 text-gray-200 hover:text-gray-300 hover:underline" onClick={closeMenu}>
                     Interpretation
                   </div>
                 </Link>
                 <Link href="/services/audioservices">
-                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                  <div className="py-2 text-gray-200 hover:text-gray-300 hover:underline" onClick={closeMenu}>
                     Audio Services
                   </div>
                 </Link>
                 <Link href="/services/dtp">
-                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                  <div className="py-2 text-gray-200 hover:text-gray-300 hover:underline" onClick={closeMenu}>
                     DTP
                   </div>
                 </Link>
                 <Link href="/services/machine">
-                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                  <div className="py-2 text-gray-200 hover:text-gray-300 hover:underline" onClick={closeMenu}>
                     Machine Traslation
                   </div>
                 </Link>
@@ -138,6 +143,13 @@ const Navbar = () => {
             </button>
             {showSubMenu && (
               <div className="ml-4">
+                <Link
+                  href="/services"
+                  className="block py-2 text-gray-200 hover:bg-gray-700 hover:text-white"
+                  onClick={closeMenu}
+                >
+                  ALL SERVICES
+                </Link>
                 <Link
                   href="/services/translation"
                   className="block py-2 text-gray-200 hover:bg-gray-700 hover:text-white"

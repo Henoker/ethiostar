@@ -11,154 +11,188 @@ const Navbar = () => {
     setShowSubMenu(!showSubMenu);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+    setShowSubMenu(false);
+  };
+
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-transparent backdrop-blur-lg fixed z-50 w-full">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
-        <div className="flex items-center">
-          <img src="/logo5.svg" className="w-100 h-10 mr-12" alt="Logo" />
+    <nav className="bg-transparent backdrop-blur-lg fixed z-50 w-full">
+      <div className="max-w-screen-xl mx-auto p-2">
+        <div className="flex items-center justify-between">
+          <Link href="/">
+            <div className="cursor-pointer flex items-center">
+              <img src="/logo5.svg" className="w-20 h-10 mr-4" alt="Logo" />
+            </div>
+          </Link>
+          <div className="hidden md:flex items-center space-x-4">
+            <Link href="/">
+              <div className="text-gray-200 hover:text-gray-300 hover:underline" onClick={closeMenu}>
+                Home
+              </div>
+            </Link>
+            <Link href="/about">
+              <div className="text-gray-200 hover:text-gray-300 hover:underline" onClick={closeMenu}>
+                About
+              </div>
+            </Link>
+            <button
+              type="button"
+              className="text-gray-200 hover:text-gray-300 hover:underline focus:outline-none"
+              onClick={handleServicesClick}
+            >
+              Services
+            </button>
+            {showSubMenu && (
+              <div className="ml-4">
+                <Link href="/services/translation">
+                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                    Translation
+                  </div>
+                </Link>
+                <Link href="/services/localization">
+                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                    Localization
+                  </div>
+                </Link>
+                <Link href="/services/interpretation">
+                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                    Interpretation
+                  </div>
+                </Link>
+                <Link href="/services/audioservices">
+                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                    Audio Services
+                  </div>
+                </Link>
+                <Link href="/services/dtp">
+                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                    DTP
+                  </div>
+                </Link>
+                <Link href="/services/machine">
+                  <div className="py-2 text-gray-200 hover:bg-gray-700 hover:text-white" onClick={closeMenu}>
+                    Machine Traslation
+                  </div>
+                </Link>
+              </div>
+            )}
+            <Link href="/industries">
+              <div className="text-gray-200 hover:text-gray-300 hover:underline" onClick={closeMenu}>
+                Industries
+              </div>
+            </Link>
+            <Link href="/quote">
+              <div className="bg-amber-500 border-0 py-1 px-4 text-gray-700 hover:text-blue-500 hover:underline" onClick={closeMenu}>
+                Instant Quote
+              </div>
+            </Link>
+          </div>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="inline-flex items-center p-2 ml-4 text-sm text-white rounded-lg md:hidden"
+            type="button"
+          >
+            <svg
+              className={`fill-current h-6 w-6 ${isOpen ? 'hidden' : 'block'}`}
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+            <svg
+              className={`fill-current h-6 w-6 ${isOpen ? 'block' : 'hidden'}`}
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+            </svg>
+          </button>
         </div>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center p-2 ml-12 text-sm text-white rounded-lg md:hidden"
-          type="button"
-        >
-          <svg
-            className={`fill-current h-6 w-6 ${isOpen ? 'hidden' : 'block'}`}
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-          <svg
-            className={`fill-current h-6 w-6 ${isOpen ? 'block' : 'hidden'}`}
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-          </svg>
-        </button>
-        {/* </div> */}
         <div
-          className={`w-full text-amber-400 opacity-90 mx-4 block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}
+          className={`w-full text-amber-400 opacity-90 block md:hidden ${
+            isOpen ? 'block' : 'hidden'
+          }`}
         >
-          <div className="text-sm lg:flex-grow border border-gray-100 bg-gray-900 divide-gray-600 p-4 md:p-0 mt-4  md:bg-transparent border-transparent">
+          <div className="bg-gray-900 border-gray-100 border-transparent md:bg-transparent md:border-0 divide-gray-600 p-4 md:p-0">
             <Link
               href="/"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 md:text-gray-100 hover:text-gray-300 hover:underline mx-4"
-              onClick={() => setIsOpen(!isOpen)}
+              className="block mt-4 text-gray-200 hover:text-gray-300 hover:underline"
+              onClick={closeMenu}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 md:text-gray-100 hover:text-gray-300 hover:underline  mx-4"
-              onClick={() => setIsOpen(!isOpen)}
+              className="block mt-4 text-gray-200 hover:text-gray-300 hover:underline"
+              onClick={closeMenu}
             >
               About
             </Link>
-            <Link
-              href="/services"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-900 md:text-gray-100 hover:text-gray-300 hover:underline ml-4"
-              onClick={() => setIsOpen(!isOpen)}
+            <button
+              type="button"
+              className="block mt-4 text-gray-200 hover:text-gray-300 hover:underline focus:outline-none"
+              onClick={handleServicesClick}
             >
               Services
-            </Link>
-            <div className="relative inline-block">
-              <button
-                type="button"
-                className="relative z-10 block p-2 text-gray-700 border border-transparent rounded-md focus:border-blue-500 focus:ring-opacity-40 dark:focus:ring-opacity-40 focus:ring-blue-300 dark:focus:ring-blue-400 focus:outline-none"
-                onClick={handleServicesClick}
-              >
-                <svg
-                  className="w-5 h-5 text-blue-800 lg:text-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-              {/* Dropdown menu */}
-              {showSubMenu && (
-              <div
-                className="absolute left-0 z-20 w-48 py-2 ml-0 mt-2 origin-top-right rounded-md shadow-xl bg-gray-800"
-              >
+            </button>
+            {showSubMenu && (
+              <div className="ml-4">
                 <Link
                   href="/services/translation"
-                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
-                  onClick={() => setShowSubMenu(!showSubMenu)}
+                  className="block py-2 text-gray-200 hover:bg-gray-700 hover:text-white"
+                  onClick={closeMenu}
                 >
-                  {' '}
-                  Translation{' '}
-                </Link>
-                <Link
-                  href="/services/localization"
-                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
-                  onClick={() => setShowSubMenu(!showSubMenu)}
-                >
-                  {' '}
-                  Localization{' '}
+                  Translation
                 </Link>
                 <Link
                   href="/services/interpretation"
-                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
-                  onClick={() => setShowSubMenu(!showSubMenu)}
+                  className="block py-2 text-gray-200 hover:bg-gray-700 hover:text-white"
+                  onClick={closeMenu}
                 >
-                  {' '}
-                  Interpretation{' '}
+                  Interpretation
                 </Link>
                 <Link
                   href="/services/audioservices"
-                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
-                  onClick={() => setShowSubMenu(!showSubMenu)}
+                  className="block py-2 text-gray-200 hover:bg-gray-700 hover:text-white"
+                  onClick={closeMenu}
                 >
-                  {' '}
-                  Audio Services{' '}
+                  Audio Services
                 </Link>
                 <Link
                   href="/services/dtp"
-                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
-                  onClick={() => setShowSubMenu(!showSubMenu)}
+                  className="block py-2 text-gray-200 hover:bg-gray-700 hover:text-white"
+                  onClick={closeMenu}
                 >
-                  {' '}
-                  DTP{' '}
+                  DTP
                 </Link>
                 <Link
                   href="/services/machine"
-                  className="block px-4 py-3 text-sm text-gray-200 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-700 dark:hover:text-white"
-                  onClick={() => setShowSubMenu(!showSubMenu)}
+                  className="block py-2 text-gray-200 hover:bg-gray-700 hover:text-white"
+                  onClick={closeMenu}
                 >
-                  {' '}
-                  Machine Translation{' '}
+                  Machine Traslation
                 </Link>
               </div>
-              )}
-            </div>
+            )}
             <Link
               href="/industries"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 md:text-gray-100 hover:text-gray-300 hover:underline  mx-4"
-              onClick={() => setIsOpen(!isOpen)}
+              className="block mt-4 text-gray-200 hover:text-gray-300 hover:underline"
+              onClick={closeMenu}
             >
               Industries
             </Link>
             <Link
               href="/quote"
-              className="block bg-amber-500 border-0 py-1 px-4 mt-4 lg:inline-block lg:mt-0 text-gray-700 md:text-gray-700 hover:text-blue-500 hover:underline mx-4"
-              onClick={() => setIsOpen(!isOpen)}
+              className="block bg-amber-500 border-0 py-1 px-4 mt-4 text-gray-700 hover:text-blue-500 hover:underline"
+              onClick={closeMenu}
             >
               Instant Quote
             </Link>
           </div>
         </div>
-
       </div>
-
     </nav>
-
   );
 };
 

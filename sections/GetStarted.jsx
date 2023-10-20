@@ -8,7 +8,7 @@ import { StartSteps, TitleTextWhite, TypingTextWhite } from '../components';
 import { startingFeatures } from '../constants';
 
 const GetStarted = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section>
     <motion.div
       variants={staggerContainer}
       initial="hidden"

@@ -1,6 +1,6 @@
 // import Head from 'next/head';
 import SEOHead from '../components/SEOHead';
-import { About, Intro, Feedback, MarqueeSlider, GetStarted, Hero, Insights, WhatsNew, World, IndustryStats } from '../sections';
+import { About, Hero, Intro, Feedback, MarqueeSlider, Insights, IndustryStats } from '../sections';
 import globalMeta from '../constants/globalmeta';
 
 const Page = () => {
@@ -17,27 +17,26 @@ const Page = () => {
         description="Ethiostar America is a Fremont, California-based translation and localization LLC company. We provide document translation, proofreading, mobile localization, website localization and software localization, interpretation, voiceover, desktop publishing, and more."
         ogType="website"
       />
+
       <Hero />
-      <div>
-        <About />
-      </div>
-      <div className="relative">
-        <GetStarted />
-        <div />
-        <WhatsNew />
-      </div>
+      <About />
+      {/* <div>
+      </div> */}
+      {/* <div className="relative"> */}
+      {/* <GetStarted /> */}
+      {/* <WhatsNew /> */}
+      {/* </div> */}
 
       <Intro />
       <IndustryStats />
-      <World />
+      {/* <World /> */}
       <MarqueeSlider />
-      <div className="relative">
+      {/* <div className="relative"> */}
 
-        <Insights />
-        <div />
-        <Feedback />
+      <Insights />
+      <Feedback />
 
-      </div>
+      {/* </div> */}
 
     </div>
 

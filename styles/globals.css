@@ -23,7 +23,7 @@
     --color-text-base: 255, 255, 255;
     --color-text-muted: 254, 202, 202;
     --color-text-inverted: 220, 38, 38;
-    --color-fill: 185, 28, 28;
+    --color-fill: 47, 59, 82;
     --color-button-accent: 255, 255, 255;
     --color-button-accent-hover: 254, 242, 242;
     --color-button-muted: 239, 68, 68;
@@ -48,11 +48,11 @@
 
   }
 
-  ..theme-black-pearl {
+  .theme-black-pearl {
     --color-text-base: 255, 255, 255;
     --color-text-muted: 254, 202, 202;
     --color-text-inverted: 79, 70, 229;
-    --color-fill: 9, 20, 60;
+    --color-fill: 37, 46, 66;
     --color-button-accent: 36, 52, 3;
     --color-button-accent-hover: 55, 79, 5;
     --color-button-muted: 212, 255, 122;

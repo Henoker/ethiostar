@@ -14,4 +14,5 @@ const MyApp = ({ Component, pageProps }) => (
     <Component {...pageProps} />
   </Layout>
 );
+
 export default MyApp;

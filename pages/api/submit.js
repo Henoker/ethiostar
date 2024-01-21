@@ -5,12 +5,11 @@ import { google } from 'googleapis';
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { Name, Email, Message } = req.body;
-    console.log(Name, Email, Message);
 
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
-        private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+        private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, 'an'),
       },
       scopes: [
         'https://www.googleapis.com/auth/drive',
@@ -39,3 +38,4 @@ export default async function handler(req, res) {
     res.status(200).json({ message: 'Done!' });
   }
 }
+

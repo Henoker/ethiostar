@@ -248,7 +248,7 @@ export default function Feedback() {
         />
         <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3 sm:grid-cols-2 ">
           <div className="p-4 rounded-lg-50 md:p-6 bg-[#9fe218]">
-            <span className="inline-block p-3 rounded-lg bg-blue-100/80 bg-gray-700">
+            <span className="inline-block p-3 rounded-lg bg-blue-100/80 bg-gray-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -275,7 +275,7 @@ export default function Feedback() {
             </p>
           </div>
           <div className="p-4 rounded-lg md:p-6 bg-[#9fe218]">
-            <span className="inline-block p-3 rounded-lg bg-blue-100/80 bg-gray-700">
+            <span className="inline-block p-3 rounded-lg bg-blue-100/80 bg-gray-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -307,7 +307,7 @@ export default function Feedback() {
             </p>
           </div>
           <div className="p-4 rounded-lg bg-[#9fe218]">
-            <span className="inline-block p-3 rounded-lg bg-blue-100/80 bg-gray-700">
+            <span className="inline-block p-3 rounded-lg bg-blue-100/80 bg-gray-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

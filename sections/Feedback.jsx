@@ -303,7 +303,7 @@ export default function Feedback() {
               Main Office
             </p>
             <p className="mt-2 text-sm text-blue-800">
-              Fremont, California
+             Hayward, CA, United States
             </p>
           </div>
           <div className="p-4 rounded-lg bg-[#9fe218]">
